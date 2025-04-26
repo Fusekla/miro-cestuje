@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 import Header from "@/components/Header";
 
 export const metadata = {
-  title: "My Itinerary",
-  description: "Plan your trip with style",
+  title: "Miro idze do šveta 🌍",
+  description: "My itinerary website for travel planning",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
