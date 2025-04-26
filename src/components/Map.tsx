@@ -42,7 +42,7 @@ export default function Map({ locations }: { locations: { lat: number; lng: numb
       ))}
 
       {/* Draw route as a polyline */}
-      <Polyline positions={routeCoordinates} color="blue" weight={4} />
+      <Polyline positions={routeCoordinates as [number, number][]} color="blue" weight={4} />
     </MapContainer>
   );
 }

@@ -1,5 +1,5 @@
 -- Create the trips schema
-CREATE SCHEMA IF NOT EXISTS trips;
+-- CREATE SCHEMA IF NOT EXISTS trips;
 
 -- Table: trips
 CREATE TABLE public.trips (
