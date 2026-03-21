@@ -5,10 +5,12 @@
 The project now has:
 
 - a clean content-first architecture
-- one published trip
+- two published trips
 - archived legacy material
 - working lint, typecheck, build, and dev setup
 - a first-pass design direction
+- committed image attribution tracking
+- improved desktop trip-page scrolling behavior
 
 ## Phase 1: Governance And Documentation
 
@@ -35,6 +37,8 @@ Success looks like:
 
 ## Phase 3: Migrate Archived Trips
 
+Status: in progress
+
 Goal:
 
 Convert the archived Krakow, Scotland, and Cantabria plans into the final live content format.
@@ -46,6 +50,15 @@ Success looks like:
 - consistent copy style
 - no dead fields
 - no duplicate truth sources
+
+Completed so far:
+
+- Krakow 2026 is now live in the new content model, with real trip imagery and richer editorial copy
+
+Still pending:
+
+- migrate Cantabria
+- migrate Scotland
 
 ## Phase 4: Visual Polish
 
@@ -73,6 +86,14 @@ Likely work:
 - final favicon and browser polish
 - deployment notes
 - light QA pass on mobile and desktop
+
+## Next Recommended Session
+
+Pick up here next time:
+
+1. migrate Cantabria into `src/content/trips/`
+2. review whether the current schema needs any trip-specific optional fields after Cantabria
+3. migrate Scotland last, because it is the most logistics-heavy of the remaining archived plans
 
 ## Phase 6: Optional Features
 

@@ -84,8 +84,8 @@ export default async function TripPage({ params }: TripPageProps) {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
+      <section className="mx-auto grid max-w-6xl gap-10 px-6 lg:h-[calc(100vh-8rem)] lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+        <aside className="space-y-6 lg:min-h-0 lg:max-h-full lg:overflow-y-auto lg:pr-3 trip-pane-scroll">
           <div className="rounded-[28px] border border-[var(--line)] bg-white/80 p-6 shadow-[0_14px_36px_rgba(24,28,24,0.06)]">
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[var(--clay)]">
               Trip notes
@@ -142,7 +142,7 @@ export default async function TripPage({ params }: TripPageProps) {
           ) : null}
         </aside>
 
-        <section className="space-y-5">
+        <section className="space-y-5 lg:min-h-0 lg:max-h-full lg:overflow-y-auto lg:pr-3 trip-pane-scroll">
           <div className="mb-2">
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[var(--clay)]">
               Day by day
