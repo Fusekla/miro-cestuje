@@ -151,8 +151,9 @@ export default async function TripPage({ params }: TripPageProps) {
               Open the plan when you need the detail.
             </h2>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--muted)]">
-              Each row gives the shape of the day first. Open it for timing,
-              driving load, highlight image, and the accommodation name.
+              Start with the short version. Open a day when you want the fuller
+              story, the timings, the moving parts, and the useful practical
+              bits.
             </p>
           </div>
 

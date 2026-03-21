@@ -4,8 +4,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: {
-    default: "Miro's Roadbook",
-    template: "%s | Miro's Roadbook",
+    default: "Miro idze do šveta",
+    template: "%s | Miro idze do šveta",
   },
   description:
     "Elegant, shareable holiday itineraries with day-by-day plans, accommodation names, and highlight moments.",
