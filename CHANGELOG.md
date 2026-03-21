@@ -15,14 +15,12 @@ The archived pre-rebuild implementation lives in:
 - renamed the live site title and header branding to `Miro idze do šveta`
 - rewrote the homepage and trip-page helper copy to remove generic product language and use a more personal, tongue-in-cheek editorial tone
 - expanded the Slovenia trip intro and all day overviews so the opened itinerary gives more place context, factual hooks, and travel mood instead of only route mechanics
+- replaced the Krakow placeholder artwork with local JPG trip photography for the cover and each day highlight
 
 ### Added
 
 - migrated the Krakow 2026 city-break plan into the live content model
-
-### Changed
-
-- replaced the Krakow placeholder artwork with local JPG trip photography for the cover and each day highlight
+- committed `docs/image-credits.md` to track attribution for third-party trip imagery used in the published site
 
 ## [2.0.0] - 2026-03-21
 
