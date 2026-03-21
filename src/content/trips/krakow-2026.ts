@@ -43,6 +43,7 @@ export const krakow2026: Trip = {
         { label: "Drive", duration: "Approx. 4.5-5 hours total" },
         { label: "Olomouc stop", duration: "Approx. 2-3 hours" },
       ],
+      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
       highlightImage: {
         src: "/trips/2026-krakow/highlights/day01.jpg",
         alt: "Olomouc stop and Krakow arrival highlight for day 1",
@@ -94,6 +95,7 @@ export const krakow2026: Trip = {
         "This is the ceremonial Krakow day, and it should lean into that. Rynek Glowny is one of the largest medieval market squares in Europe, which is why the centre feels less like a decorative old town and more like a real urban stage. The Cloth Hall, St. Mary's Basilica, and the surrounding lanes all carry the familiar royal-city weight, but Krakow works best when some of that grandeur is cut with slower moments: a coffee break, a river walk, time on Wawel Hill without trying to consume every interior in one shot. The walking tour is useful here because Krakow's history is layered rather than instantly legible. Royal capital, university city, mercantile crossroads, and later occupied city all overlap in a relatively compact area. By the end of the day, the goal is not to have ticked off every church and courtyard. It is to understand the tone of the city well enough that the later days feel connected rather than separate excursions.",
       tags: ["old town", "walking tour", "landmarks"],
       transport: [{ label: "City walking", duration: "Most of the day" }],
+      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
       fixedItems: [
         {
           time: "10:00-12:30",
@@ -151,6 +153,7 @@ export const krakow2026: Trip = {
       transport: [
         { label: "Drive", duration: "Short transfer to Wieliczka and back" },
       ],
+      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
       fixedItems: [
         {
           time: "09:00",
@@ -209,6 +212,7 @@ export const krakow2026: Trip = {
         { label: "City walking", duration: "Most of the day" },
         { label: "Transfer", duration: "Allow approx. 30 minutes to Schindler's" },
       ],
+      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
       fixedItems: [
         {
           time: "10:30-13:00",
