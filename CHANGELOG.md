@@ -16,6 +16,7 @@ The archived pre-rebuild implementation lives in:
 - rewrote the homepage and trip-page helper copy to remove generic product language and use a more personal, tongue-in-cheek editorial tone
 - expanded the Slovenia trip intro and all day overviews so the opened itinerary gives more place context, factual hooks, and travel mood instead of only route mechanics
 - replaced the Krakow placeholder artwork with local JPG trip photography for the cover and each day highlight
+- changed desktop trip pages from a sticky sidebar layout to two independently scrollable columns so scrolling follows the pane under the cursor more intuitively
 
 ### Added
 
