@@ -1,5 +1,61 @@
 @import "tailwindcss";
 
+:root {
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --font-body: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+  --paper: #f6f0e7;
+  --paper-strong: #ecdfcf;
+  --card: rgba(251, 247, 241, 0.9);
+  --ink: #1f2a25;
+  --muted: #5f685f;
+  --forest: #18382f;
+  --forest-soft: #2a5146;
+  --clay: #b86b43;
+  --gold: #92724a;
+  --line: rgba(31, 42, 37, 0.12);
+  --shadow: 0 20px 60px rgba(23, 26, 21, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-yellow-50 text-slate-800;
+  background:
+    radial-gradient(circle at top left, rgba(184, 107, 67, 0.15), transparent 32%),
+    radial-gradient(circle at top right, rgba(24, 56, 47, 0.12), transparent 30%),
+    linear-gradient(180deg, #fbf7f1 0%, var(--paper) 48%, #eee4d4 100%);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), serif;
+}
+
+::selection {
+  background: rgba(184, 107, 67, 0.2);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.day-toggle {
+  transition: transform 180ms ease;
+}
+
+details[open] .day-toggle {
+  transform: rotate(45deg);
+}
+
+.glass-card {
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
 }

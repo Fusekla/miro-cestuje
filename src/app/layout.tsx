@@ -1,20 +1,26 @@
+import type { Metadata } from "next";
 import "./globals.css";
-import { ReactNode } from "react";
-import Header from "@/components/Header";
+import { SiteHeader } from "@/components/SiteHeader";
 
-export const metadata = {
-  title: "Miro idze do šveta 🌍",
-  description: "My itinerary website for travel planning",
+export const metadata: Metadata = {
+  title: {
+    default: "Miro's Roadbook",
+    template: "%s | Miro's Roadbook",
+  },
+  description:
+    "Elegant, shareable holiday itineraries with day-by-day plans, accommodation names, and highlight moments.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gray-50 text-gray-900 font-sans antialiased">
-        <Header />
-        <main className="flex flex-col items-center p-6 pt-24 bg-yellow-50 min-h-screen">
-          {children}
-        </main>
+      <body>
+        <SiteHeader />
+        {children}
       </body>
     </html>
   );
