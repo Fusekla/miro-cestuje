@@ -65,6 +65,7 @@ The site exists to help friends quickly understand:
 - Keep explanations plain and non-jargony.
 - Preserve archived source material unless explicitly asked to delete it.
 - Before adding new trip data fields, confirm they solve a real content need.
+- When a trip is migrated into `src/content/trips/` and becomes live, remove it from any homepage "coming up" / future-trip list so published and upcoming states stay consistent.
 
 ## Definition Of Done
 
