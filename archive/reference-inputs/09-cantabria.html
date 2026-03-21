@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cantabria · September 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #f4efe6;
+    --warm: #ede5d8;
+    --stone: #c8b99a;
+    --terracotta: #b85c38;
+    --ink: #2a2118;
+    --muted: #7a6a58;
+    --sea: #3d6b7a;
+    --sea-light: #e8f0f3;
+    --accent: #b85c38;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--sand);
+    color: var(--ink);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* Header */
+  .header {
+    background: var(--ink);
+    color: var(--sand);
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+      radial-gradient(ellipse at 20% 50%, rgba(61,107,122,0.25) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(184,92,56,0.15) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .header-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 1rem;
+  }
+
+  .header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  .header h1 em {
+    font-style: italic;
+    color: var(--stone);
+  }
+
+  .header-sub {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--stone);
+    margin-top: 0.75rem;
+  }
+
+  .header-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 0.4rem 0.9rem;
+    border-radius: 2px;
+    color: var(--stone);
+  }
+
+  /* Main layout */
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  /* Base section */
+  .base-card {
+    background: var(--ink);
+    color: var(--sand);
+    border-radius: 3px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .base-card::after {
+    content: '⌂';
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 2rem;
+    opacity: 0.08;
+  }
+
+  .base-card h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.5rem;
+  }
+
+  .base-card .base-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .base-card .base-detail {
+    font-style: italic;
+    color: var(--stone);
+    font-size: 0.95rem;
+  }
+
+  .base-note {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    color: rgba(244,239,230,0.65);
+    line-height: 1.6;
+  }
+
+  .base-note strong {
+    color: var(--terracotta);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  /* Day cards */
+  .day {
+    margin-bottom: 2.5rem;
+    border-left: 2px solid var(--stone);
+    padding-left: 1.75rem;
+    position: relative;
+  }
+
+  .day::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0.55rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--terracotta);
+  }
+
+  .day-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+    flex-wrap: wrap;
+  }
+
+  .day-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+
+  .day-anchor {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    background: rgba(184,92,56,0.08);
+    border: 1px solid rgba(184,92,56,0.2);
+    padding: 0.25rem 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 0.85rem;
+    margin-top: 0.1rem;
+  }
+
+  .day-anchor::before { content: '◆'; font-size: 0.5rem; }
+
+  .schedule {
+    list-style: none;
+  }
+
+  .schedule li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .time-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    min-width: 90px;
+    padding-top: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  .schedule-text { flex: 1; }
+
+  .tag {
+    display: inline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-left: 0.3rem;
+  }
+
+  .tag-food { background: rgba(61,107,122,0.12); color: var(--sea); border: 1px solid rgba(61,107,122,0.2); }
+  .tag-tip  { background: rgba(184,92,56,0.1); color: var(--terracotta); border: 1px solid rgba(184,92,56,0.2); }
+  .tag-opt  { background: rgba(122,106,88,0.1); color: var(--muted); border: 1px solid rgba(122,106,88,0.2); }
+
+  .day-note {
+    margin-top: 0.85rem;
+    padding: 0.7rem 0.9rem;
+    background: var(--warm);
+    border-left: 3px solid var(--stone);
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.55;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .day-note strong {
+    font-style: normal;
+    color: var(--terracotta);
+    font-weight: 400;
+  }
+
+  /* Special day types */
+  .day.arrival .day-title { color: var(--sea); }
+  .day.arrival::before { background: var(--sea); }
+  .day.arrival { border-left-color: var(--sea); }
+
+  /* Optional section */
+  .optional-block {
+    background: var(--warm);
+    border: 1px solid var(--stone);
+    border-radius: 3px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .optional-block h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .optional-block .opt-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .optional-block p {
+    font-size: 0.93rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* Principles */
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--stone);
+  }
+
+  .principle {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .principle-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+
+  .principle-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* Divider */
+  .section-divider {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--stone);
+  }
+
+  .changed {
+    position: relative;
+  }
+  .changed::after {
+    content: 'revised';
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    background: rgba(184,92,56,0.08);
+    border: 1px solid rgba(184,92,56,0.2);
+    padding: 0.15rem 0.45rem;
+    border-radius: 2px;
+    margin-left: 0.6rem;
+    vertical-align: middle;
+    font-style: normal;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 2rem 1.25rem; }
+    .header { padding: 3rem 1.25rem 2rem; }
+    .base-card { padding: 1.5rem; }
+    .time-label { min-width: 70px; font-size: 0.55rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-eyebrow">Trip Itinerary · v1.5</div>
+  <h1>Cantabria<br><em>September 2026</em></h1>
+  <p class="header-sub">Slow coast. Good food. No agenda.</p>
+  <div class="header-meta">
+    <span class="meta-chip">11–18 Sep 2026</span>
+    <span class="meta-chip">7 nights</span>
+    <span class="meta-chip">Group 2–4</span>
+    <span class="meta-chip">One anchor / day</span>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- BASE -->
+  <div class="base-card">
+    <h2>Base</h2>
+    <div class="base-name">Santillana del Mar</div>
+    <div class="base-detail">Mayorazgo de Altamira Mila</div>
+    <div class="base-note">
+      Beautiful village, but heavily touristic. Plan your dinners before you go — don't wing it every night.<br><br>
+      <strong>Dinner within driving distance (15–25 min):</strong><br>
+      · <strong>El Nuevo Molino</strong>, Puente Arce (20 min) — 18th-century water mill on the River Pas, serious Cantabrian cooking, garden with chapel. Former Michelin star. Reserve in advance. Good for one proper evening out.<br>
+      · <strong>La Dársena de Suances</strong>, Suances (15 min) — fresh fish and seafood right next to the beach, good value, local atmosphere. A reliable fallback for any evening.<br>
+      · <strong>El Pasaje de los Nobles</strong>, Santillana itself — 4th-generation family restaurant, genuinely well-regarded, gluten-free focused. Consistently rated the best in Santillana. Worth knowing for nights you don't want to drive.
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day arrival">
+    <div class="day-header">
+      <span class="day-date">Fri · 11 Sep</span>
+      <span class="day-title">Arrival</span>
+    </div>
+    <ul class="schedule">
+      <li><span class="time-label">Bilbao</span><span class="schedule-text">Pick up rental car at Bilbao airport — ~1h45 drive to Santillana via A-8 motorway, straightforward</span></li>
+      <li><span class="time-label">~17:00</span><span class="schedule-text">Arrive, unpack, settle in</span></li>
+      <li><span class="time-label">Evening</span><span class="schedule-text">First dinner in Santillana old town — low effort, just orient yourself</span></li>
+    </ul>
+    <div class="day-note"><strong>Departure note:</strong> Bilbao airport car returns can get congested — build 20–30 min buffer on 18 Sep depending on flight time.</div>
+  </div>
+  <div class="day">
+    <div class="day-header">
+      <span class="day-date">Sat · 12 Sep</span>
+      <span class="day-title">Santillana & Altamira</span>
+    </div>
+    <div class="day-anchor">Altamira Cave Museum (Neocueva)</div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text">Walk Santillana early — quiet streets, Romanesque church, coffee before the coaches arrive</span></li>
+      <li><span class="time-label">Late morning</span><span class="schedule-text">Altamira Neocueva <span class="tag tag-tip">book in advance</span></span></li>
+      <li><span class="time-label">Midday</span><span class="schedule-text">Lunch + rest, garden time</span></li>
+      <li><span class="time-label">Evening</span><span class="schedule-text">Relaxed dinner — gentle intro day</span></li>
+    </ul>
+    <div class="day-note">Low driving. Cultural warm-up. Very gentle pace — right for day two.</div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day">
+    <div class="day-header">
+      <span class="day-date">Sun · 13 Sep</span>
+      <span class="day-title">Comillas + San Vicente de la Barquera</span>
+    </div>
+    <div class="day-anchor">El Capricho · San Vicente castle & harbor</div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text">Drive to Comillas (25 min), coffee in old town</span></li>
+      <li><span class="time-label">Mid-morning</span><span class="schedule-text">El Capricho — Gaudí's genuinely strange summer house, worth 45–60 min <span class="tag tag-tip">book ahead</span></span></li>
+      <li><span class="time-label">Late morning</span><span class="schedule-text">Continue west to San Vicente de la Barquera (15 min from Comillas)</span></li>
+      <li><span class="time-label">Midday</span><span class="schedule-text">Medieval castle walk, estuary views, harbor — then lunch at a harbor seafood restaurant, unpretentious and good <span class="tag tag-food">food</span></span></li>
+      <li><span class="time-label">Afternoon</span><span class="schedule-text">Oyambre beach walk en route back — dunes, open sea, flat and easy <span class="tag tag-opt">optional</span></span></li>
+      <li><span class="time-label">Evening</span><span class="schedule-text">Back to base, garden / quiet night</span></li>
+    </ul>
+    <div class="day-note">Both are in the same westward direction from base — you pass through Oyambre and Comillas on the way to San Vicente. The day has natural forward momentum without any doubling back. Fuller than most days but both are strolling-pace, so it won't feel rushed.</div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day">
+    <div class="day-header">
+      <span class="day-date">Mon · 14 Sep</span>
+      <span class="day-title">Free Day</span>
+    </div>
+    <div class="day-anchor">Beach · rest · impulse</div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text">Slow morning — coffee, garden, no plan</span></li>
+      <li><span class="time-label">Midday</span><span class="schedule-text">Beach if the day is good — Playa de Santa Justa (10 min) or Arnía (25 min) are the picks</span></li>
+      <li><span class="time-label">Afternoon</span><span class="schedule-text">Stay at the beach, or drive somewhere on impulse — no anchor, no obligation</span></li>
+      <li><span class="time-label">Evening</span><span class="schedule-text">Dinner at La Dársena de Suances (15 min) — seafood, unpretentious, right on the water <span class="tag tag-food">food</span></span></li>
+    </ul>
+    <div class="day-note">One unanchored day in the week is deliberate. Sunday is the fullest day; Monday absorbs any overflow and lets the group reset before three consecutive destination days.</div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day">
+    <div class="day-header">
+      <span class="day-date">Tue · 15 Sep</span>
+      <span class="day-title">El Soplao Cave + Carmona</span>
+    </div>
+    <div class="day-anchor">El Soplao Cave</div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text">Drive to El Soplao (~50 min, inland) <span class="tag tag-tip">book standard turístico tour — not the adventure crawl</span></span></li>
+      <li><span class="time-label">Late morning</span><span class="schedule-text">Cave visit (~2–2.5h on site) — among the best caves in Spain, your wife will not be disappointed</span></li>
+      <li><span class="time-label">Midday</span><span class="schedule-text">Carmona village — tiny mountain settlement, short walk, lunch at a local café <span class="tag tag-tip">confirm open before going</span> <span class="tag tag-food">food</span></span></li>
+      <li><span class="time-label">Afternoon</span><span class="schedule-text">Active: Valle del Nansa walk — river path, chestnut forest, ~6km out and back <span class="tag tag-tip">active</span></span></li>
+      <li><span class="time-label">Afternoon</span><span class="schedule-text">Light alternative: scenic drive back via the valley, coffee stop, base by 4pm <span class="tag tag-opt">fallback</span></span></li>
+    </ul>
+    <div class="day-note">Inland day — completely different landscape from the coast. The cave formations are extraordinary. Carmona afterwards is a good contrast: tiny, quiet, mountain Cantabria rather than coastal Cantabria.</div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day">
+    <div class="day-header">
+      <span class="day-date">Wed · 16 Sep</span>
+      <span class="day-title">Santoña — Anchovy Town</span>
+    </div>
+    <div class="day-anchor">Conservas Emilia anchovy factory</div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text">Drive to Santoña (~45 min east, route skirts the marshlands natural park)</span></li>
+      <li><span class="time-label">~10:00–11:30</span><span class="schedule-text"><strong>Conservas Emilia factory tour</strong> — free, no booking needed, hourly 10am–1pm. ~90 min: video intro, factory floor, tasting of anchovies + boquerones en vinagre <span class="tag tag-tip">go early, smaller crowd</span></span></li>
+      <li><span class="time-label">Midday</span><span class="schedule-text">Harbor walk, Fort of San Martín, town wander — genuine working fishing port, no tourists <span class="tag tag-food">lunch on the waterfront</span></span></li>
+      <li><span class="time-label">Afternoon</span><span class="schedule-text">Coastal drive back — optional stop at Noja or Trengandín beach <span class="tag tag-opt">optional</span></span></li>
+      <li><span class="time-label">Evening</span><span class="schedule-text">Good night for <strong>El Nuevo Molino</strong>, Puente Arce — 20 min from base, reserve in advance <span class="tag tag-tip">special dinner</span></span></li>
+    </ul>
+    <div class="day-note">No fish smell (the guide will explain that good anchovies shouldn't taste fishy either). The curing process takes months — it's craftsmanship, not a conveyor belt. The town is completely un-touristed and feels like real Cantabria.</div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day">
+    <div class="day-header">
+      <span class="day-date">Thu · 17 Sep</span>
+      <span class="day-title">Cantabrian Kitchen + Santander</span>
+    </div>
+    <div class="day-anchor">Cooking class · Mercado de la Esperanza</div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text"><strong>Cantabrian Kitchen</strong> — "Morning at the Market + Cooking Class": starts at Mercado de la Esperanza, select produce, cook traditional recipes with a professional chef <span class="tag tag-tip">book via hello@cantabriankitchen.com</span></span></li>
+      <li><span class="time-label">Early afternoon</span><span class="schedule-text">Stay in Santander — Magdalena Peninsula walk, El Sardinero neighbourhood, coffee and people-watching</span></li>
+      <li><span class="time-label">Late afternoon</span><span class="schedule-text">Return to base — last evening in Santillana</span></li>
+      <li><span class="time-label">Evening</span><span class="schedule-text">Dinner at El Pasaje de los Nobles (in Santillana) — 4th-generation family restaurant, the best in the village <span class="tag tag-food">food</span></span></li>
+    </ul>
+    <div class="day-note">Cantabrian Kitchen looks genuine — small operator, chef and sommelier led, embedded in local food culture. The market class is the right pick: you already know the Mercado from the cooking class context, and it deepens the food thread that runs through the whole trip.</div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="day arrival">
+    <div class="day-header">
+      <span class="day-date">Fri · 18 Sep</span>
+      <span class="day-title">Departure</span>
+    </div>
+    <ul class="schedule">
+      <li><span class="time-label">Morning</span><span class="schedule-text">Last breakfast, pack up, last coffee in Santillana old town</span></li>
+      <li><span class="time-label">TBD</span><span class="schedule-text">Drive to Bilbao (~1h45 via A-8)</span></li>
+    </ul>
+    <div class="day-note"><strong>Buffer note:</strong> Bilbao airport car returns can get congested — build 20–30 min into your schedule depending on flight time.</div>
+  </div>
+
+  <div class="section-divider">· · ·</div>
+
+  <!-- BEACHES -->
+  <div class="optional-block">
+    <h3>Beaches · nearby options</h3>
+    <div class="opt-title">For afternoons or unplanned days</div>
+    <p>
+      <strong>Playa de Santa Justa</strong> (Ubiarco, 10 min) — Small secluded cove with a dramatic rock arch, often uncrowded even in summer. Closest quiet beach to base. Good for an afternoon impulse.<br><br>
+      <strong>Playa de Arnía</strong> (25 min east) — Karst limestone rock formations, shallow turquoise pool at high tide, spectacular coastal scenery. Increasingly visited but still calm in September. The most visually striking beach on this coastline.<br><br>
+      <strong>Playa de Langre</strong> (30 min east) — Wide crescent of sand between green cliffs, no tourist facilities, natural and wild. Good for a walk rather than a structured beach day. Popular with anglers.<br><br>
+      <strong>Comillas beach</strong> (20 min west) — Sheltered bay, calmer water, Blue Flag. Good for a relaxed swim if you're already in Comillas. Convenient rather than spectacular.<br><br>
+      <strong>Oyambre</strong> (already in the itinerary, 25 min west) — Also works as a standalone afternoon beach any other day. Fine sand, dune backdrop, open sea.
+    </p>
+  </div>
+
+
+  <div class="optional-block">
+    <h3>Optional swap · Asturias</h3>
+    <div class="opt-title">Llanes</div>
+    <p>Drive ~1h. Old town with a well-preserved medieval wall, working fishing harbor, and the remarkable <em>Cubos de la Memoria</em> — concrete breakwater cubes painted by local artists, genuinely striking at low tide. Skip the cider-house angle. Use only if you feel rested and want a longer day. Not mandatory.</p>
+  </div>
+
+  <div class="optional-block">
+    <h3>Optional add · East Coast</h3>
+    <div class="opt-title">Castro Urdiales</div>
+    <p>~1.5h east of Santillana. Gothic church dramatically perched on a sea cliff, working fishing harbor, almost no package tourists. Very different atmosphere from anywhere else on the itinerary — quieter, more dramatic coastline. Could replace Santander if you want a lower-key city day, or slot in as its own half-day if energy allows.</p>
+  </div>
+
+  <!-- PRINCIPLES -->
+  <div class="principles">
+    <div class="principle">
+      <span class="principle-icon">◆</span>
+      <div class="principle-label">One anchor / day</div>
+    </div>
+    <div class="principle">
+      <span class="principle-icon">◇</span>
+      <div class="principle-label">Afternoons free</div>
+    </div>
+    <div class="principle">
+      <span class="principle-icon">~</span>
+      <div class="principle-label">Swimming optional</div>
+    </div>
+    <div class="principle">
+      <span class="principle-icon">�
