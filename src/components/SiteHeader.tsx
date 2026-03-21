@@ -12,7 +12,7 @@ export function SiteHeader() {
             <span className="block text-[0.65rem] uppercase tracking-[0.34em] text-white/60">
               Travel magazine
             </span>
-            <span className="block text-xl">Miro&apos;s Roadbook</span>
+            <span className="block text-xl">Miro idze do šveta</span>
           </span>
         </Link>
 

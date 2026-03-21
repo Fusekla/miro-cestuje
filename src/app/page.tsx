@@ -30,12 +30,13 @@ export default function HomePage() {
             Share the plan before the road starts
           </p>
           <h1 className="max-w-3xl text-6xl leading-[0.92] text-[var(--forest)] sm:text-7xl">
-            Holiday itineraries that feel clear, useful, and worth opening.
+            Holiday plans for Miro and whoever happens to be in roughly the same
+            place at roughly the same time.
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-8 text-[var(--muted)]">
-            A simple public roadbook for friends: where each trip lives on one
-            polished page, each day has a clean headline, and the detailed plan
-            sits one click away.
+            This is where the trips live before they happen: the rough shape of
+            each day, the useful details when you need them, and enough context
+            to know why we are going there in the first place.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -108,8 +109,9 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="max-w-xl text-lg leading-7 text-[var(--muted)]">
-            Live trips use one clean structure: cover photo, short intro, and
-            expandable days with the practical details inside.
+            Open any trip for the full plan: the shape of each day first, the
+            proper details underneath, and enough background to make the place
+            feel less random.
           </p>
         </div>
 
