@@ -1,38 +1,124 @@
-"use client";
-
+import Image from "next/image";
 import Link from "next/link";
+import { TripCard } from "@/components/TripCard";
+import { getPublishedTrips } from "@/content";
 
-const trips = [
-  {
-    id: "2025-slovenia",
-    name: "Slovenia 2025",
-    description: "A scenic trip across Slovenia.",
-  },
-  {
-    id: "2026-tramtaria",
-    name: "Tramtaria 2026",
-    description: "An adventurous journey to Tramtaria.",
-  },
-];
+const upcomingTrips = ["Krakow 2026", "Scotland 2026", "Cantabria 2026"];
 
-export default function TripList() {
+export default function HomePage() {
+  const trips = getPublishedTrips();
+  const featuredTrip = trips[0];
+
+  if (!featuredTrip) {
+    return (
+      <main className="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[var(--clay)]">
+          No journeys yet
+        </p>
+        <h1 className="text-5xl text-[var(--forest)] sm:text-6xl">
+          The roadbook is being prepared.
+        </h1>
+      </main>
+    );
+  }
+
   return (
-    <main className="flex flex-col items-center p-6">
-      <h1 className="text-4xl font-bold text-sky-600 mb-2">Your Trips ✈️</h1>
+    <main className="pb-20">
+      <section className="mx-auto grid max-w-6xl gap-10 px-6 pb-16 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.36em] text-[var(--clay)]">
+            Share the plan before the road starts
+          </p>
+          <h1 className="max-w-3xl text-6xl leading-[0.92] text-[var(--forest)] sm:text-7xl">
+            Holiday itineraries that feel clear, useful, and worth opening.
+          </h1>
+          <p className="mt-6 max-w-2xl text-xl leading-8 text-[var(--muted)]">
+            A simple public roadbook for friends: where each trip lives on one
+            polished page, each day has a clean headline, and the detailed plan
+            sits one click away.
+          </p>
 
-      <ul className="w-full max-w-lg">
-        {trips.map((trip) => (
-          <li key={trip.id} className="border-b py-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href={`/trips/${trip.id}`}
-              className="text-2xl text-blue-600 hover:underline"
+              href={`/trips/${featuredTrip.slug}`}
+              className="rounded-full bg-[var(--forest)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--paper)] transition hover:bg-[var(--forest-soft)]"
             >
-              {trip.name}
+              Open featured trip
             </Link>
-            <p className="text-gray-600">{trip.description}</p>
-          </li>
-        ))}
-      </ul>
+            <a
+              href="#journeys"
+              className="rounded-full border border-[var(--line)] bg-white/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--forest)] transition hover:border-[var(--forest)]"
+            >
+              Browse journeys
+            </a>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            {upcomingTrips.map((trip) => (
+              <span
+                key={trip}
+                className="rounded-full border border-[var(--line)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]"
+              >
+                On deck: {trip}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="glass-card relative overflow-hidden rounded-[34px] border border-white/50 p-4">
+          <div className="relative overflow-hidden rounded-[28px]">
+            <Image
+              src={featuredTrip.coverImage.src}
+              alt={featuredTrip.coverImage.alt}
+              width={1400}
+              height={1100}
+              className="aspect-[4/5] w-full object-cover"
+              priority
+              sizes="(max-width: 1024px) 100vw, 42vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(18,28,24,0.82)] via-[rgba(18,28,24,0.22)] to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 space-y-4 p-6 text-[var(--paper)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/70">
+                Featured plan
+              </p>
+              <div className="flex items-end justify-between gap-6">
+                <div>
+                  <h2 className="text-5xl leading-none">{featuredTrip.title}</h2>
+                  <p className="mt-3 max-w-md text-base leading-7 text-white/80">
+                    {featuredTrip.blurb}
+                  </p>
+                </div>
+                <span className="hidden rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/70 sm:inline-flex">
+                  {featuredTrip.dateRange}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journeys" className="mx-auto max-w-6xl px-6">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[var(--clay)]">
+              Published journeys
+            </p>
+            <h2 className="mt-2 text-5xl text-[var(--forest)]">
+              Ready to share
+            </h2>
+          </div>
+          <p className="max-w-xl text-lg leading-7 text-[var(--muted)]">
+            Live trips use one clean structure: cover photo, short intro, and
+            expandable days with the practical details inside.
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2">
+          {trips.map((trip) => (
+            <TripCard key={trip.slug} trip={trip} />
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

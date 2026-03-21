@@ -1,67 +1,65 @@
-# Miro idze do šveta 🌍
+# Miro's Roadbook
 
-A lighthearted web app to organize and display road trip itineraries, including:
-- Dynamic day-by-day plans
-- Weather forecast integration
-- Interactive maps (Leaflet.js)
-- Smooth mobile-friendly design
+A simple travel-magazine style website for sharing holiday itineraries with friends.
 
-Built mostly for fun, learning, and trip planning.
+## Current Direction
 
----
+- Public, read-only website
+- Content edited in files
+- One home page
+- One page per trip
+- Each day opens to reveal detailed itinerary
+- No database
+- No weather integration
 
-## ✨ Tech Stack
-- Next.js 14 (React 18)
-- Tailwind CSS
-- Framer Motion (animations)
-- Leaflet + React-Leaflet (maps)
-- Supabase (database)
-- OpenWeatherMap API (forecasts)
+## Content Source
 
----
+Published trips live in `src/content/trips/`.
 
-## 🚀 Local Development
+Shared content types and loaders live in:
 
-1. Clone the repo
-2. Install dependencies:
+- `src/content/types.ts`
+- `src/content/index.ts`
 
-    ```bash
-    npm install
-    ```
+Raw planning references that should not drive the live site directly live in:
 
-3. Start the local dev server:
+- `archive/reference-inputs/`
+- `archive/legacy-app/`
+- `archive/legacy-public/`
 
-    ```bash
-    npm run dev
-    ```
+Project guidance for humans and agents lives in:
 
-4. Requires a Supabase backend + OpenWeatherMap API key (or use mock data).
+- `AGENTS.md`
+- `docs/product-bible.md`
+- `docs/content-model.md`
+- `docs/design-direction.md`
+- `docs/roadmap.md`
 
----
+## Local Development
 
-## 🌐 Production Hosting
+Recommended runtime:
 
-- Hosted on Vercel
-- Supabase used as managed PostgreSQL + REST API
+- Node.js `24.14.0` LTS preferred
+- Node.js `20.19.0+` minimum for the current toolchain
 
-Environment variables required:
+```bash
+npm run dev
+```
 
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- (optional) `NEXT_PUBLIC_OPENWEATHER_API_KEY` (if not hardcoded)
+Lint:
 
----
+```bash
+npm run lint
+```
 
-## 🛠 Known Limitations
+Typecheck:
 
-- Only forecast for 5 upcoming days available (OpenWeatherMap free tier)
-- Basic error handling
-- UI is intentionally simple and minimalistic
+```bash
+npm run typecheck
+```
 
----
+Build:
 
-## 💬 Notes
-
-This project is "vibe-coded" — built mostly by exploring, tinkering, and pasting code from ChatGPT sessions.
-
-A perfect reminder that exploration builds real-world skill! 🚀
+```bash
+npm run build
+```
