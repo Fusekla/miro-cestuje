@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scotland 2026 — Itinerary</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --stone: #4a4a4a;
+    --mist: #8a8a8a;
+    --heather: #6b4c6b;
+    --heather-light: #9b7a9b;
+    --moss: #4a5e3a;
+    --loch: #2a4a5e;
+    --cream: #f7f4ef;
+    --warm-white: #faf8f5;
+    --border: #ddd8cf;
+    --warn-bg: #fdf6ec;
+    --warn-border: #c8935a;
+    --warn-text: #7a4a1a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    background: var(--warm-white);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--loch);
+    color: white;
+    padding: 60px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 80% 50%, rgba(107,76,107,0.3) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 80%, rgba(74,94,58,0.2) 0%, transparent 50%);
+  }
+
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header-eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 18px;
+  }
+
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 60px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 em {
+    font-style: italic;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .header-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .meta-item .dot {
+    width: 4px;
+    height: 4px;
+    background: var(--heather-light);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* WARNINGS BLOCK */
+  .warnings-section {
+    max-width: 860px;
+    margin: 40px auto 0;
+    padding: 0 24px;
+  }
+
+  .warnings-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--warn-text);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .warnings-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--warn-border);
+    opacity: 0.4;
+  }
+
+  .warning-card {
+    background: var(--warn-bg);
+    border-left: 3px solid var(--warn-border);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .warning-card .warn-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--warn-border);
+    margin-bottom: 4px;
+  }
+
+  .warning-card p {
+    font-size: 13.5px;
+    color: var(--warn-text);
+    line-height: 1.6;
+  }
+
+  /* MAIN CONTENT */
+  .main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* LOCATION BAND */
+  .location-band {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 40px 0 20px;
+    position: relative;
+  }
+
+  .location-band:first-of-type {
+    margin-top: 0;
+  }
+
+  .location-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 2px;
+  }
+
+  .loc-edinburgh { background: var(--loch); }
+  .loc-transit { background: var(--stone); }
+  .loc-oban { background: var(--moss); }
+  .loc-fortWilliam { background: #4a3a5e; }
+  .loc-inverness { background: #5e3a2a; }
+  .loc-aviemore { background: #2a5e4a; }
+  .loc-return { background: var(--loch); }
+
+  .location-band::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+    margin-left: 16px;
+  }
+
+  /* DAY CARD */
+  .day-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    background: white;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .day-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .day-header {
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    padding: 20px 22px;
+    min-width: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .dn-edinburgh { background: var(--loch); }
+  .dn-transit { background: var(--stone); }
+  .dn-oban { background: var(--moss); }
+  .dn-fortWilliam { background: #4a3a5e; }
+  .dn-inverness { background: #5e3a2a; }
+  .dn-aviemore { background: #2a5e4a; }
+  .dn-return { background: var(--loch); }
+
+  .day-summary {
+    flex: 1;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .day-date {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--mist);
+    margin-bottom: 4px;
+  }
+
+  .day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  .day-tagline {
+    font-size: 12.5px;
+    color: var(--mist);
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  .day-toggle {
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    color: var(--mist);
+    font-size: 18px;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+  }
+
+  .day-toggle.open { transform: rotate(180deg); }
+
+  /* DAY BODY */
+  .day-body {
+    display: none;
+    border-top: 1px solid var(--border);
+    padding: 24px 24px 24px;
+  }
+
+  .day-body.open { display: block; }
+
+  .time-block {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .time-block:last-child { margin-bottom: 0; }
+
+  .time-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mist);
+    min-width: 76px;
+    padding-top: 2px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .time-content {
+    flex: 1;
+    font-size: 14px;
+    color: var(--stone);
+    line-height: 1.7;
+    border-left: 2px solid var(--border);
+    padding-left: 20px;
+  }
+
+  .time-content p { margin-bottom: 6px; }
+  .time-content p:last-child { margin-bottom: 0; }
+
+  .day-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--border);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--mist);
+  }
+
+  .footer-item .fi-label {
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--heather);
+    padding-top: 2px;
+    white-space: nowrap;
+  }
+
+  /* INLINE WARNING */
+  .inline-warn {
+    background: var(--warn-bg);
+    border-left: 2px solid var(--warn-border);
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 12.5px;
+    color: var(--warn-text);
+    border-radius: 0 3px 3px 0;
+  }
+
+  .inline-warn strong {
+    font-weight: 500;
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    color: var(--warn-border);
+  }
+
+  /* TRIP OVERVIEW BAR */
+  .overview-bar {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .overview-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .overview-stat .stat-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--ink);
+  }
+
+  .overview-stat .stat-key {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mist);
+    font-weight: 500;
+  }
+
+  /* TIMELINE TABLE */
+  .tl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    margin-bottom: 0;
+  }
+
+  .tl-table tr {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tl-table tr:last-child {
+    border-bottom: none;
+  }
+
+  .tl-table td {
+    padding: 9px 8px;
+    vertical-align: top;
+    color: var(--stone);
+    line-height: 1.5;
+  }
+
+  .tl-time {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mist);
+    min-width: 60px;
+    padding-right: 12px !important;
+    text-align: right;
+  }
+
+  .tl-time.fixed {
+    color: var(--loch);
+    font-weight: 600;
+  }
+
+  .tl-place {
+    font-weight: 500;
+    color: var(--ink);
+    min-width: 160px;
+    padding-right: 12px !important;
+  }
+
+  .tl-place.fixed {
+    color: var(--loch);
+  }
+
+  .tl-desc {
+    color: var(--stone);
+  }
+
+  .tl-transport {
+    background: rgba(42,74,94,0.06);
+  }
+
+  .tl-transport .tl-time { color: var(--loch); font-weight: 600; }
+  .tl-transport .tl-place { color: var(--loch); font-weight: 600; }
+  .tl-transport .tl-desc { color: var(--loch); }
+
+  /* PRINT */
+  @media print {
+    .day-body { display: block !important; }
+    .day-toggle { display: none; }
+    .day-card { break-inside: avoid; }
+  }
+
+  @media (max-width: 600px) {
+    .header { padding: 40px 20px 36px; }
+    .day-number { min-width: 56px; padding: 16px 14px; font-size: 22px; }
+    .time-label { min-width: 60px; }
+    .header-meta { gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="header-eyebrow">Travel Itinerary</div>
+    <h1>Scotland <em>2026</em></h1>
+    <div class="header-meta">
+      <div class="meta-item"><span class="dot"></span> 28 May – 9 June 2026</div>
+      <div class="meta-item"><span class="dot"></span> 13 days · 12 nights</div>
+      <div class="meta-item"><span class="dot"></span> Group of 5</div>
+      <div class="meta-item"><span class="dot"></span> Edinburgh in & out</div>
+    </div>
+  </div>
+</div>
+
+<div class="warnings-section">
+  <div class="warnings-title">Planning notes &amp; flags</div>
+
+  <div class="warning-card">
+    <div class="warn-label">⚠ Book now — Jacobite Steam Train</div>
+    <p>Both directions (Fort William → Mallaig and return) sell out months ahead. Book as soon as possible if not already done. Only a few trains run daily on this route.</p>
+  </div>
+
+  <div class="warning-card">
+    <div class="warn-label">✓ Day 6 logistics — fully managed by operator (West Coast Motors)</div>
+    <p>All transport on Day 6 is handled end-to-end: ferry tickets, coach across Mull, and boat. Show the booking email at each stage. Arrive at Oban ferry terminal by <strong>06:55</strong> — stay within easy walking distance of the terminal.</p>
+  </div>
+
+  <div class="warning-card">
+    <div class="warn-label">⚠ Iona Abbey — advance booking required</div>
+    <p>If anyone wants to visit the abbey interior, book online in advance at historicenvironment.scot. You have approximately 2 hours on Iona; slots fill up.</p>
+  </div>
+
+  <div class="warning-card">
+    <div class="warn-label">⚠ West Highland Line — train times constrain Glasgow stop (Day 3)</div>
+    <p>Only a handful of trains run Glasgow → Oban daily. Check the timetable: this will determine how long you realistically have in Glasgow. Don't miss the right train.</p>
+  </div>
+
+  <div class="warning-card">
+    <div class="warn-label">⚠ Day 12–13 — tight turnaround into departure morning</div>
+    <p>Arriving Edinburgh by evening train on Day 12, with a 09:00 flight on Day 13, means being at the airport around 07:00. Consider staying near the airport or very central. Early alarm required.</p>
+  </div>
+
+  <div class="warning-card">
+    <div class="warn-label">Note — Glenfinnan appears twice (Days 8 &amp; 9)</div>
+    <p>Day 8 passes the Glenfinnan Viaduct by train; Day 9 visits it on foot. This is intentional and works well — two very different experiences — but worth flagging so it doesn't feel like a scheduling error when reviewing the plan.</p>
+  </div>
+
+  <div class="warning-card">
+    <div class="warn-label">Note — No true rest day in the schedule</div>
+    <p>Day 6 (Staffa/Lunga/Iona) is the most physically and logistically demanding day of the trip, and it comes mid-sequence with full days on either side. The "easy" days (Oban Day 4, Cairngorms morning) provide some relief but may not be enough for all five people. Worth discussing with the group.</p>
+  </div>
+</div>
+
+<div class="main">
+  <div class="overview-bar">
+    <div class="overview-stat"><span class="stat-val">13</span><span class="stat-key">Days total</span></div>
+    <div class="overview-stat"><span class="stat-val">5</span><span class="stat-key">Bases</span></div>
+    <div class="overview-stat"><span class="stat-val">6+</span><span class="stat-key">Islands visited</span></div>
+    <div class="overview-stat"><span class="stat-val">PT only</span><span class="stat-key">Transport mode</span></div>
+    <div class="overview-stat"><span class="stat-val">Mid-range</span><span class="stat-key">Accommodation</span></div>
+  </div>
+
+  <!-- EDINBURGH -->
+  <div class="location-band"><span class="location-label loc-edinburgh">Edinburgh</span></div>
+
+  <!-- Day 1 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-edinburgh">1</div>
+      <div class="day-summary">
+        <div class="day-date">Thursday, 28 May</div>
+        <div class="day-title">Arrival in Edinburgh</div>
+        <div class="day-tagline">Gentle landing, neighbourhood atmosphere, first contact with the city</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">08:45</td><td class="tl-place">Edinburgh Airport</td><td class="tl-desc">Arrive. Tram or bus to city centre (~30 min)</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~09:15</td><td class="tl-place">🚋 Tram / bus</td><td class="tl-desc">Edinburgh Airport → city centre</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Stockbridge / New Town</td><td class="tl-desc">Coffee and light breakfast; luggage drop if possible</td></tr>
+        <tr><td class="tl-time">~11:00</td><td class="tl-place">Water of Leith</td><td class="tl-desc">Walk along the river, explore Dean Village and nearby bridges</td></tr>
+        <tr><td class="tl-time">~13:00</td><td class="tl-place">Stockbridge</td><td class="tl-desc">Light lunch</td></tr>
+        <tr><td class="tl-time">~14:30</td><td class="tl-place">Princes Street Gardens</td><td class="tl-desc">Rest or short visit to Scottish National Gallery if weather is poor</td></tr>
+        <tr><td class="tl-time">~16:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Check-in and rest</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Stockbridge / New Town</td><td class="tl-desc">Dinner; early night to recover from travel</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Edinburgh</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Airport tram/bus to centre</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-edinburgh">2</div>
+      <div class="day-summary">
+        <div class="day-date">Friday, 29 May</div>
+        <div class="day-title">Historic Edinburgh &amp; Urban Layers</div>
+        <div class="day-tagline">Old Town history, hidden closes, distinctive city character</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Breakfast near accommodation</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Old Town</td><td class="tl-desc">Royal Mile side streets and hidden closes; St Giles' Cathedral including the Thistle Chapel</td></tr>
+        <tr><td class="tl-time">~11:30</td><td class="tl-place">Grassmarket</td><td class="tl-desc">Continue to Grassmarket and Greyfriars Kirkyard</td></tr>
+        <tr><td class="tl-time">~13:00</td><td class="tl-place">Grassmarket / Victoria Street</td><td class="tl-desc">Lunch; optional visit to Surgeons' Hall Museum nearby</td></tr>
+        <tr><td class="tl-time">~14:30</td><td class="tl-place">Afternoon focus — choose one</td><td class="tl-desc">Salisbury Crags (moderate walk, excellent views) — or — National Museum of Scotland (weather fallback) — or — Edinburgh Castle (only if group strongly wants it)</td></tr>
+        <tr><td class="tl-time">~17:00</td><td class="tl-place">City centre</td><td class="tl-desc">Coffee or short rest</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Old Town / New Town / Leith</td><td class="tl-desc">Dinner; optional quiet evening walk</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Edinburgh</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Walking</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSIT DAY -->
+  <div class="location-band" style="margin-top:30px;"><span class="location-label loc-transit">Edinburgh → Glasgow → Oban</span></div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-transit">3</div>
+      <div class="day-summary">
+        <div class="day-date">Saturday, 30 May</div>
+        <div class="day-title">Edinburgh → Glasgow → Oban</div>
+        <div class="day-tagline">Scenic rail journey, brief Glasgow stop, arrival at the west coast</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <div class="inline-warn">
+        <strong>⚠ Glasgow → Oban: fixed train, must not miss</strong>
+        16:49 from Glasgow Queen Street is your anchor. Everything before it is built around this departure.
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Breakfast; check out</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~10:00</td><td class="tl-place fixed">🚂 Edinburgh Waverley</td><td class="tl-desc">Suggested departure — frequent service, trains every ~15 min, journey ~1 h</td></tr>
+        <tr><td class="tl-time">~11:00</td><td class="tl-place">Glasgow Queen Street</td><td class="tl-desc">Arrive Glasgow; drop bags at left luggage if available</td></tr>
+        <tr><td class="tl-time">~11:30</td><td class="tl-place">Glasgow city centre</td><td class="tl-desc">Lunch near Queen Street</td></tr>
+        <tr><td class="tl-time">~12:30</td><td class="tl-place">Glasgow Cathedral</td><td class="tl-desc">~20 min walk from station. Medieval cathedral, well preserved and rarely crowded</td></tr>
+        <tr><td class="tl-time">~13:30</td><td class="tl-place">The Necropolis</td><td class="tl-desc">Directly behind the Cathedral — climb up for views over the city. Victorian hill cemetery with distinctive monuments</td></tr>
+        <tr><td class="tl-time">~15:00</td><td class="tl-place">City centre</td><td class="tl-desc">Coffee; walk back toward Queen Street (~20 min)</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">16:35</td><td class="tl-place fixed">🚂 Glasgow Queen Street</td><td class="tl-desc"><strong>Fixed — must not miss.</strong> West Highland Line → Oban. One of Scotland's most scenic rail routes (~3 h)</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">19:40</td><td class="tl-place fixed">Oban train station</td><td class="tl-desc">Arrive Oban</td></tr>
+        <tr><td class="tl-time">~20:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">17 min walk from station; check in</td></tr>
+        <tr><td class="tl-time">~20:30</td><td class="tl-place">Oban harbour</td><td class="tl-desc">Dinner; relaxed evening</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Oban</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Train Edinburgh→Glasgow (~1 h) + Glasgow→Oban (~3 h, Scotrail)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OBAN -->
+  <div class="location-band"><span class="location-label loc-oban">Oban</span></div>
+
+  <!-- Day 4 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-oban">4</div>
+      <div class="day-summary">
+        <div class="day-date">Sunday, 31 May</div>
+        <div class="day-title">Oban Town &amp; Harbour Views</div>
+        <div class="day-tagline">Coastal town orientation, whisky heritage, viewpoints over Oban Bay</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Easy start; breakfast</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Oban harbour</td><td class="tl-desc">Gentle walk along the waterfront; watch ferries and fishing boats come and go</td></tr>
+        <tr><td class="tl-time">~11:00</td><td class="tl-place">Dunollie Castle</td><td class="tl-desc">Short coastal walk or climb to the viewpoint — elevated views over Oban Bay and surrounding islands</td></tr>
+        <tr><td class="tl-time">~12:30</td><td class="tl-place">Town centre</td><td class="tl-desc">Lunch; optional browse of small shops or grocery stop</td></tr>
+        <tr><td class="tl-time">~14:00</td><td class="tl-place">McCaig's Tower</td><td class="tl-desc">Moderate but short climb — panoramic views over the harbour and islands</td></tr>
+        <tr><td class="tl-time">~15:00</td><td class="tl-place">Town centre</td><td class="tl-desc">Coffee and rest before distillery tour</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">16:30</td><td class="tl-place fixed">⚑ Oban Distillery</td><td class="tl-desc"><strong>Fixed — booked tour.</strong> ~1 hour. History of the distillery, production process, still house. Tasting drams can be taken away if preferred.</td></tr>
+        <tr><td class="tl-time">~17:30</td><td class="tl-place">Distillery / town centre</td><td class="tl-desc">Tour ends; short browse of distillery shop if interested</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Oban harbour</td><td class="tl-desc">Dinner; relaxed evening</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Oban</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Walking only</div>
+        <div class="footer-item"><span class="fi-label">Booked</span> Distillery tour 16:30 ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-oban">5</div>
+      <div class="day-summary">
+        <div class="day-date">Monday, 1 June</div>
+        <div class="day-title">Isle of Mull: Tobermory &amp; Island Life</div>
+        <div class="day-tagline">First island experience, colourful harbour town, slower island rhythm</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <div class="inline-warn">
+        <strong>Note — Mull bus (this day only)</strong>
+        Day 6 bus across Mull is handled by your West Coast Motors booking. For today (Day 5, Tobermory), check whether the public Craignure–Tobermory bus requires advance booking for a group of 5.
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">~08:30</td><td class="tl-place">Oban harbour</td><td class="tl-desc">Breakfast; walk to ferry terminal</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~09:00</td><td class="tl-place fixed">⛴ Oban ferry terminal</td><td class="tl-desc">CalMac ferry → Craignure, Isle of Mull (~45 min). Check current timetable for exact departure</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~09:45</td><td class="tl-place">🚌 Craignure</td><td class="tl-desc">Bus across Mull → Tobermory (~45 min)</td></tr>
+        <tr><td class="tl-time">~10:30</td><td class="tl-place">Tobermory</td><td class="tl-desc">Arrive; explore the colourful harbour front, shops, and cafés</td></tr>
+        <tr><td class="tl-time">~12:30</td><td class="tl-place">Tobermory</td><td class="tl-desc">Light lunch in town</td></tr>
+        <tr><td class="tl-time">~14:00</td><td class="tl-place">Aros Park</td><td class="tl-desc">Optional gentle walk above the harbour for views back over town and sea</td></tr>
+        <tr><td class="tl-time">~15:30</td><td class="tl-place">Tobermory</td><td class="tl-desc">Return to bus stop; depart for Craignure</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~16:15</td><td class="tl-place">🚌 Bus → ⛴ Ferry</td><td class="tl-desc">Craignure → Oban (~45 min ferry)</td></tr>
+        <tr><td class="tl-time">~17:30</td><td class="tl-place">Oban</td><td class="tl-desc">Arrive back; rest</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Oban</td><td class="tl-desc">Dinner; relaxed evening</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Oban</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Ferry + bus, ~3 h total transit</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-oban">6</div>
+      <div class="day-summary">
+        <div class="day-date">Tuesday, 2 June</div>
+        <div class="day-title">Staffa, Lunga &amp; Iona — Full-Day Expedition</div>
+        <div class="day-tagline">Atlantic boat journey, basalt caves, puffins, sacred island landscapes</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <div class="inline-warn">
+        <strong>✓ Fully managed by West Coast Motors — show booking email at each stage</strong>
+        All transport included: ferry tickets, coach across Mull, boat. Arrive at Oban ferry terminal by <strong>06:55</strong>. Return to Oban at 20:15 — a long but predictable day.
+      </div>
+      <table class="tl-table">
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">06:55</td><td class="tl-place fixed">⚑ Oban ferry terminal</td><td class="tl-desc"><strong>Must be here.</strong> Collect CalMac tickets at ticket office (allow 40 min before sailing)</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">07:25</td><td class="tl-place fixed">⛴ Ferry departs</td><td class="tl-desc">Oban → Craignure</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">08:20</td><td class="tl-place fixed">Craignure</td><td class="tl-desc">Arrive</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">08:25</td><td class="tl-place fixed">🚌 Coach departs</td><td class="tl-desc">Craignure → Fionnphort across Mull</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">09:40</td><td class="tl-place fixed">Fionnphort</td><td class="tl-desc">Arrive; board small boat</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Lunga</td><td class="tl-desc">~2 hours — puffins, coastal walking</td></tr>
+        <tr><td class="tl-time">~12:00</td><td class="tl-place">Staffa</td><td class="tl-desc">~1 hour — Fingal's Cave and basalt columns</td></tr>
+        <tr><td class="tl-time">~13:00</td><td class="tl-place">Iona</td><td class="tl-desc">~2 hours — beaches, village, abbey surroundings. Abbey interior requires separate advance booking at historicenvironment.scot</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">17:15</td><td class="tl-place fixed">⚑ Depart Iona</td><td class="tl-desc"><strong>No later than.</strong></td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">17:45</td><td class="tl-place fixed">🚌 Coach departs</td><td class="tl-desc">Fionnphort → Craignure</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">19:00</td><td class="tl-place fixed">Craignure</td><td class="tl-desc">Arrive</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">19:25</td><td class="tl-place fixed">⛴ Ferry departs</td><td class="tl-desc">Craignure → Oban</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">20:15</td><td class="tl-place fixed">Oban</td><td class="tl-desc">Arrive back. Simple dinner; early night.</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Oban</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Full day — ferry + bus + boat, weather-dependent</div>
+        <div class="footer-item"><span class="fi-label">Booked</span> Staffa tour ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSIT TO FORT WILLIAM -->
+  <div class="location-band" style="margin-top:30px;"><span class="location-label loc-transit">Oban → Fort William</span></div>
+
+  <!-- Day 7 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-fortWilliam">7</div>
+      <div class="day-summary">
+        <div class="day-date">Wednesday, 3 June</div>
+        <div class="day-title">Oban → Fort William</div>
+        <div class="day-tagline">Scenic coastal-to-mountain transfer, relaxed arrival in the Highlands</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Oban</td><td class="tl-desc">Easy breakfast; final harbour walk</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~10:00</td><td class="tl-place fixed">🚌 Oban bus station</td><td class="tl-desc">Direct bus → Fort William (~2 h). Landscape shifts from sea lochs to glens</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~12:00</td><td class="tl-place">Fort William</td><td class="tl-desc">Arrive; check in or luggage drop</td></tr>
+        <tr><td class="tl-time">~12:30</td><td class="tl-place">Fort William town</td><td class="tl-desc">Lunch</td></tr>
+        <tr><td class="tl-time">~14:00</td><td class="tl-place">Neptune's Staircase / Loch Linnhe</td><td class="tl-desc">Gentle walk along the Caledonian Canal locks or the loch shoreline — relaxed pace, no agenda</td></tr>
+        <tr><td class="tl-time">~17:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Rest</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Fort William</td><td class="tl-desc">Dinner near accommodation; early night</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Fort William</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Direct bus ~2 h</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORT WILLIAM -->
+  <div class="location-band"><span class="location-label loc-fortWilliam">Fort William</span></div>
+
+  <!-- Day 8 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-fortWilliam">8</div>
+      <div class="day-summary">
+        <div class="day-date">Thursday, 4 June</div>
+        <div class="day-title">Jacobite Steam Train to Mallaig</div>
+        <div class="day-tagline">Iconic Highland rail journey, Glenfinnan Viaduct, west coast scenery</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <div class="inline-warn">
+        <strong>⚠ Jacobite not yet bookable for 2026 — monitor and book immediately when open</strong>
+        Both directions sell out months ahead. Book outbound (Fort William → Mallaig) and return (Mallaig → Fort William) separately — both are individually ticketed.
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">~08:30</td><td class="tl-place">Accommodation</td><td class="tl-desc">Early breakfast; walk to station (~5 min)</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~10:15</td><td class="tl-place fixed">🚂 Fort William station</td><td class="tl-desc"><strong>Jacobite departs.</strong> Scenic journey through glens and lochs; crosses Glenfinnan Viaduct en route</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~12:20</td><td class="tl-place">Mallaig</td><td class="tl-desc">Arrive</td></tr>
+        <tr><td class="tl-time">~12:30</td><td class="tl-place">Mallaig harbour</td><td class="tl-desc">Lunch; short walk along the waterfront, watch ferries and fishing boats</td></tr>
+        <tr><td class="tl-time">~14:00</td><td class="tl-place">Mallaig</td><td class="tl-desc">Explore; coffee before return journey</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~14:05</td><td class="tl-place fixed">🚂 Mallaig station</td><td class="tl-desc"><strong>Jacobite return departs.</strong> Changing light over the landscape on the return leg</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~16:00</td><td class="tl-place">Fort William</td><td class="tl-desc">Arrive back</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Fort William</td><td class="tl-desc">Dinner near accommodation; relaxed evening</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Fort William</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Full day — Jacobite steam train return (times approx — confirm when booked)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 9 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-fortWilliam">9</div>
+      <div class="day-summary">
+        <div class="day-date">Friday, 5 June</div>
+        <div class="day-title">Glenfinnan &amp; Mountain Views</div>
+        <div class="day-tagline">Glenfinnan Viaduct on foot, Highland valley landscapes, mountain viewpoints</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Breakfast</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~09:30</td><td class="tl-place fixed">🚌 Fort William</td><td class="tl-desc">Bus or local train → Glenfinnan (~30 min)</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Glenfinnan Viaduct viewpoint</td><td class="tl-desc">Walk up to the viewpoint at a relaxed pace. Yesterday you crossed it by train — today you see it from outside. Different entirely.</td></tr>
+        <tr><td class="tl-time">~11:30</td><td class="tl-place">Loch Shiel</td><td class="tl-desc">Quieter walk along the shore and valley floor; good views of the loch and surrounding hills</td></tr>
+        <tr><td class="tl-time">~13:00</td><td class="tl-place">Glenfinnan</td><td class="tl-desc">Light lunch</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~14:00</td><td class="tl-place">🚌 Return to Fort William</td><td class="tl-desc">Bus back (~30 min)</td></tr>
+        <tr><td class="tl-time">~15:00</td><td class="tl-place">Nevis Range gondola</td><td class="tl-desc">Easy access to mountain viewpoints; optional short walks at altitude or simply sit and take in the scenery</td></tr>
+        <tr><td class="tl-time">~17:00</td><td class="tl-place">Fort William</td><td class="tl-desc">Return; rest</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Fort William</td><td class="tl-desc">Dinner; relaxed final evening in the Highlands</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Fort William</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Local bus/train + gondola</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSIT TO INVERNESS -->
+  <div class="location-band" style="margin-top:30px;"><span class="location-label loc-transit">Fort William → Loch Ness → Inverness</span></div>
+
+  <!-- Day 10 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-inverness">10</div>
+      <div class="day-summary">
+        <div class="day-date">Saturday, 6 June</div>
+        <div class="day-title">Fort William → Loch Ness → Inverness</div>
+        <div class="day-tagline">Great Glen crossing, Loch Ness landscapes, historic ruins</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Breakfast; check out</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~10:00</td><td class="tl-place fixed">🚌 Fort William bus station</td><td class="tl-desc">Citylink 919 north. Confirm exact departure time — times TBC once timetable checked</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~11:30</td><td class="tl-place">🚌 Urquhart Castle car park</td><td class="tl-desc">Bus stops right at the castle entrance. Get off here.</td></tr>
+        <tr><td class="tl-time">~11:45</td><td class="tl-place">Urquhart Castle</td><td class="tl-desc">Castle grounds sit directly on the loch shore — this is your Loch Ness moment. ~45 min: walk the ruins, stand at the water's edge, take in the scale of the loch. Skip the visitor centre film. Entrance fee ~£15/person.</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~12:30</td><td class="tl-place">🚶 Walk to Drumnadrochit</td><td class="tl-desc">~2 miles along the A82, mostly flat. ~35–40 min. Road walk, not scenic, but straightforward.</td></tr>
+        <tr><td class="tl-time">~13:15</td><td class="tl-place">Drumnadrochit</td><td class="tl-desc">Lunch in the village. Ignore the Nessie exhibitions.</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~14:00</td><td class="tl-place fixed">🚌 Drumnadrochit Post Office</td><td class="tl-desc">Citylink 919 → Inverness (~30 min). Confirm exact time — TBC</td></tr>
+        <tr><td class="tl-time">~14:30</td><td class="tl-place">Inverness</td><td class="tl-desc">Check in; gentle walk along the River Ness</td></tr>
+        <tr><td class="tl-time">~19:00</td><td class="tl-place">Inverness</td><td class="tl-desc">Dinner; relaxed evening</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Inverness</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Citylink 919 — Fort William → Urquhart Castle → Drumnadrochit → Inverness</div>
+        <div class="footer-item"><span class="fi-label">Note</span> Refine times once Citylink 919 timetable checked</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INVERNESS -->
+  <div class="location-band"><span class="location-label loc-inverness">Inverness</span></div>
+
+  <!-- Day 11 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-inverness">11</div>
+      <div class="day-summary">
+        <div class="day-date">Sunday, 7 June</div>
+        <div class="day-title">Culloden, Clava Cairns → Aviemore</div>
+        <div class="day-tagline">Highland history, prehistoric landscapes, transition to the Cairngorms</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Breakfast</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~09:30</td><td class="tl-place fixed">🚌 Inverness bus station</td><td class="tl-desc">Stagecoach route 5 → Culloden (~20 min)</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Culloden Battlefield</td><td class="tl-desc">Visit battlefield and visitor centre (1746 battle context). Walk the moorland and clan markers at an unhurried pace — this place deserves time</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~12:00</td><td class="tl-place">🚕 Short taxi</td><td class="tl-desc">Culloden → Clava Cairns (~2 km, ~5 min)</td></tr>
+        <tr><td class="tl-time">~12:15</td><td class="tl-place">Clava Cairns</td><td class="tl-desc">Prehistoric stone circles and burial cairns — Bronze Age, remarkably intact. Take time with the atmosphere</td></tr>
+        <tr class="tl-transport"><td class="tl-time">~13:30</td><td class="tl-place">🚌 Bus back</td><td class="tl-desc">Return to Inverness</td></tr>
+        <tr><td class="tl-time">~14:00</td><td class="tl-place">Inverness</td><td class="tl-desc">Late lunch; coffee and short rest</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~17:00</td><td class="tl-place fixed">🚂 Inverness station</td><td class="tl-desc">Train → Aviemore (~35 min). Confirm exact time on Scotrail</td></tr>
+        <tr><td class="tl-time">~17:40</td><td class="tl-place">Aviemore</td><td class="tl-desc">Arrive; check in; relaxed evening</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Aviemore</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Bus + taxi + bus + train</td></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVIEMORE / RETURN -->
+  <div class="location-band"><span class="location-label loc-aviemore">Aviemore → Edinburgh</span></div>
+
+  <!-- Day 12 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-aviemore">12</div>
+      <div class="day-summary">
+        <div class="day-date">Monday, 8 June</div>
+        <div class="day-title">Cairngorms: Forests, Lochs &amp; Return South</div>
+        <div class="day-tagline">Caledonian pine forest, loch walking, relaxed cycling, calm transition south</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <div class="inline-warn">
+        <strong>⚠ Evening arrival Edinburgh, early flight next morning</strong>
+        09:00 flight Day 13 means airport by ~07:00. Stay near airport or city centre. Book Aviemore→Edinburgh train in advance (Scotrail).
+      </div>
+      <table class="tl-table">
+        <tr><td class="tl-time">~09:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Easy start; breakfast</td></tr>
+        <tr><td class="tl-time">~10:00</td><td class="tl-place">Loch an Eilein</td><td class="tl-desc">Walk around the loch at a relaxed pace — quiet, reflective setting surrounded by Caledonian pine forest</td></tr>
+        <tr><td class="tl-time">~12:30</td><td class="tl-place">Aviemore / Rothiemurchus</td><td class="tl-desc">Lunch</td></tr>
+        <tr><td class="tl-time">~14:00</td><td class="tl-place">Rothiemurchus Forest</td><td class="tl-desc">Optional bike ride on wide, flat gravel tracks — routes flexible, suitable for regular or e-bikes. Or continue walking, or simply rest.</td></tr>
+        <tr><td class="tl-time">~14:30</td><td class="tl-place">Rothiemurchus / Aviemore</td><td class="tl-desc">Return from forest area; pack; brief rest before train (~30 min to station from forest)</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">16:27</td><td class="tl-place fixed">🚂 Aviemore station</td><td class="tl-desc"><strong>Fixed — must not miss.</strong> Train → Edinburgh (~2.5–3 h). Book in advance on Scotrail.</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">19:43</td><td class="tl-place fixed">Edinburgh</td><td class="tl-desc">Arrive. Check in near city centre or airport. Early night — very early start tomorrow.</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> Edinburgh (near airport)</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Walking/cycling + evening train ~2.5–3 h (Scotrail — book in advance)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 13 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <div class="day-number dn-return">13</div>
+      <div class="day-summary">
+        <div class="day-date">Tuesday, 9 June</div>
+        <div class="day-title">Departure</div>
+        <div class="day-tagline">Early transfer, smooth logistics, home</div>
+      </div>
+      <div class="day-toggle">▾</div>
+    </div>
+    <div class="day-body">
+      <table class="tl-table">
+        <tr><td class="tl-time">~06:00</td><td class="tl-place">Accommodation</td><td class="tl-desc">Wake up; final pack</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~06:20</td><td class="tl-place fixed">🚋 Transfer to airport</td><td class="tl-desc">Tram from city centre or taxi (~30–40 min)</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">~07:00</td><td class="tl-place fixed">Edinburgh Airport</td><td class="tl-desc">Arrive; check in and security</td></tr>
+        <tr class="tl-transport"><td class="tl-time tl-time fixed">09:00</td><td class="tl-place fixed">✈ Departs Edinburgh</td><td class="tl-desc">Flight home</td></tr>
+      </table>
+      <div class="day-footer">
+        <div class="footer-item"><span class="fi-label">Sleep</span> —</div>
+        <div class="footer-item"><span class="fi-label">Transport</span> Airport transfer</div>
+        <div class="footer-item"><span class="fi-label">Flight</span> 09:00 Edinburgh</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(header) {
+  const body = header.nextElementSibling;
+  const arrow = header.querySelector('.day-toggle');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  arrow.classList.toggle('open', !isOpen);
+}
+
+// Open Day 1 by default
+document.querySelector('.day-header').click();
+</script>
+</body>
+</html>

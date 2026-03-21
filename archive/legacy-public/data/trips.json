@@ -1,0 +1,170 @@
+{
+    "2025-slovenia": {
+      "name": "Slovenia 2025 Road Trip",
+      "description": "A 9-day scenic journey through Slovenia, covering lakes, mountains, and coastal towns.",
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-07-19",
+          "location": "Bratislava → Maribor → Bled/Bohinj",
+          "highlights": "Road trip start, exploring Maribor before reaching Bled.",
+          "activities": [
+            { "time": "Morning", "description": "Early departure from Bratislava (~3.5-hour drive)." },
+            { "time": "Afternoon", "description": "Stop in Maribor – explore Old Town, Pyramid Hill, and the Drava River promenade." },
+            { "time": "Evening", "description": "Continue to Bled/Bohinj (~2-hour drive), check into accommodation." }
+          ],
+          "accommodation": {
+            "name": "Guest House Golja, Bled",
+            "link": "https://www.booking.com/hotel/si/apartment-and-rooms-golja.html",
+            "price": "€908 for 3 nights, 4 people"
+          },
+          "drive_time": "5.5 hours",
+          "lat": 46.369,
+          "lng": 14.114
+        },
+        {
+          "day": 2,
+          "date": "2025-07-20",
+          "location": "Lake Bled & Vintgar Gorge",
+          "highlights": "Exploring Bled Lake, Castle, and the famous gorge.",
+          "activities": [
+            { "time": "Morning", "description": "Walk around Lake Bled and take a pletna boat to Bled Island." },
+            { "time": "Afternoon", "description": "Visit Bled Castle and hike through Vintgar Gorge." },
+            { "time": "Evening", "description": "Relax at a lakeside café or explore Bled Town." }
+          ],
+          "accommodation": {
+            "name": "Guest House Golja, Bled",
+            "link": "https://www.booking.com/hotel/si/apartment-and-rooms-golja.html"
+          },
+          "drive_time": "1 hour",
+          "lat": 46.369,
+          "lng": 14.114
+        },
+        {
+          "day": 3,
+          "date": "2025-07-21",
+          "location": "Triglav National Park & Lake Bohinj",
+          "highlights": "Scenic mountain views and Slovenia's largest lake.",
+          "activities": [
+            { "time": "Morning", "description": "Take the Vogel Cable Car for stunning mountain views." },
+            { "time": "Afternoon", "description": "Explore Lake Bohinj, visit Savica Waterfall, or take a short hike." },
+            { "time": "Evening", "description": "Return to accommodation for a relaxed evening." }
+          ],
+          "accommodation": {
+            "name": "Guest House Golja, Bled",
+            "link": "https://www.booking.com/hotel/si/apartment-and-rooms-golja.html"
+          },
+          "drive_time": "1–1.5 hours",
+          "lat": 46.276,
+          "lng": 13.836
+        },
+        {
+          "day": 4,
+          "date": "2025-07-22",
+          "location": "Bled → Vršič Pass → Bovec",
+          "highlights": "Scenic drive through Vršič Pass and ziplining in Bovec.",
+          "activities": [
+            { "time": "Morning", "description": "Drive through Vršič Pass (~1.5 hours) with optional short hike to Slemenova Špica (~2–3 hours). Stop at Russian Chapel & Lake Jasna." },
+            { "time": "Afternoon", "description": "Lunch in Bovec, check into accommodation, then enjoy ziplining (~2 hours)." }
+          ],
+          "accommodation": {
+            "name": "Apartma Mulino, Kobarid",
+            "link": "https://www.booking.com/hotel/si/apartma-mulino.html",
+            "price": "€370 for 2 nights, 4 people"
+          },
+          "drive_time": "2.5–3 hours",
+          "lat": 46.337,
+          "lng": 13.555
+        },
+        {
+          "day": 5,
+          "date": "2025-07-23",
+          "location": "Soča Valley – Kayaking & Kobarid Museum",
+          "highlights": "Outdoor adventures in the stunning Soča Valley.",
+          "activities": [
+            { "time": "Morning", "description": "Guided tour of Kobarid Museum, or choose an alternative activity (hike, cheese tasting, rafting)." },
+            { "time": "Afternoon", "description": "Go kayaking on the Soča River." }
+          ],
+          "accommodation": {
+            "name": "Apartma Mulino, Kobarid",
+            "link": "https://www.booking.com/hotel/si/apartma-mulino.html"
+          },
+          "drive_time": "1 hour",
+          "lat": 46.247,
+          "lng": 13.579
+        },
+        {
+          "day": 6,
+          "date": "2025-07-24",
+          "location": "Full-Day Hike → Drive to the Coast",
+          "highlights": "Hiking in Triglav National Park, then heading to the seaside.",
+          "activities": [
+            { "time": "Morning", "description": "Full-day hike in Soča Valley (Soča Trail, Krn Lake, or Seven Lakes Valley)." },
+            { "time": "Afternoon", "description": "Drive to Piran/Portorož (~2.5–3 hours)." },
+            { "time": "Evening", "description": "Check into seaside accommodation, walk around Piran Old Town." }
+          ],
+          "accommodation": {
+            "name": "Luxury Apartment Magical Portorose",
+            "link": "https://www.booking.com/hotel/si/luxury-apartment-magical-portorose.html",
+            "price": "€534 for 2 nights, 4 people"
+          },
+          "drive_time": "3.5–4 hours",
+          "lat": 45.516,
+          "lng": 13.568
+        },
+        {
+          "day": 7,
+          "date": "2025-07-25",
+          "location": "Beach & Evening in Trieste",
+          "highlights": "Relaxing beach day followed by a trip to Trieste.",
+          "activities": [
+            { "time": "Morning", "description": "Relax at Piran or Portorož Beach." },
+            { "time": "Afternoon", "description": "Drive to Trieste (~30 min) and explore Piazza Unità d’Italia, Grand Canal, and Castello di Miramare." },
+            { "time": "Evening", "description": "Dinner at a harborside Italian restaurant, then drive back to Piran (~30 min)." }
+          ],
+          "accommodation": {
+            "name": "Luxury Apartment Magical Portorose",
+            "link": "https://www.booking.com/hotel/si/luxury-apartment-magical-portorose.html"
+          },
+          "drive_time": "1 hour",
+          "lat": 45.516,
+          "lng": 13.568
+        },
+        {
+          "day": 8,
+          "date": "2025-07-26",
+          "location": "Postojna Cave → Ljubljana",
+          "highlights": "Exploring Postojna Cave, Predjama Castle, and arriving in Ljubljana.",
+          "activities": [
+            { "time": "Morning", "description": "Drive to Postojna Cave (~1 hour), visit the cave and Predjama Castle." },
+            { "time": "Afternoon", "description": "Drive to Ljubljana (~40 min) and explore the Old Town." }
+          ],
+          "accommodation": {
+            "name": "City Hotel Ljubljana",
+            "link": "https://www.booking.com/hotel/si/cityhotelljubljana.html",
+            "price": "€316 for 2 nights, 4 people"
+          },
+          "drive_time": "2 hours",
+          "lat": 46.051,
+          "lng": 14.506
+        },
+        {
+          "day": 9,
+          "date": "2025-07-27",
+          "location": "Ljubljana → Bratislava",
+          "highlights": "Final day, optional stop in Graz before returning home.",
+          "activities": [
+            { "time": "Morning", "description": "Enjoy breakfast and explore Ljubljana." },
+            { "time": "Afternoon", "description": "Drive back to Bratislava (~4.5 hours). Optional stop in Graz for sightseeing & lunch." }
+          ],
+          "accommodation": {
+            "name": "Home sweet home!"
+          },
+          "drive_time": "4.5–5 hours",
+          "lat": 48.148,
+          "lng": 17.107
+        }
+      ]
+    }
+  }
+  
