@@ -17,7 +17,8 @@ The archived pre-rebuild implementation lives in:
 - expanded the Slovenia trip intro and all day overviews so the opened itinerary gives more place context, factual hooks, and travel mood instead of only route mechanics
 - replaced the Krakow placeholder artwork with local JPG trip photography for the cover and each day highlight
 - changed desktop trip pages from a sticky sidebar layout to two independently scrollable columns so scrolling follows the pane under the cursor more intuitively
-- added the Krakow accommodation reference to the live itinerary so it appears directly in the relevant day details
+- added the Krakow accommodation name to the live itinerary so it appears directly in the relevant day details
+- sanitized public trip content and archived legacy references to remove private home-location hints, exact temporary address detail, old booking links/prices, and a legacy weather API key
 
 ### Added
 

@@ -18,9 +18,10 @@ type ForecastEntry = {
   };
   
   export async function getDailyForecast(lat: number, lon: number): Promise<DailySummary[] | null> {
+    const apiKey = "REDACTED";
   
     const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=3a4f66679a08357803b5c2134b4ad9cb`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`
     );
   
     if (!res.ok) {

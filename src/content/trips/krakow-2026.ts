@@ -33,7 +33,7 @@ export const krakow2026: Trip = {
       slug: "day-01",
       dayNumber: 1,
       date: "2026-03-28",
-      title: "Letovice to Olomouc to Krakow",
+      title: "Home to Olomouc to Krakow",
       summary:
         "A travel day with one proper stop in Olomouc before the final push into Krakow.",
       overview:
@@ -43,7 +43,7 @@ export const krakow2026: Trip = {
         { label: "Drive", duration: "Approx. 4.5-5 hours total" },
         { label: "Olomouc stop", duration: "Approx. 2-3 hours" },
       ],
-      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
+      accommodationName: "Apartmenty Lea",
       highlightImage: {
         src: "/trips/2026-krakow/highlights/day01.jpg",
         alt: "Olomouc stop and Krakow arrival highlight for day 1",
@@ -55,7 +55,7 @@ export const krakow2026: Trip = {
         {
           title: "Morning",
           items: [
-            { text: "Leave Letovice before lunch." },
+            { text: "Leave home before lunch." },
             { text: "Drive toward Olomouc.", duration: "Approx. 1.5 hours" },
           ],
         },
@@ -95,7 +95,7 @@ export const krakow2026: Trip = {
         "This is the ceremonial Krakow day, and it should lean into that. Rynek Glowny is one of the largest medieval market squares in Europe, which is why the centre feels less like a decorative old town and more like a real urban stage. The Cloth Hall, St. Mary's Basilica, and the surrounding lanes all carry the familiar royal-city weight, but Krakow works best when some of that grandeur is cut with slower moments: a coffee break, a river walk, time on Wawel Hill without trying to consume every interior in one shot. The walking tour is useful here because Krakow's history is layered rather than instantly legible. Royal capital, university city, mercantile crossroads, and later occupied city all overlap in a relatively compact area. By the end of the day, the goal is not to have ticked off every church and courtyard. It is to understand the tone of the city well enough that the later days feel connected rather than separate excursions.",
       tags: ["old town", "walking tour", "landmarks"],
       transport: [{ label: "City walking", duration: "Most of the day" }],
-      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
+      accommodationName: "Apartmenty Lea",
       fixedItems: [
         {
           time: "10:00-12:30",
@@ -153,7 +153,7 @@ export const krakow2026: Trip = {
       transport: [
         { label: "Drive", duration: "Short transfer to Wieliczka and back" },
       ],
-      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
+      accommodationName: "Apartmenty Lea",
       fixedItems: [
         {
           time: "09:00",
@@ -212,7 +212,7 @@ export const krakow2026: Trip = {
         { label: "City walking", duration: "Most of the day" },
         { label: "Transfer", duration: "Allow approx. 30 minutes to Schindler's" },
       ],
-      accommodationName: "Apartmenty Lea, Juliusza Lea 210A / 38",
+      accommodationName: "Apartmenty Lea",
       fixedItems: [
         {
           time: "10:30-13:00",
@@ -272,15 +272,15 @@ export const krakow2026: Trip = {
       slug: "day-05",
       dayNumber: 5,
       date: "2026-04-01",
-      title: "Auschwitz-Birkenau and the drive back toward Slovakia",
+      title: "Auschwitz-Birkenau and the drive home",
       summary:
-        "An early departure, a fixed memorial visit, and then the drive onward without trying to force much else into the day.",
+        "An early departure, a fixed memorial visit, and then the drive home without trying to force much else into the day.",
       overview:
-        "This final day should be treated differently from the others. Auschwitz-Birkenau is not another historical attraction on the list but a memorial site that changes the weight of the whole schedule around it. The early start is practical because the visit is fixed, but the more important adjustment is mental rather than logistical: leave space for the site to be what it is, and do not try to decorate the day with too many extras around it. The guided structure is helpful because the scale and horror of the place need context, but it will still be emotionally demanding. Afterward, a quiet lunch and the drive toward Spisska Nova Ves are enough. This is not the day for one more detour or one last city flourish. The cleanest ending is to let the visit stand on its own and keep the rest of the route functional.",
+        "This final day should be treated differently from the others. Auschwitz-Birkenau is not another historical attraction on the list but a memorial site that changes the weight of the whole schedule around it. The early start is practical because the visit is fixed, but the more important adjustment is mental rather than logistical: leave space for the site to be what it is, and do not try to decorate the day with too many extras around it. The guided structure is helpful because the scale and horror of the place need context, but it will still be emotionally demanding. Afterward, a quiet lunch and the drive home are enough. This is not the day for one more detour or one last city flourish. The cleanest ending is to let the visit stand on its own and keep the rest of the route functional.",
       tags: ["fixed visit", "memorial site", "return day"],
       transport: [
         { label: "Drive to Auschwitz", duration: "Approx. 1.5 hours" },
-        { label: "Drive onward", note: "Toward Spisska Nova Ves after the visit" },
+        { label: "Drive onward", note: "Home after the visit" },
       ],
       fixedItems: [
         {
@@ -319,7 +319,7 @@ export const krakow2026: Trip = {
         },
         {
           title: "Afternoon",
-          items: [{ text: "Drive toward Spisska Nova Ves." }],
+          items: [{ text: "Drive home." }],
         },
       ],
     },
