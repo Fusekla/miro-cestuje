@@ -6,17 +6,17 @@
         {
           "day": 1,
           "date": "2025-07-19",
-          "location": "Bratislava → Maribor → Bled/Bohinj",
+          "location": "Home → Maribor → Bled/Bohinj",
           "highlights": "Road trip start, exploring Maribor before reaching Bled.",
           "activities": [
-            { "time": "Morning", "description": "Early departure from Bratislava (~3.5-hour drive)." },
+            { "time": "Morning", "description": "Early departure from home (~3.5-hour drive)." },
             { "time": "Afternoon", "description": "Stop in Maribor – explore Old Town, Pyramid Hill, and the Drava River promenade." },
             { "time": "Evening", "description": "Continue to Bled/Bohinj (~2-hour drive), check into accommodation." }
           ],
           "accommodation": {
             "name": "Guest House Golja, Bled",
-            "link": "https://www.booking.com/hotel/si/apartment-and-rooms-golja.html",
-            "price": "€908 for 3 nights, 4 people"
+            "link": "",
+            "price": ""
           },
           "drive_time": "5.5 hours",
           "lat": 46.369,
@@ -34,7 +34,7 @@
           ],
           "accommodation": {
             "name": "Guest House Golja, Bled",
-            "link": "https://www.booking.com/hotel/si/apartment-and-rooms-golja.html"
+            "link": ""
           },
           "drive_time": "1 hour",
           "lat": 46.369,
@@ -52,7 +52,7 @@
           ],
           "accommodation": {
             "name": "Guest House Golja, Bled",
-            "link": "https://www.booking.com/hotel/si/apartment-and-rooms-golja.html"
+            "link": ""
           },
           "drive_time": "1–1.5 hours",
           "lat": 46.276,
@@ -69,8 +69,8 @@
           ],
           "accommodation": {
             "name": "Apartma Mulino, Kobarid",
-            "link": "https://www.booking.com/hotel/si/apartma-mulino.html",
-            "price": "€370 for 2 nights, 4 people"
+            "link": "",
+            "price": ""
           },
           "drive_time": "2.5–3 hours",
           "lat": 46.337,
@@ -87,7 +87,7 @@
           ],
           "accommodation": {
             "name": "Apartma Mulino, Kobarid",
-            "link": "https://www.booking.com/hotel/si/apartma-mulino.html"
+            "link": ""
           },
           "drive_time": "1 hour",
           "lat": 46.247,
@@ -105,8 +105,8 @@
           ],
           "accommodation": {
             "name": "Luxury Apartment Magical Portorose",
-            "link": "https://www.booking.com/hotel/si/luxury-apartment-magical-portorose.html",
-            "price": "€534 for 2 nights, 4 people"
+            "link": "",
+            "price": ""
           },
           "drive_time": "3.5–4 hours",
           "lat": 45.516,
@@ -124,7 +124,7 @@
           ],
           "accommodation": {
             "name": "Luxury Apartment Magical Portorose",
-            "link": "https://www.booking.com/hotel/si/luxury-apartment-magical-portorose.html"
+            "link": ""
           },
           "drive_time": "1 hour",
           "lat": 45.516,
@@ -141,8 +141,8 @@
           ],
           "accommodation": {
             "name": "City Hotel Ljubljana",
-            "link": "https://www.booking.com/hotel/si/cityhotelljubljana.html",
-            "price": "€316 for 2 nights, 4 people"
+            "link": "",
+            "price": ""
           },
           "drive_time": "2 hours",
           "lat": 46.051,
@@ -151,14 +151,14 @@
         {
           "day": 9,
           "date": "2025-07-27",
-          "location": "Ljubljana → Bratislava",
+          "location": "Ljubljana → Home",
           "highlights": "Final day, optional stop in Graz before returning home.",
           "activities": [
             { "time": "Morning", "description": "Enjoy breakfast and explore Ljubljana." },
-            { "time": "Afternoon", "description": "Drive back to Bratislava (~4.5 hours). Optional stop in Graz for sightseeing & lunch." }
+            { "time": "Afternoon", "description": "Drive back home (~4.5 hours). Optional stop in Graz for sightseeing & lunch." }
           ],
           "accommodation": {
-            "name": "Home sweet home!"
+            "name": "Home"
           },
           "drive_time": "4.5–5 hours",
           "lat": 48.148,

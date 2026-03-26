@@ -7,7 +7,7 @@ export const slovenia2025: Trip = {
   destination: "Slovenia",
   dateRange: "19-27 July 2025",
   blurb:
-    "A nine-day route from Bratislava through lakes, mountain passes, the Soca valley, the coast, and Ljubljana.",
+    "A nine-day route from home through lakes, mountain passes, the Soca valley, the coast, and Ljubljana.",
   intro: [
     "A full week through northeastern Slovenia and beyond: old towns, lake mornings, mountain roads, the Soca valley, and a slower coastal landing before the final swing through Ljubljana.",
     "The route stays practical where it should, but the days are built to feel like places rather than checklists. The point is not only to know what happens next, but also why each stop earns its place on the plan.",
@@ -32,7 +32,7 @@ export const slovenia2025: Trip = {
       slug: "day-01",
       dayNumber: 1,
       date: "2025-07-19",
-      title: "Bratislava to Maribor to Bled or Bohinj",
+      title: "Home to Maribor to Bled or Bohinj",
       summary:
         "A long opening drive with a Maribor stop before settling into the lake region.",
       overview:
@@ -52,7 +52,7 @@ export const slovenia2025: Trip = {
         {
           title: "Morning",
           items: [
-            { text: "Early departure from Bratislava." },
+            { text: "Early departure from home." },
             { text: "Drive toward Maribor.", duration: "Approx. 3.5 hours" },
           ],
         },
@@ -327,14 +327,14 @@ export const slovenia2025: Trip = {
       slug: "day-09",
       dayNumber: 9,
       date: "2025-07-27",
-      title: "Ljubljana back to Bratislava",
+      title: "Ljubljana back home",
       summary:
         "A final city morning followed by the long drive home, with Graz available as an optional pause.",
       overview:
         "The final day is about leaving well rather than trying to steal one last oversized experience from the trip. Ljubljana suits that kind of ending. It is a city that rewards a final breakfast, a short riverside walk, and a last look at the old center without needing an elaborate farewell program. The drive home is long enough to deserve respect, and that is where Graz becomes useful. It is not there to complicate the day, only to make the return feel less like one continuous motorway blur if energy starts to drop. Graz is Austria's second city and has enough architectural weight and café culture to justify a lunch pause if needed, but the route does not depend on it. The real function of the day is closure: one calm morning in Ljubljana, one sensible drive home, and enough margin to finish the trip without turning the last day into a grind.",
       tags: ["return", "travel-heavy", "city morning"],
       transport: [{ label: "Drive", duration: "Approx. 4.5-5 hours" }],
-      accommodationName: "Home sweet home",
+      accommodationName: "Home",
       highlightImage: {
         src: "/trips/2025-slovenia/highlights/day09.jpg",
         alt: "Day 9 highlight from the Slovenia trip",
@@ -348,7 +348,7 @@ export const slovenia2025: Trip = {
         {
           title: "Afternoon",
           items: [
-            { text: "Drive back toward Bratislava." },
+            { text: "Drive back home." },
             { text: "Use Graz as an optional stop for lunch or a break." },
           ],
         },

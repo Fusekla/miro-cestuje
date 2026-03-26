@@ -5,14 +5,14 @@ const days = [
     id: 1,
     date: "Saturday, 28 March 2026",
     label: "Day 1",
-    title: "Letovice → Olomouc → Kraków",
+    title: "Home → Olomouc → Kraków",
     color: "#8B7355",
     blocks: [
       {
         time: "Morning",
         booked: false,
         items: [
-          "Departure from Letovice before lunch",
+          "Departure from home before lunch",
           "Drive to Olomouc (approx. 1.5 h)",
         ],
       },
@@ -192,7 +192,7 @@ const days = [
       {
         time: "Afternoon",
         booked: false,
-        items: ["Drive toward Spišská Nová Ves"],
+        items: ["Drive home"],
       },
     ],
     food: [],
