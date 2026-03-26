@@ -66,14 +66,17 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="glass-card relative overflow-hidden rounded-[34px] border border-white/50 p-4">
+        <Link
+          href={`/trips/${featuredTrip.slug}`}
+          className="glass-card group relative overflow-hidden rounded-[34px] border border-white/50 p-4 transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(24,28,24,0.14)]"
+        >
           <div className="relative overflow-hidden rounded-[28px]">
             <Image
               src={featuredTrip.coverImage.src}
               alt={featuredTrip.coverImage.alt}
               width={1400}
               height={1100}
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"
               priority
               sizes="(max-width: 1024px) 100vw, 42vw"
             />
@@ -95,7 +98,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </section>
 
       <section id="journeys" className="mx-auto max-w-6xl px-6">
