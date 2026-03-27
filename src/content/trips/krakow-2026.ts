@@ -146,10 +146,10 @@ export const krakow2026: Trip = {
       date: "2026-03-30",
       title: "Wieliczka Salt Mine and a lighter evening",
       summary:
-        "A fixed early visit to Wieliczka, then a softer return to Krakow with room to decompress.",
+        "A fixed early visit to Wieliczka, then a softer return to Krakow with an optional Nowa Huta detour in the afternoon.",
       overview:
-        "Wieliczka gives the trip one of those places that sounds almost too famous until it turns out to justify itself. It is not just an old mine but a whole underground world of chambers, chapels, carved salt details, and industrial history stacked over centuries. The guided structure matters here because the site is too large and too strange to appreciate properly as random wandering. The famous St. Kinga's Chapel is the visual climax, but the mine's deeper charm is that it shows how much wealth, labour, and quiet ingenuity once sat below the surface of ordinary life. Because the visit starts early, the rest of the day should remain deliberately lighter. Returning to Krakow for lunch and a low-pressure evening is not wasted time. It gives the trip some breathing room before the more historically heavy fourth and fifth days.",
-      tags: ["fixed visit", "underground site", "lighter evening"],
+        "Wieliczka gives the trip one of those places that sounds almost too famous until it turns out to justify itself. It is not just an old mine but a whole underground world of chambers, chapels, carved salt details, and industrial history stacked over centuries. The guided structure matters here because the site is too large and too strange to appreciate properly as random wandering. The famous St. Kinga's Chapel is the visual climax, but the mine's deeper charm is that it shows how much wealth, labour, and quiet ingenuity once sat below the surface of ordinary life. Because the visit starts early, the rest of the day should remain deliberately lighter, but not necessarily empty. Returning to Krakow for lunch still leaves room for an optional afternoon look at Nowa Huta, which adds a very different urban layer to the trip: broad socialist-realist planning, postwar history, and a part of the city that feels far removed from the royal core. It should stay optional rather than forced, but if energy is still good it gives day 3 a useful second texture before the more historically heavy fourth and fifth days.",
+      tags: ["fixed visit", "underground site", "optional district stop"],
       transport: [
         { label: "Drive", duration: "Short transfer to Wieliczka and back" },
       ],
@@ -170,6 +170,7 @@ export const krakow2026: Trip = {
       ],
       tips: [
         "Do not overpack the evening. Wieliczka is more tiring than it sounds because of the early start and the amount of walking underground.",
+        "Treat Nowa Huta as optional. It works well as a short, mood-setting look around rather than another full museum-style commitment.",
       ],
       sections: [
         {
@@ -187,7 +188,9 @@ export const krakow2026: Trip = {
           title: "Afternoon",
           items: [
             { text: "Return to Krakow." },
-            { text: "Have lunch and keep the rest of the afternoon free." },
+            { text: "Have lunch back in Krakow." },
+            { text: "Optional: head to Nowa Huta for a look around in the afternoon." },
+            { text: "Keep the rest of the day flexible depending on energy." },
           ],
         },
         {
