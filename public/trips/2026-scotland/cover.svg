@@ -1,0 +1,39 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#102C2A"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <path d="M0 858C143 805 257 798 342 838C433 879 520 949 624 949C718 949 790 881 896 850C1020 815 1111 844 1220 890C1318 931 1451 949 1600 906V1200H0V858Z" fill="#173B38"/>
+  <path d="M0 911C146 873 258 878 342 911C443 951 507 1029 620 1029C726 1029 814 962 913 936C1008 911 1100 928 1218 982C1310 1023 1444 1040 1600 1000V1200H0V911Z" fill="#31524F"/>
+  <path d="M0 1032C150 1000 261 1006 354 1037C452 1071 531 1128 640 1128C759 1128 839 1081 938 1061C1060 1037 1145 1066 1250 1100C1354 1134 1469 1141 1600 1123V1200H0V1032Z" fill="#6B8A7A"/>
+  <path d="M954 386C1002 355 1078 366 1119 410C1143 436 1178 446 1219 439C1259 432 1295 447 1316 479C1337 511 1337 552 1319 588C1299 629 1260 657 1220 667C1183 676 1152 697 1129 726C1093 771 1021 786 964 760C921 741 881 709 859 669C833 621 823 562 843 512C863 462 907 421 954 386Z" fill="url(#mist)" opacity="0.68"/>
+  <path d="M0 232C151 188 286 174 405 197C521 219 627 279 730 288C838 298 941 255 1035 230C1137 202 1230 198 1315 223C1403 249 1498 298 1600 370V0H0V232Z" fill="url(#sky)"/>
+  <path d="M203 760L425 539L566 671L728 455L885 623L1048 411L1231 611L1414 468V1200H203V760Z" fill="url(#ridge)" opacity="0.72"/>
+  <circle cx="1258" cy="202" r="68" fill="#E7C998" opacity="0.9"/>
+  <g opacity="0.88">
+    <rect x="115" y="120" width="398" height="206" rx="30" fill="#F3EDE2" fill-opacity="0.1" stroke="#F3EDE2" stroke-opacity="0.18"/>
+    <text x="151" y="174" fill="#F5EBDD" font-family="Georgia, serif" font-size="26" letter-spacing="7">PUBLIC-TRANSPORT LOOP</text>
+    <text x="151" y="245" fill="#FFF9F0" font-family="Georgia, serif" font-size="102">Scotland</text>
+    <text x="154" y="293" fill="#F5EBDD" font-family="Georgia, serif" font-size="38" font-style="italic">2026</text>
+  </g>
+  <g opacity="0.8">
+    <text x="118" y="1060" fill="#F6F0E5" font-family="Arial, sans-serif" font-size="24" letter-spacing="4">EDINBURGH · OBAN · MULL · FORT WILLIAM · INVERNESS · AVIEMORE</text>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="800" y1="0" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173F4A"/>
+      <stop offset="0.52" stop-color="#214954"/>
+      <stop offset="1" stop-color="#102C2A"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C8791"/>
+      <stop offset="1" stop-color="#40606B" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="mist" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1082 561) rotate(90) scale(257 257)">
+      <stop stop-color="#EFE8DA"/>
+      <stop offset="1" stop-color="#EFE8DA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ridge" x1="809" y1="411" x2="809" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18302D"/>
+      <stop offset="1" stop-color="#0E1F1D"/>
+    </linearGradient>
+  </defs>
+</svg>

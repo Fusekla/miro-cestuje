@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TripCard } from "@/components/TripCard";
 import { getPublishedTrips } from "@/content";
 
-const upcomingTrips = ["Scotland 2026", "Cantabria 2026"];
+const upcomingTrips = ["Cantabria 2026"];
 
 export default function HomePage() {
   const trips = getPublishedTrips();
