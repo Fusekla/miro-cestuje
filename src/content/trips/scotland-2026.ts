@@ -9,8 +9,8 @@ export const scotland2026: Trip = {
   blurb:
     "A thirteen-day rail, ferry, and bus route from Edinburgh through Oban, Mull, Fort William, Loch Ness, Inverness, and Aviemore before the final return south.",
   intro: [
-    "This trip is much more of a stitched-together route than a single-base holiday: city arrival, west-coast harbour days, island weather dependence, Highland rail scenery, and a last swing through the Cairngorms before the flight home. The movement is part of the point.",
-    "The shape is strong, but it only works if the fixed transport pieces are treated seriously. A few trains and ferries act as anchors for whole days, and the hardest island day sits right in the middle. When those edges are respected, the route should feel cinematic rather than stressful.",
+    "Scotland the slow way and the wild way, at once. From Edinburgh we ride the West Highland Line to the west coast, sail out to Staffa for puffins and Fingal's Cave, cross to Iona's white beaches, board the Jacobite steam train over Glenfinnan Viaduct, walk into Glencoe, stand above Loch Ness at Urquhart Castle, and finish among the ancient pines of the Cairngorms.",
+    "Thirteen days, five travellers, zero rental cars — a route built entirely from rails, ferries, and Highland buses, with the big-ticket Scotland everyone imagines and the quieter corners most itineraries miss.",
   ],
   coverImage: {
     src: "/trips/2026-scotland/cover.jpg",
@@ -35,9 +35,9 @@ export const scotland2026: Trip = {
       date: "2026-05-28",
       title: "Arrival in Edinburgh",
       summary:
-        "A soft landing day through Stockbridge, the Water of Leith, and a first easy evening in the city.",
+        "A soft landing into Edinburgh through Stockbridge, the hidden gorge of the Water of Leith, and the old mill-buildings of Dean Village.",
       overview:
-        "The first day works best as decompression rather than a grand Edinburgh statement. Stockbridge and the Water of Leith give the city in a gentler register, with enough texture to feel local without asking for much decision-making straight after the flight. It is the right kind of opening: river walk, a little air, one museum fallback if the weather turns, then an early night.",
+        "The first day isn't the day for Edinburgh's headline postcard. After the flight, a bus or tram into town and a first coffee somewhere in Stockbridge is the right register — a neighbourhood that used to be a fishing village on the Water of Leith and still has the feel of one, with independent shops, Georgian tenements and an unpretentious local rhythm rather than the Royal Mile's crowds. From there we drop down to the river itself, which cuts a wooded gorge through the middle of the city at a level most visitors never see, and follow it a short way to Dean Village — a cluster of old mill buildings tucked under Thomas Telford's Dean Bridge that is quietly one of Edinburgh's most photographed corners. Lunch, a slow afternoon in Princes Street Gardens with the castle looming above us, the Scottish National Gallery as a free and comfortable weather fallback if the rain sets in, and then an early dinner and an earlier night. The city proper can wait until morning.",
       tags: ["arrival", "city", "easy start"],
       transport: [
         { label: "Airport tram or bus", duration: "Approx. 30 minutes" },
@@ -51,38 +51,28 @@ export const scotland2026: Trip = {
           title: "Morning",
           items: [
             { time: "08:45", text: "Arrive at Edinburgh Airport." },
+            { text: "Tram or bus into the city centre." },
             {
-              time: "~09:15",
-              text: "Take the tram or bus into the city centre.",
-              duration: "Approx. 30 minutes",
+              text: "Coffee and a light breakfast in Stockbridge, with luggage drop if possible.",
             },
-            {
-              time: "~10:00",
-              text: "Coffee and a light breakfast in Stockbridge or New Town, with luggage drop if possible.",
-            },
-            {
-              time: "~11:00",
-              text: "Walk along the Water of Leith and through Dean Village.",
-            },
+            { text: "Walk along the Water of Leith and through Dean Village." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { time: "~13:00", text: "Light lunch in Stockbridge." },
+            { text: "Light lunch in Stockbridge." },
             {
-              time: "~14:30",
-              text: "Rest in Princes Street Gardens or use the Scottish National Gallery as a weather fallback.",
+              text: "Rest in Princes Street Gardens, or use the Scottish National Gallery as a weather fallback.",
             },
-            { time: "~16:00", text: "Check in and rest." },
+            { text: "Check in and rest." },
           ],
         },
         {
           title: "Evening",
           items: [
             {
-              time: "~19:00",
-              text: "Dinner in Stockbridge or New Town and keep the night deliberately early.",
+              text: "Dinner in Stockbridge or New Town, and an early night.",
             },
           ],
         },
@@ -94,9 +84,9 @@ export const scotland2026: Trip = {
       date: "2026-05-29",
       title: "Historic Edinburgh and urban layers",
       summary:
-        "A booked Old Town walking tour in the morning, then one stronger afternoon choice instead of trying to consume the whole city.",
+        "The ceremonial Edinburgh day: the Royal Mile under a booked walking tour, then one strong afternoon choice — a volcanic ridge walk, a national museum, or the castle itself.",
       overview:
-        "This is the day for Edinburgh's historic weight, but it still works better with restraint than with accumulation. The morning tour gives the Royal Mile, Grassmarket, and Greyfriars the right structure, then the afternoon can stay selective: one viewpoint, one museum, or the castle only if the group genuinely wants it. The city is stronger when it feels legible, not overstuffed.",
+        "Today is Edinburgh's ceremonial day, and it works best when the morning gives it some structure. At ten we join the Old Town History walking tour from halfway down the Royal Mile, and over the next couple of hours the Old Town's layers start to untangle themselves: St Giles' Cathedral and the medieval spine of the High Street, Grassmarket below the castle rock where livestock markets and public executions used to share the same square, and Greyfriars Kirkyard with its crooked seventeenth-century headstones and the grave of the loyal terrier Bobby tucked near the gate. By lunch the shape of historic Edinburgh should feel legible rather than overwhelming. The afternoon then gets one strong focus rather than a grab-bag of smaller stops — Salisbury Crags and the old volcanic ridge above Holyrood for the broadest view of the city, the National Museum of Scotland for the depth and breadth of Scottish material culture, or Edinburgh Castle itself if the group genuinely wants to climb up to the rock. We keep the evening unforced: dinner in the Old Town, New Town, or Leith, and an easy walk through streets that look best in the long northern dusk.",
       tags: ["old town", "walking tour", "history"],
       transport: [{ label: "Walking", duration: "Most of the day" }],
       highlightImage: {
@@ -117,7 +107,7 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Breakfast near the accommodation." },
+            { text: "Breakfast near the accommodation." },
             {
               time: "10:00",
               text: "Join the Old Town History walking tour from 351 High Street.",
@@ -130,22 +120,17 @@ export const scotland2026: Trip = {
         {
           title: "Afternoon",
           items: [
+            { text: "Lunch around Grassmarket or Victoria Street after the tour." },
             {
-              time: "11:45",
-              text: "Lunch around Grassmarket or Victoria Street after the tour.",
+              text: "Spend the afternoon on one stronger focus rather than a grab-bag of smaller stops.",
             },
-            {
-              time: "~13:30",
-              text: "Use the afternoon for one stronger focus rather than a grab-bag of smaller stops.",
-            },
-            { time: "~17:00", text: "Coffee or a short rest in the city centre." },
+            { text: "Coffee or a short rest in the city centre." },
           ],
         },
         {
           title: "Evening",
           items: [
             {
-              time: "~19:00",
               text: "Dinner in Old Town, New Town, or Leith, with an optional quiet evening walk.",
             },
           ],
@@ -158,9 +143,9 @@ export const scotland2026: Trip = {
       date: "2026-05-30",
       title: "Edinburgh to Glasgow to Oban",
       summary:
-        "A transfer day built around the fixed West Highland Line departure, with just enough Glasgow in the middle to make the move feel like part of the trip.",
+        "A transfer day with enough Glasgow in the middle to feel like part of the trip, then the slow pull west on the West Highland Line to the harbour town of Oban.",
       overview:
-        "The crucial fact here is that Glasgow is not the main event; the 16:35 departure to Oban is. That discipline still leaves enough room for lunch, the cathedral, and the Necropolis, which is exactly the right scale of urban interlude before the route turns west into the long scenic rail section. The day succeeds if Oban feels earned rather than merely reached.",
+        "Today is a movement day, but the movement is the point. A short morning train from Edinburgh Waverley drops us at Glasgow Queen Street with just enough time for lunch and a proper urban interlude before the real journey begins. We walk up to Glasgow Cathedral — twelfth century, the only mainland Scottish cathedral to have come through the Reformation more or less intact — and then step across to the Necropolis, a Victorian hilltop cemetery crowded with ornate tombs and broad views back over the city. It is a surprisingly theatrical piece of Glasgow and a good counterweight to the afternoon that follows. At half past four we board the West Highland Line service to Oban: one of the great scenic railways of Britain. The route runs along the western shore of Loch Lomond, splits at Crianlarich, and then turns west through Strath Fillan and down the long Pass of Brander beside Loch Awe — with the ruin of Kilchurn Castle at the head of the loch — before passing Taynuilt, crossing the Connel tidal bridge, and rolling into Oban as the light starts to go. By dinnertime we are in a working west-coast harbour town with ferries to the islands stacked up in the distance, and the day feels earned.",
       tags: ["transfer", "rail journey", "west coast"],
       transport: [
         { label: "Train", duration: "Edinburgh to Glasgow approx. 1 hour" },
@@ -184,31 +169,22 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Breakfast and check out." },
+            { text: "Breakfast and check out." },
             {
-              time: "~10:00",
-              text: "Take a suggested train from Edinburgh Waverley to Glasgow Queen Street.",
+              text: "Train from Edinburgh Waverley to Glasgow Queen Street.",
               duration: "Approx. 1 hour",
             },
-            {
-              time: "~11:00",
-              text: "Arrive in Glasgow and drop bags at left luggage if available.",
-            },
+            { text: "Drop bags at left luggage if available." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { time: "~11:30", text: "Lunch near Queen Street." },
+            { text: "Lunch near Queen Street." },
             {
-              time: "~12:30",
-              text: "Walk to Glasgow Cathedral for a short visit.",
+              text: "Walk up to Glasgow Cathedral and continue to the Necropolis for views back across the city.",
             },
-            {
-              time: "~13:30",
-              text: "Continue to the Necropolis for views across the city.",
-            },
-            { time: "~15:00", text: "Coffee and head back toward Queen Street." },
+            { text: "Coffee and head back toward Queen Street." },
             {
               time: "16:35",
               text: "Board the West Highland Line service to Oban.",
@@ -220,9 +196,8 @@ export const scotland2026: Trip = {
         {
           title: "Evening",
           items: [
-            { time: "19:40", text: "Arrive at Oban station." },
-            { time: "~20:00", text: "Check in after the short walk from the station." },
-            { time: "~20:30", text: "Dinner around the harbour and a relaxed evening." },
+            { text: "Arrive at Oban station and walk the short way to the accommodation." },
+            { text: "Dinner around the harbour and a relaxed evening." },
           ],
         },
       ],
@@ -233,9 +208,9 @@ export const scotland2026: Trip = {
       date: "2026-05-31",
       title: "Oban town and harbour views",
       summary:
-        "An easier orientation day for Oban, with coastal viewpoints, a bit of breathing room, and the booked distillery visit in the late afternoon.",
+        "An easier orientation day for Oban: harbour walks, a coastal path to a ruined MacDougall stronghold, the Colosseum-shaped folly above the bay, and a booked distillery tour.",
       overview:
-        "After the long rail move west, Oban should be allowed to register as a place rather than just a base for island departures. The waterfront, Dunollie side, and McCaig's Tower all do that well without turning the day into a march. The distillery booking then gives the afternoon one firm point of focus and keeps the rest of the day comfortably loose.",
+        "After the long rail move west, Oban gets to be a place rather than just a base. The morning is for the harbour and waterfront: a walk along the crescent of Oban Bay with the ferries coming and going to Mull, Colonsay and the outer isles, and then a gentler coastal path north to Dunollie Castle, a thirteenth-century MacDougall stronghold now falling quietly to ivy and sea wind on its headland above the bay. Lunch back in town — Oban calls itself the seafood capital of Scotland and makes a reasonable case for it — and then we climb up behind the harbour to McCaig's Tower, the Colosseum-inspired folly that a local banker built on the hill in 1897 as both a family monument and a make-work scheme for unemployed stonemasons through a hard winter. The circular walls frame a postcard view back across the bay, and on a clear afternoon you can see the low shapes of the islands strung out west. At half past four we drop down the hill again for the booked tour at Oban Distillery — one of the oldest working distilleries in Scotland, founded in 1794 right in the middle of what would become the town — and finish the day with dinner around the harbour as the light fades over the Sound of Kerrera.",
       tags: ["harbour town", "viewpoints", "booked stop"],
       transport: [{ label: "Walking", duration: "All day in town" }],
       highlightImage: {
@@ -253,34 +228,28 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Easy breakfast start." },
-            { time: "~10:00", text: "Walk the harbour and waterfront." },
-            {
-              time: "~11:00",
-              text: "Head toward Dunollie Castle or the nearby coastal viewpoint.",
-            },
+            { text: "Easy breakfast start." },
+            { text: "Walk the harbour and waterfront." },
+            { text: "Continue along the coastal path to Dunollie Castle." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { time: "~12:30", text: "Lunch in the town centre." },
-            {
-              time: "~14:00",
-              text: "Climb to McCaig's Tower for the broad harbour view.",
-            },
-            { time: "~15:00", text: "Coffee and rest before the tour." },
+            { text: "Lunch in the town centre." },
+            { text: "Climb to McCaig's Tower for the broad harbour view." },
+            { text: "Coffee and rest before the tour." },
             {
               time: "16:30",
-              text: "Take the booked Oban Distillery tour.",
+              text: "Oban Distillery tour.",
               fixed: true,
             },
-            { time: "~17:30", text: "Browse the shop only if there is still interest." },
+            { text: "Browse the shop only if there is still interest." },
           ],
         },
         {
           title: "Evening",
-          items: [{ time: "~19:00", text: "Dinner around the harbour." }],
+          items: [{ text: "Dinner around the harbour." }],
         },
       ],
     },
@@ -290,9 +259,9 @@ export const scotland2026: Trip = {
       date: "2026-06-01",
       title: "Isle of Mull and Tobermory",
       summary:
-        "The first island day: ferry to Craignure, bus to Tobermory, and a slower harbour-town rhythm before returning to Oban.",
+        "A softer island day: the ferry to Mull, a slow harbour rhythm in Tobermory's painted front, and a walk in Aros Park before heading back to Oban.",
       overview:
-        "Tobermory is useful precisely because it is not trying to be an epic expedition. The coloured harbour front and slower island pacing give the route a change of register before the much heavier Day 6. That makes this a good day to stay open to weather, ferry rhythm, and how much walking the group actually wants rather than pushing it beyond what the island naturally offers.",
+        "Tobermory is the kind of day you want in the middle of a trip like this, because it doesn't ask anything heroic of you. The morning starts with breakfast and a short walk to the ferry terminal, where we board the CalMac service across to Craignure — about forty-five minutes of open water with Kerrera sliding past on the left and the Morvern coast off to the north. From Craignure a single-decker bus winds across the middle of Mull to Tobermory, which sits at the top of the island on a sheltered bay facing out toward Ardnamurchan. The town was founded as a planned fishing station in 1788, and its famous curve of painted seafront houses — blue, red, yellow, pink — is still the thing most people have in mind when they picture Mull. We spend the core of the day there at a slow pace: coffee and a browse around the harbour, lunch in one of the small cafés or fish bars, and then a gentle walk into Aros Park, the wooded headland just east of town with a short path to a waterfall and open views back across the Sound of Mull. Late afternoon we retrace our steps — bus across the island, ferry back to Oban — in time for a quiet dinner and an early night, because tomorrow is the big one.",
       tags: ["island day", "ferry", "slower rhythm"],
       transport: [
         { label: "Ferry", duration: "Oban to Craignure approx. 45 minutes" },
@@ -309,40 +278,34 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~08:30", text: "Breakfast and walk to the ferry terminal." },
+            { text: "Breakfast and walk to the ferry terminal." },
             {
-              time: "~09:00",
-              text: "Take the CalMac ferry from Oban to Craignure.",
+              text: "CalMac ferry from Oban to Craignure.",
               duration: "Approx. 45 minutes",
             },
             {
-              time: "~09:45",
               text: "Continue by bus across Mull to Tobermory.",
               duration: "Approx. 45 minutes",
             },
-            { time: "~10:30", text: "Explore Tobermory harbour, shops, and cafes." },
+            { text: "Explore Tobermory harbour, shops, and cafés." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { time: "~12:30", text: "Light lunch in town." },
+            { text: "Light lunch in town." },
             {
-              time: "~14:00",
-              text: "Optional gentle walk in Aros Park for views back across the harbour.",
+              text: "Gentle walk in Aros Park for views back across the Sound of Mull.",
             },
-            { time: "~15:30", text: "Return toward the bus stop for Craignure." },
-            {
-              time: "~16:15",
-              text: "Bus back across Mull and ferry onward to Oban.",
-            },
+            { text: "Return toward the bus stop for Craignure." },
+            { text: "Bus back across Mull and ferry onward to Oban." },
           ],
         },
         {
           title: "Evening",
           items: [
-            { time: "~17:30", text: "Arrive back in Oban and rest." },
-            { time: "~19:00", text: "Dinner and a relaxed evening." },
+            { text: "Arrive back in Oban and rest." },
+            { text: "Dinner and a relaxed evening." },
           ],
         },
       ],
@@ -353,9 +316,9 @@ export const scotland2026: Trip = {
       date: "2026-06-02",
       title: "Staffa, Lunga and Iona",
       summary:
-        "The most demanding day of the trip: fully managed island logistics, puffins and basalt, then the abbey-and-beach atmosphere on Iona.",
+        "The expedition day — an early ferry, a coach across Mull, a small boat to Lunga's puffin cliffs and Staffa's basalt cathedral, then the white beaches and abbey of Iona.",
       overview:
-        "This is the trip's expedition day and it should be treated as such. The logistics are helpfully handled by the operator, but it is still an early, weather-sensitive, physically full sequence that starts before seven and does not end until after eight at night. That effort is also what earns it: Atlantic boat time, Staffa's geology, Lunga's puffins, and Iona's older spiritual gravity all stacked into one day.",
+        "Today is the expedition day and also the one people remember. It starts before seven at Oban ferry terminal, because the day runs on a single well-oiled handover of ferries, coaches and small boats out to three islands and back. The first ferry crosses to Craignure; then a coach runs all the way across Mull to Fionnphort at the island's south-western tip; from there a small open boat takes us out into the Atlantic. Lunga, the largest of the Treshnish Isles, is first — in early June the puffins are nesting in burrows right at the edge of the cliff path, and at this time of year they stand at arm's length and entirely ignore you. From Lunga the boat runs a few miles south to Staffa, a tiny uninhabited island where cooling basalt set into vertical hexagonal columns on the same geological pattern as the Giant's Causeway in Ireland, and where a vast sea cave cut through the stone becomes Fingal's Cave — the space whose echoing walls inspired Mendelssohn's Hebrides overture and drew Turner, Queen Victoria and Keats before us. The last stop is Iona, a different register entirely: three miles long, white shell-sand beaches on the Atlantic side, and the old abbey St Columba founded from Ireland in 563, which has stood as the cradle of Christianity in Scotland ever since. We have time for the beaches, the village and the abbey grounds before the whole circuit runs in reverse — boat back to Fionnphort, coach across Mull, ferry to Oban — arriving back just after eight. A simple dinner, an early night, and a day that easily pays for itself.",
       tags: ["islands", "booked excursion", "demanding"],
       transport: [
         { label: "Ferry", duration: "Oban-Craignure return" },
@@ -394,23 +357,21 @@ export const scotland2026: Trip = {
               text: "Ferry from Oban to Craignure.",
               fixed: true,
             },
-            { time: "08:20", text: "Arrive in Craignure." },
             {
               time: "08:25",
               text: "Coach across Mull to Fionnphort.",
               fixed: true,
             },
-            { time: "09:40", text: "Reach Fionnphort and board the small boat." },
+            { text: "Reach Fionnphort and board the small boat." },
           ],
         },
         {
           title: "Island circuit",
           items: [
-            { time: "~10:00", text: "Lunga for puffins and coastal walking." },
-            { time: "~12:00", text: "Staffa for Fingal's Cave and basalt columns." },
+            { text: "Lunga for puffins and coastal walking." },
+            { text: "Staffa for Fingal's Cave and the basalt columns." },
             {
-              time: "~13:00",
-              text: "Iona for beaches, the village, and the abbey if pre-booked.",
+              text: "Iona for the white beaches, the village, and the abbey grounds.",
               duration: "Approx. 2 hours",
             },
           ],
@@ -423,7 +384,7 @@ export const scotland2026: Trip = {
             { time: "19:25", text: "Ferry departs Craignure for Oban.", fixed: true },
             {
               time: "20:15",
-              text: "Arrive back in Oban, keep dinner simple, and end the day early.",
+              text: "Arrive back in Oban. Keep dinner simple and end the day early.",
               fixed: true,
             },
           ],
@@ -436,9 +397,9 @@ export const scotland2026: Trip = {
       date: "2026-06-03",
       title: "Oban to Fort William",
       summary:
-        "A shorter transfer day with enough room for a gentle Fort William arrival instead of pushing straight into another headline stop.",
+        "A short transfer day up the west coast to Fort William — the Connel Bridge, the shore of Loch Linnhe, and an easy afternoon at Telford's Neptune's Staircase below Ben Nevis.",
       overview:
-        "After the strain of the island day, this transfer benefits from staying modest. The bus leg is short, the scenery still does the work, and Fort William is most useful here as a base where the group can recalibrate before the steam-train and Glencoe days. That makes the canal or lochside walk a better fit than anything more ambitious.",
+        "After yesterday's long circuit, today is meant to be easier. One direct bus runs north from Oban along the A828 — over the Connel Bridge with the tidal race of the Falls of Lora below, up the shore of Loch Creran, through Appin, past Castle Stalker standing on its small offshore rock, and along the length of Loch Linnhe into Fort William. The town sits at the head of the loch with Ben Nevis immediately behind it, and its useful role on this trip is as a base rather than a set-piece: somewhere to unpack, stretch the legs, and regather for the two bigger days that follow. The afternoon can stay modest. A gentle walk west out to Corpach and Neptune's Staircase — Thomas Telford's flight of eight locks on the Caledonian Canal, the longest staircase lock in Britain, climbing under the shoulder of Ben Nevis — is the right kind of stretch: water, iron, wet stone, and a view straight up the glen toward Loch Lochy. Back in town for coffee, then dinner near the accommodation and an early night. The steam train leaves tomorrow morning.",
       tags: ["transfer", "recovery day", "highlands"],
       transport: [{ label: "Direct bus", duration: "Oban to Fort William approx. 2 hours" }],
       highlightImage: {
@@ -449,10 +410,9 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Easy breakfast and one final harbour walk." },
+            { text: "Easy breakfast and one final harbour walk." },
             {
-              time: "~10:00",
-              text: "Take the direct bus from Oban to Fort William.",
+              text: "Direct Citylink bus from Oban to Fort William.",
               duration: "Approx. 2 hours",
             },
           ],
@@ -460,19 +420,18 @@ export const scotland2026: Trip = {
         {
           title: "Afternoon",
           items: [
-            { time: "~12:00", text: "Arrive, check in, or drop luggage." },
-            { time: "~12:30", text: "Lunch in Fort William." },
+            { text: "Arrive, check in, or drop luggage." },
+            { text: "Lunch in Fort William." },
             {
-              time: "~14:00",
-              text: "Choose a relaxed walk at Neptune's Staircase or along Loch Linnhe.",
+              text: "Gentle walk west to Corpach and Neptune's Staircase, or along Loch Linnhe.",
             },
-            { time: "~17:00", text: "Rest at the accommodation." },
+            { text: "Rest at the accommodation." },
           ],
         },
         {
           title: "Evening",
           items: [
-            { time: "~19:00", text: "Dinner near the accommodation and an early night." },
+            { text: "Dinner near the accommodation and an early night." },
           ],
         },
       ],
@@ -483,9 +442,9 @@ export const scotland2026: Trip = {
       date: "2026-06-04",
       title: "Jacobite Steam Train to Mallaig",
       summary:
-        "One of the signature days of the route: Glenfinnan by rail, lunch in Mallaig, and the return through the same landscape in different light.",
+        "The Jacobite day — real steam, lochside track, and the long curve of Glenfinnan Viaduct, twice in one ride.",
       overview:
-        "This is the most recognisable transport day of the trip, which is exactly why the booking risk matters so much. If those tickets are secured, the day more or less carries itself: the Glenfinnan Viaduct, long lochside stretches, the west-coast pull into Mallaig, then the whole route again on the way back with a different mood. There is no need to overcomplicate it beyond keeping the timing disciplined.",
+        "Today is the Jacobite day, the one that most looks the part of a Scottish travel poster and largely earns it. We board at Fort William station just before the mid-morning departure: a heritage steam locomotive, maroon carriages, a short platform hiss, and then the train pulling west along Loch Eil with Ben Nevis somewhere behind us. The first hour is the one everyone comes for. The line climbs gently through Lochaber and curves around the head of Loch Shiel to cross the Glenfinnan Viaduct — twenty-one concrete arches, thirty metres up, the whole train leaning into the bend so that from the window you can watch the locomotive and the front carriages swinging round ahead of you. Below the viaduct stands the tall stone monument to the 1745 rising, where Bonnie Prince Charlie first raised his standard; steam and Jacobite history in one frame, and the train's name stops feeling like a marketing choice. From there the track threads through Arisaig — the westernmost railway station in Britain — with flashes of white shell-sand and, on a clear day, the low shapes of Rum and Eigg out across the sound. The line finishes at Mallaig, a working fishing harbour where the morning's catch is mostly langoustine and the CalMac ferries come and go to Skye. We eat something simple by the quay, stretch our legs for an hour, and then take the same train back — the afternoon light sits differently on the lochs, and the second pass over Glenfinnan reads differently again.",
       tags: ["steam train", "scenic rail", "book early"],
       transport: [{ label: "Jacobite steam train", duration: "Fort William-Mallaig return" }],
       highlightImage: {
@@ -497,20 +456,20 @@ export const scotland2026: Trip = {
       ],
       fixedItems: [
         {
-          time: "~10:15",
+          time: "10:15",
           title: "Jacobite departure from Fort William",
           note: "Book outbound and return separately.",
         },
-        { time: "~14:05", title: "Jacobite return departure from Mallaig" },
+        { time: "14:05", title: "Jacobite return departure from Mallaig" },
       ],
       sections: [
         {
           title: "Morning",
           items: [
-            { time: "~08:30", text: "Early breakfast and short walk to the station." },
+            { text: "Early breakfast and a short walk to Fort William station." },
             {
-              time: "~10:15",
-              text: "Board the Jacobite for Mallaig.",
+              time: "10:15",
+              text: "Board the Jacobite bound for Mallaig.",
               fixed: true,
               note: "The route crosses the Glenfinnan Viaduct.",
             },
@@ -519,24 +478,20 @@ export const scotland2026: Trip = {
         {
           title: "Afternoon",
           items: [
-            { time: "~12:20", text: "Arrive in Mallaig." },
             {
-              time: "~12:30",
-              text: "Lunch by the harbour and a short waterfront walk.",
+              text: "Lunch by the harbour, a short walk along the quay, and a look around town before heading back to the station.",
             },
-            { time: "~14:00", text: "Coffee or a short look around before returning." },
             {
-              time: "~14:05",
+              time: "14:05",
               text: "Take the Jacobite back to Fort William.",
               fixed: true,
             },
-            { time: "~16:00", text: "Arrive back in Fort William." },
           ],
         },
         {
           title: "Evening",
           items: [
-            { time: "~19:00", text: "Dinner near the accommodation and a relaxed evening." },
+            { text: "Dinner near the accommodation and a relaxed evening." },
           ],
         },
       ],
@@ -547,9 +502,9 @@ export const scotland2026: Trip = {
       date: "2026-06-05",
       title: "Glencoe",
       summary:
-        "A booked bus day into one of the strongest Highland landscapes, with massacre history, the Greenway, Loch Achtriochtan, and a pub lunch at Clachaig.",
+        "A day in Glencoe — the glen's massacre history at the visitor centre, a walk along the Greenway, the long view down to Loch Achtriochtan, and lunch at Clachaig Inn.",
       overview:
-        "Glencoe carries both scenery and historical charge, and the day is at its best when it gives both some room. Starting at the visitor centre provides the massacre context, then the movement through the glen turns the place from image into scale. It is also useful that the route is not just roadside stopping: the Greenway and quieter old-road sections make it feel properly entered rather than merely observed from a bus window.",
+        "Glencoe is one of those places whose scenery and history are completely entangled. We take the Citylink bus west out of Fort William and drop off at the National Trust visitor centre, which is the right place to start because it lays out the massacre of 1692 with appropriate weight: on the night of 12 February, after twelve days of quartered hospitality, government troops turned on their MacDonald hosts and killed around thirty-eight of them at first light. It is a story Scotland has never quite finished processing, and Glencoe carries it still. From the visitor centre we walk east along the Greenway, the old military road that now runs as a quiet path through the glen parallel to the main road, with the Three Sisters of Bidean nam Bian rising on the south side and the long Aonach Eagach ridge on the north. Loch Achtriochtan sits at the head of the glen under the steepest part of the ridge, and is the classic Glencoe view — dark water, dark walls, nothing in a hurry. Lunch is at Clachaig Inn, the old walker's and climber's pub whose door once carried the sign 'No Hawkers or Campbells' and which is still, quietly, the right place for it. In the afternoon we continue west along the quieter old road toward Glencoe village, a short look around, perhaps the Massacre Monument if the mood holds, and then the bus back to Fort William before the evening settles in.",
       tags: ["glencoe", "history", "booked bus"],
       transport: [
         { label: "Citylink bus", duration: "Fort William to Glencoe return" },
@@ -578,51 +533,39 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Breakfast." },
+            { text: "Breakfast." },
             {
               time: "09:10",
-              text: "Take the booked Citylink bus from Fort William.",
+              text: "Citylink 915 from Fort William to the Glencoe Visitor Centre.",
               fixed: true,
             },
             {
-              time: "~09:40",
-              text: "Start at the visitor centre and take in the massacre context before heading into the landscape.",
+              text: "Start at the visitor centre with the massacre context.",
             },
-            {
-              time: "~10:45",
-              text: "Walk the Greenway eastward from the visitor centre.",
-            },
-            {
-              time: "~11:15",
-              text: "Spend time around Loch Achtriochtan for the core Glencoe view.",
-            },
+            { text: "Walk the Greenway eastward from the visitor centre." },
+            { text: "Spend time around Loch Achtriochtan for the core Glencoe view." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { time: "~12:15", text: "Lunch at Clachaig Inn." },
+            { text: "Lunch at Clachaig Inn." },
+            { text: "Continue west via the quieter old road toward Glencoe village." },
             {
-              time: "~13:30",
-              text: "Continue west via the quieter old road toward Glencoe village.",
-            },
-            {
-              time: "~14:30",
               text: "Short look around the village, with the Massacre Monument as an optional extra.",
             },
             {
               time: "16:35",
-              text: "Take the booked Citylink back to Fort William.",
+              text: "Citylink 915 back to Fort William.",
               fixed: true,
             },
-            { time: "~17:05", text: "Arrive back and rest." },
+            { text: "Arrive back and rest." },
           ],
         },
         {
           title: "Evening",
           items: [
             {
-              time: "~19:00",
               text: "Dinner and a final relaxed Highlands evening before moving on tomorrow.",
             },
           ],
@@ -635,9 +578,9 @@ export const scotland2026: Trip = {
       date: "2026-06-06",
       title: "Fort William to Loch Ness to Inverness",
       summary:
-        "A Great Glen transfer with one meaningful stop at Urquhart Castle instead of trying to scatter Loch Ness into several smaller fragments.",
+        "Along the Great Glen from Fort William to Inverness, with a long pause at Urquhart Castle on its promontory over Loch Ness.",
       overview:
-        "This day is a good example of the route working because of one clear intermediate stop. Urquhart Castle is the Loch Ness moment that earns its place: direct loch frontage, strong views, and a clean handover from Fort William to Inverness. It still needs timetable discipline, because the castle entry slot only makes sense once the Citylink timing is confirmed.",
+        "Today we travel the length of the Great Glen — the ruler-straight geological fault that cuts diagonally across the Highlands from the west coast to the Moray Firth, stringing four lochs together on the way. A morning Citylink bus runs the whole line, and we get off at Urquhart Castle, which is the one Loch Ness stop that genuinely earns its place on an itinerary. The castle sits on a low promontory jutting out into the loch roughly halfway along its length, and its thirteenth-century ruins — sieged, held and blown up repeatedly through the Jacobite risings — are arranged exactly the way you want a romantic Scottish ruin to be arranged: Grant Tower still mostly standing at the highest point, crumbled curtain walls facing across the water, and views straight down twenty-three miles of dark loch that holds more fresh water than all the lakes of England and Wales combined. We spend a proper couple of hours there, including the visitor centre and the walk out to the tower, and then take the next bus north to Inverness. Inverness itself is the Highland capital and an easy small city to arrive in: the River Ness runs through the middle of it, the red sandstone Victorian castle looks down from a bluff, and a gentle walk along the riverbank with a coffee is enough to mark the arrival. Dinner in town, and an easy evening.",
       tags: ["transfer", "Loch Ness", "booked entry needed"],
       transport: [
         { label: "Citylink 919", duration: "Fort William-Urquhart Castle-Inverness" },
@@ -651,7 +594,7 @@ export const scotland2026: Trip = {
       ],
       fixedItems: [
         {
-          time: "~09:35",
+          time: "09:35",
           title: "Citylink 919 northbound",
           note: "Confirm exact 2026 time and align the castle entry slot.",
         },
@@ -660,19 +603,15 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Breakfast and check out." },
+            { text: "Breakfast and check out." },
             {
-              time: "~09:35",
-              text: "Take the Citylink 919 north from Fort William.",
+              time: "09:35",
+              text: "Citylink 919 north from Fort William.",
               fixed: true,
             },
+            { text: "Get off at the Urquhart Castle stop right by the entrance." },
             {
-              time: "~11:01",
-              text: "Get off at the Urquhart Castle stop right by the entrance.",
-            },
-            {
-              time: "~11:15",
-              text: "Visit Urquhart Castle and focus on the lochfront setting and Grant Tower views.",
+              text: "Urquhart Castle — the visitor centre, the walk out to Grant Tower, and the lochfront setting.",
               duration: "Approx. 2 hours",
             },
           ],
@@ -680,17 +619,13 @@ export const scotland2026: Trip = {
         {
           title: "Afternoon",
           items: [
-            {
-              time: "~13:15",
-              text: "Take the next Citylink north to Inverness.",
-              fixed: true,
-            },
-            { time: "~14:00", text: "Check in and take a gentle walk along the River Ness." },
+            { text: "Next Citylink north to Inverness." },
+            { text: "Check in and take a gentle walk along the River Ness." },
           ],
         },
         {
           title: "Evening",
-          items: [{ time: "~19:00", text: "Dinner in Inverness." }],
+          items: [{ text: "Dinner in Inverness." }],
         },
       ],
     },
@@ -700,9 +635,9 @@ export const scotland2026: Trip = {
       date: "2026-06-07",
       title: "Culloden, Clava Cairns, and Aviemore",
       summary:
-        "Battlefield, prehistoric stonework, then a short evening rail shift into the Cairngorms.",
+        "A day of Scottish layers: the silent moor at Culloden, 4000-year-old Bronze Age cairns at Clava, and an evening train south into the pinewoods of the Cairngorms.",
       overview:
-        "This is a day of historical layering more than visual spectacle. Culloden asks for attention rather than speed, while Clava Cairns gives the schedule a much older, quieter register before the route turns south into Aviemore. That combination works well because none of it needs to be rushed, but it still meaningfully changes the trip's mood before the final forest-and-loch day.",
+        "This is the trip's historical spine, and it works best when it isn't rushed. A short bus east from Inverness takes us to Culloden Battlefield, the flat and windswept moor where on 16 April 1746 the last pitched battle on British soil was fought and lost in about an hour. The Jacobite army of Charles Edward Stuart was broken there by government troops under the Duke of Cumberland — the rising ended, clan culture was systematically dismantled in the decades that followed, and Scotland's relationship with the Highlands has never been quite the same. Today the moor is kept in its 1746 state, the clan graves are marked only with low stones, and lines of flags still show where the armies stood. It is a place to walk slowly rather than to photograph. A short taxi ride later we are at Clava Cairns, which is almost the opposite thing: three four-thousand-year-old Bronze Age burial cairns, still surrounded by their rings of standing stones, aligned to the midwinter setting sun, and sitting quietly in a wooded field with almost no signage or fuss. Seeing Culloden and Clava in the same morning is the real texture of the day — one wound and one deep silence, a few miles apart. We return to Inverness for a late lunch and a short rest, and in the late afternoon a train lifts us south into Strathspey and drops us at Aviemore, gateway to the Cairngorms. Pinewoods, different air, and a quiet evening to close the day.",
       tags: ["history", "prehistoric site", "cairngorms"],
       transport: [
         { label: "Bus", duration: "Inverness to Culloden return" },
@@ -717,13 +652,9 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Breakfast." },
+            { text: "Breakfast." },
+            { text: "Stagecoach route 5 bus from Inverness to Culloden." },
             {
-              time: "~09:30",
-              text: "Take the Stagecoach route 5 bus from Inverness to Culloden.",
-            },
-            {
-              time: "~10:00",
               text: "Visit Culloden Battlefield and the visitor centre at an unhurried pace.",
             },
           ],
@@ -732,22 +663,17 @@ export const scotland2026: Trip = {
           title: "Afternoon",
           items: [
             {
-              time: "~12:00",
               text: "Short taxi to Clava Cairns.",
               duration: "Approx. 5 minutes",
             },
+            { text: "Spend time at Clava Cairns and the surrounding stone circles." },
+            { text: "Return by bus to Inverness." },
+            { text: "Late lunch, coffee, and a short rest." },
             {
-              time: "~12:15",
-              text: "Spend time at Clava Cairns and the surrounding stone circles.",
-            },
-            { time: "~13:30", text: "Return by bus to Inverness." },
-            { time: "~14:00", text: "Late lunch, coffee, and a short rest." },
-            {
-              time: "~17:00",
               text: "Train from Inverness to Aviemore.",
               duration: "Approx. 35 minutes",
             },
-            { time: "~17:40", text: "Arrive in Aviemore, check in, and keep the evening relaxed." },
+            { text: "Arrive in Aviemore, check in, and keep the evening relaxed." },
           ],
         },
       ],
@@ -758,9 +684,9 @@ export const scotland2026: Trip = {
       date: "2026-06-08",
       title: "Cairngorms morning and return to Edinburgh",
       summary:
-        "A quieter final full day for loch walking or easy cycling around Aviemore before the evening train back south.",
+        "A last, quieter Highland day: the old pinewoods and the island castle at Loch an Eilein, then the evening train south to Edinburgh.",
       overview:
-        "The final full day is valuable precisely because it stops competing with the itinerary's larger set-pieces. Loch an Eilein and Rothiemurchus give the route one calmer, woodland register before the jump back to Edinburgh. The only thing that really matters beyond that is not missing the 16:27 train, because the next morning's flight turns this into a tight turnaround by design.",
+        "The last full day of the trip is deliberately the quietest. Aviemore sits on the western edge of the Cairngorms, and a short walk or bike ride in the Rothiemurchus estate gets us into one of the last surviving fragments of the Great Caledonian Forest — the Scots pine woodland that once covered most of the Highlands and is now reduced to a few stubborn pockets. The main objective is Loch an Eilein, a small quiet loch ringed by old pines with a ruined fourteenth-century castle standing on its wooded islet a few metres from the shore. A gentle circular path runs the whole way around the water — about four miles — and the loop is the day's one deliberate walk: slow, piney, and rarely busy. Red squirrels, crested tits, and the occasional osprey high over the loch. Lunch around Aviemore or Rothiemurchus, an optional second walk or a bike ride through the forest if anyone still has energy, and then packing up and heading back to the station. The afternoon train south is the one fixed point of the day: it runs the Highland Main Line over the Drumochter Pass, down through Pitlochry and Perth and across the Forth into Edinburgh, arriving in the long northern evening. One last short night in the city, and then the airport at first light.",
       tags: ["forest", "loch", "return south"],
       transport: [
         { label: "Walking or cycling", duration: "Flexible daytime pacing" },
@@ -787,31 +713,24 @@ export const scotland2026: Trip = {
         {
           title: "Morning",
           items: [
-            { time: "~09:00", text: "Easy breakfast start." },
-            {
-              time: "~10:00",
-              text: "Walk around Loch an Eilein at a relaxed pace.",
-            },
+            { text: "Easy breakfast start." },
+            { text: "Walk around Loch an Eilein at a relaxed pace." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { time: "~12:30", text: "Lunch around Aviemore or Rothiemurchus." },
+            { text: "Lunch around Aviemore or Rothiemurchus." },
             {
-              time: "~14:00",
-              text: "Optional bike ride in Rothiemurchus Forest, or keep walking, or simply rest.",
+              text: "Optional bike ride in Rothiemurchus Forest, more walking, or simple rest.",
             },
-            {
-              time: "~14:30",
-              text: "Head back, pack, and leave enough buffer to reach the station from the forest area.",
-            },
+            { text: "Pack and leave enough buffer to reach the station." },
             {
               time: "16:27",
-              text: "Board the train from Aviemore to Edinburgh.",
+              text: "Train from Aviemore to Edinburgh.",
               fixed: true,
             },
-            { time: "19:43", text: "Arrive in Edinburgh and check in for the final short night." },
+            { text: "Arrive in Edinburgh and check in for the final short night." },
           ],
         },
       ],
@@ -822,9 +741,9 @@ export const scotland2026: Trip = {
       date: "2026-06-09",
       title: "Departure",
       summary:
-        "A short final morning built entirely around getting to Edinburgh Airport without friction.",
+        "An airport morning — early wake-up, the tram to Edinburgh Airport, and the flight home.",
       overview:
-        "There is no need to romanticise the final day. It is an airport morning, and the right version is simply the smooth one: wake up early, leave with margin, and let the trip end cleanly.",
+        "The last morning is a transfer and nothing more. An early wake-up, the quickest possible breakfast or none at all, packed bags out the door before first light, the tram or a taxi to Edinburgh Airport, and through security with time to spare for a coffee on the other side. Flight home at nine, and the rest of the day is airports.",
       tags: ["departure", "airport", "early start"],
       transport: [{ label: "Airport transfer", duration: "Approx. 30-40 minutes" }],
       highlightImage: {
@@ -839,14 +758,10 @@ export const scotland2026: Trip = {
         {
           title: "Early start",
           items: [
-            { time: "~06:00", text: "Wake up and finish packing." },
+            { text: "Wake up and finish packing." },
+            { text: "Transfer to the airport by tram or taxi." },
             {
-              time: "~06:20",
-              text: "Transfer to the airport by tram or taxi.",
-              fixed: true,
-            },
-            {
-              time: "~07:00",
+              time: "07:00",
               text: "Arrive at Edinburgh Airport for check-in and security.",
               fixed: true,
             },
