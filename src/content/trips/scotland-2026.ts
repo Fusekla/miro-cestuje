@@ -26,7 +26,6 @@ export const scotland2026: Trip = {
   planningNotes: [
     "The Jacobite steam train and key intercity legs are the schedule-defining pieces, so bookings and timetable checks matter more here than on a road trip.",
     "Day 6 is the hardest logistical day of the trip and Day 12 leads straight into a very early airport morning on 9 June 2026.",
-    "Scotland disappears from the homepage future-trip list in this change because it is now a published live itinerary in `src/content/trips/`.",
   ],
   days: [
     {
