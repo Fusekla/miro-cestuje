@@ -28,10 +28,24 @@ export type DaySection = {
   items: DayItem[];
 };
 
+export type ContextPlace = {
+  slug: string;
+  name: string;
+  subtitle: string;
+  body: string;
+  aliases?: string[];
+};
+
+export type DayContext = {
+  theme?: string;
+  places: ContextPlace[];
+};
+
 export type TripDay = {
   slug: string;
   dayNumber: number;
   date: string;
+  dateLabel?: string;
   title: string;
   summary: string;
   overview?: string;
@@ -46,6 +60,7 @@ export type TripDay = {
   notes?: string[];
   tips?: string[];
   options?: string[];
+  context?: DayContext;
   sections: DaySection[];
 };
 

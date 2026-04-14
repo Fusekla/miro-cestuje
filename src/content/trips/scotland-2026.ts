@@ -1,11 +1,12 @@
 import type { Trip } from "@/content/types";
+import { scotlandContextByDay } from "@/content/context/scotland-2026";
 
 export const scotland2026: Trip = {
   slug: "2026-scotland",
   title: "Scotland 2026",
   eyebrow: "Public-transport loop, May-June 2026",
   destination: "Scotland",
-  dateRange: "28 May - 9 June 2026",
+  dateRange: "Late May - early June 2026",
   blurb:
     "A thirteen-day rail, ferry, and bus route from Edinburgh through Oban, Mull, Fort William, Loch Ness, Inverness, and Aviemore before the final return south.",
   intro: [
@@ -25,13 +26,14 @@ export const scotland2026: Trip = {
   ],
   planningNotes: [
     "The Jacobite steam train and key intercity legs are the schedule-defining pieces, so bookings and timetable checks matter more here than on a road trip.",
-    "Day 6 is the hardest logistical day of the trip and Day 12 leads straight into a very early airport morning on 9 June 2026.",
+    "Day 6 is the hardest logistical day of the trip and Day 12 leads straight into a very early airport morning the next day.",
   ],
   days: [
     {
       slug: "day-01",
       dayNumber: 1,
       date: "2026-05-28",
+      dateLabel: "Thursday",
       title: "Arrival in Edinburgh",
       summary:
         "A soft landing into Edinburgh through Stockbridge, the hidden gorge of the Water of Leith, and the old mill-buildings of Dean Village.",
@@ -81,6 +83,7 @@ export const scotland2026: Trip = {
       slug: "day-02",
       dayNumber: 2,
       date: "2026-05-29",
+      dateLabel: "Friday",
       title: "Historic Edinburgh and urban layers",
       summary:
         "The ceremonial Edinburgh day: the Royal Mile under a booked walking tour, then one strong afternoon choice — a volcanic ridge walk, a national museum, or the castle itself.",
@@ -92,6 +95,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day02.jpg",
         alt: "Historic Edinburgh highlight for day 2",
       },
+      context: scotlandContextByDay["day-02"],
       fixedItems: [
         {
           time: "10:00",
@@ -140,6 +144,7 @@ export const scotland2026: Trip = {
       slug: "day-03",
       dayNumber: 3,
       date: "2026-05-30",
+      dateLabel: "Saturday",
       title: "Edinburgh to Glasgow to Oban",
       summary:
         "A transfer day with enough Glasgow in the middle to feel like part of the trip, then the slow pull west on the West Highland Line to the harbour town of Oban.",
@@ -154,6 +159,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day03.jpg",
         alt: "West Highland Line journey highlight for day 3",
       },
+      context: scotlandContextByDay["day-03"],
       fixedItems: [
         {
           time: "16:35",
@@ -205,6 +211,7 @@ export const scotland2026: Trip = {
       slug: "day-04",
       dayNumber: 4,
       date: "2026-05-31",
+      dateLabel: "Sunday",
       title: "Oban town and harbour views",
       summary:
         "An easier orientation day for Oban: harbour walks, a coastal path to a ruined MacDougall stronghold, the Colosseum-shaped folly above the bay, and a booked distillery tour.",
@@ -216,6 +223,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day04.jpg",
         alt: "Oban harbour and McCaig's Tower highlight for day 4",
       },
+      context: scotlandContextByDay["day-04"],
       fixedItems: [
         {
           time: "16:30",
@@ -256,6 +264,7 @@ export const scotland2026: Trip = {
       slug: "day-05",
       dayNumber: 5,
       date: "2026-06-01",
+      dateLabel: "Monday",
       title: "Isle of Mull and Tobermory",
       summary:
         "A softer island day: the ferry to Mull, a slow harbour rhythm in Tobermory's painted front, and a walk in Aros Park before heading back to Oban.",
@@ -313,6 +322,7 @@ export const scotland2026: Trip = {
       slug: "day-06",
       dayNumber: 6,
       date: "2026-06-02",
+      dateLabel: "Tuesday",
       title: "Staffa, Lunga and Iona",
       summary:
         "The expedition day — an early ferry, a coach across Mull, a small boat to Lunga's puffin cliffs and Staffa's basalt cathedral, then the white beaches and abbey of Iona.",
@@ -328,6 +338,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day06.jpg",
         alt: "Staffa, Lunga, and Iona highlight for day 6",
       },
+      context: scotlandContextByDay["day-06"],
       fixedItems: [
         {
           time: "06:55",
@@ -394,6 +405,7 @@ export const scotland2026: Trip = {
       slug: "day-07",
       dayNumber: 7,
       date: "2026-06-03",
+      dateLabel: "Wednesday",
       title: "Oban to Fort William",
       summary:
         "A short transfer day up the west coast to Fort William — the Connel Bridge, the shore of Loch Linnhe, and an easy afternoon at Telford's Neptune's Staircase below Ben Nevis.",
@@ -439,17 +451,19 @@ export const scotland2026: Trip = {
       slug: "day-08",
       dayNumber: 8,
       date: "2026-06-04",
+      dateLabel: "Thursday",
       title: "Jacobite Steam Train to Mallaig",
       summary:
         "The Jacobite day — real steam, lochside track, and the long curve of Glenfinnan Viaduct, twice in one ride.",
       overview:
-        "Today is the Jacobite day, the one that most looks the part of a Scottish travel poster and largely earns it. We board at Fort William station just before the mid-morning departure: a heritage steam locomotive, maroon carriages, a short platform hiss, and then the train pulling west along Loch Eil with Ben Nevis somewhere behind us. The first hour is the one everyone comes for. The line climbs gently through Lochaber and curves around the head of Loch Shiel to cross the Glenfinnan Viaduct — twenty-one concrete arches, thirty metres up, the whole train leaning into the bend so that from the window you can watch the locomotive and the front carriages swinging round ahead of you. Below the viaduct stands the tall stone monument to the 1745 rising, where Bonnie Prince Charlie first raised his standard; steam and Jacobite history in one frame, and the train's name stops feeling like a marketing choice. From there the track threads through Arisaig — the westernmost railway station in Britain — with flashes of white shell-sand and, on a clear day, the low shapes of Rum and Eigg out across the sound. The line finishes at Mallaig, a working fishing harbour where the morning's catch is mostly langoustine and the CalMac ferries come and go to Skye. We eat something simple by the quay, stretch our legs for an hour, and then take the same train back — the afternoon light sits differently on the lochs, and the second pass over Glenfinnan reads differently again.",
+        "Today is the Jacobite day, the one that most looks the part of a Scottish travel poster and largely earns it. We board at Fort William station just before the mid-morning departure: a heritage steam locomotive, maroon carriages, a short platform hiss, and then the train pulling west along Loch Eil with Ben Nevis somewhere behind us. The first hour is the one everyone comes for. The line climbs gently through Lochaber and curves around the head of Loch Shiel to cross the Glenfinnan Viaduct — twenty-one concrete arches, thirty metres up, the whole train leaning into the bend so that from the window you can watch the locomotive and the front carriages swinging round ahead of you. Below the viaduct stands the Glenfinnan Monument to the 1745 rising, where Bonnie Prince Charlie first raised his standard; steam and Jacobite history in one frame, and the train's name stops feeling like a marketing choice. From there the track threads through Arisaig — the westernmost railway station in Britain — with flashes of white shell-sand and, on a clear day, the low shapes of Rum and Eigg out across the sound. The line finishes at Mallaig, a working fishing harbour where the morning's catch is mostly langoustine and the CalMac ferries come and go to Skye. We eat something simple by the quay, stretch our legs for an hour, and then take the same train back — the afternoon light sits differently on the lochs, and the second pass over Glenfinnan reads differently again.",
       tags: ["steam train", "scenic rail", "book early"],
       transport: [{ label: "Jacobite steam train", duration: "Fort William-Mallaig return" }],
       highlightImage: {
         src: "/trips/2026-scotland/highlights/day08.jpg",
         alt: "Jacobite steam train highlight for day 8",
       },
+      context: scotlandContextByDay["day-08"],
       notes: [
         "The Jacobite is not yet bookable for 2026 in the source material, so this still needs monitoring and quick action once sales open.",
       ],
@@ -499,6 +513,7 @@ export const scotland2026: Trip = {
       slug: "day-09",
       dayNumber: 9,
       date: "2026-06-05",
+      dateLabel: "Friday",
       title: "Glencoe",
       summary:
         "A day in Glencoe — the glen's massacre history at the visitor centre, a walk along the Greenway, the long view down to Loch Achtriochtan, and lunch at Clachaig Inn.",
@@ -512,6 +527,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day09.jpg",
         alt: "Glencoe highlight for day 9",
       },
+      context: scotlandContextByDay["day-09"],
       fixedItems: [
         {
           time: "09:10",
@@ -575,6 +591,7 @@ export const scotland2026: Trip = {
       slug: "day-10",
       dayNumber: 10,
       date: "2026-06-06",
+      dateLabel: "Saturday",
       title: "Fort William to Loch Ness to Inverness",
       summary:
         "Along the Great Glen from Fort William to Inverness, with a long pause at Urquhart Castle on its promontory over Loch Ness.",
@@ -588,6 +605,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day10.jpg",
         alt: "Loch Ness and Urquhart Castle highlight for day 10",
       },
+      context: scotlandContextByDay["day-10"],
       notes: [
         "Urquhart Castle entry needs advance booking once the northbound bus timetable is confirmed.",
       ],
@@ -632,6 +650,7 @@ export const scotland2026: Trip = {
       slug: "day-11",
       dayNumber: 11,
       date: "2026-06-07",
+      dateLabel: "Sunday",
       title: "Culloden, Clava Cairns, and Aviemore",
       summary:
         "A day of Scottish layers: the silent moor at Culloden, 4000-year-old Bronze Age cairns at Clava, and an evening train south into the pinewoods of the Cairngorms.",
@@ -647,6 +666,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day11.jpg",
         alt: "Culloden and Clava Cairns highlight for day 11",
       },
+      context: scotlandContextByDay["day-11"],
       sections: [
         {
           title: "Morning",
@@ -681,6 +701,7 @@ export const scotland2026: Trip = {
       slug: "day-12",
       dayNumber: 12,
       date: "2026-06-08",
+      dateLabel: "Monday",
       title: "Cairngorms morning and return to Edinburgh",
       summary:
         "A last, quieter Highland day: the old pinewoods and the island castle at Loch an Eilein, then the evening train south to Edinburgh.",
@@ -695,6 +716,7 @@ export const scotland2026: Trip = {
         src: "/trips/2026-scotland/highlights/day12.jpg",
         alt: "Loch an Eilein and Cairngorms highlight for day 12",
       },
+      context: scotlandContextByDay["day-12"],
       fixedItems: [
         {
           time: "16:27",
@@ -703,7 +725,7 @@ export const scotland2026: Trip = {
         },
       ],
       notes: [
-        "The Edinburgh arrival on 8 June 2026 runs straight into a 09:00 departure on 9 June 2026.",
+        "The Edinburgh arrival runs straight into a 09:00 departure the next morning.",
       ],
       options: [
         "Swap the bike plan for more walking or simple rest if the group wants a calmer final day.",
@@ -738,6 +760,7 @@ export const scotland2026: Trip = {
       slug: "day-13",
       dayNumber: 13,
       date: "2026-06-09",
+      dateLabel: "Tuesday",
       title: "Departure",
       summary:
         "An airport morning — early wake-up, the tram to Edinburgh Airport, and the flight home.",
