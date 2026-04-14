@@ -75,6 +75,11 @@ Each trip is stored as one TypeScript file exporting one `Trip` object.
 - `date`
   - ISO-like date string in `YYYY-MM-DD`
 
+- `dateLabel`
+  - optional public-facing replacement for the rendered date string
+  - use this when the site should show a softer label such as only the weekday
+  - the underlying `date` still stays in the content for ordering and internal consistency
+
 - `title`
   - day headline
 
@@ -113,6 +118,13 @@ Each trip is stored as one TypeScript file exporting one `Trip` object.
 
 - `options`
   - optional array of optional ideas or alternative versions of the day
+
+- `context`
+  - optional day-scoped background material for places mentioned in the itinerary
+  - intended for richer editorial context, not logistics
+  - contains:
+    - optional `theme`
+    - `places`, each with `slug`, `name`, `subtitle`, `body`, and optional `aliases`
 
 - `sections`
   - ordered array of day sections
@@ -207,6 +219,7 @@ export const exampleTrip = {
       slug: "day-01",
       dayNumber: 1,
       date: "2026-04-03",
+      dateLabel: "Thursday",
       title: "Arrival and city centre",
       summary: "Arrival, check-in, and a calm first evening.",
       overview: "A gentle landing day with enough structure to feel purposeful without becoming heavy.",
@@ -221,6 +234,18 @@ export const exampleTrip = {
       notes: ["Dinner booking is fixed at 19:30."],
       tips: ["Keep the first day light and use it to orient yourself."],
       options: ["Swap the city walk for rest if arrival runs later than expected."],
+      context: {
+        theme: "Example history",
+        places: [
+          {
+            slug: "example-old-town",
+            name: "Example Old Town",
+            subtitle: "Why this part of the city matters",
+            body: "Longer editorial background text goes here.",
+            aliases: ["Old Town"],
+          },
+        ],
+      },
       sections: [
         {
           title: "Afternoon",
