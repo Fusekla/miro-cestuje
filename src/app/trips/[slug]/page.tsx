@@ -157,12 +157,8 @@ export default async function TripPage({ params }: TripPageProps) {
             </p>
           </div>
 
-          {trip.days.map((day, index) => (
-            <DayAccordion
-              key={day.slug}
-              day={day}
-              defaultOpen={index === 0}
-            />
+          {trip.days.map((day) => (
+            <DayAccordion key={day.slug} day={day} />
           ))}
         </section>
       </section>
