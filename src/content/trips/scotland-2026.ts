@@ -10,7 +10,7 @@ export const scotland2026: Trip = {
   blurb:
     "A thirteen-day rail, ferry, and bus route from Edinburgh through Oban, Mull, Fort William, Loch Ness, Inverness, and Aviemore before the final return south.",
   intro: [
-    "Scotland the slow way and the wild way, at once. From Edinburgh we ride the West Highland Line to the west coast, sail out to Staffa for puffins and Fingal's Cave, cross to Iona's white beaches, board the Jacobite steam train over Glenfinnan Viaduct, walk into Glencoe, stand above Loch Ness at Urquhart Castle, and finish among the ancient pines of the Cairngorms.",
+    "Scotland the slow way and the wild way, at once. From Edinburgh we ride the West Highland Line to the west coast, sail out to Staffa for puffins and Fingal's Cave, cross to Iona's white beaches, pause at Glenfinnan for the viaduct, monument, and Loch Shiel, walk into Glencoe, stand above Loch Ness at Urquhart Castle, and finish among the ancient pines of the Cairngorms.",
     "Thirteen days, five travellers, zero rental cars — a route built entirely from rails, ferries, and Highland buses, with the big-ticket Scotland everyone imagines and the quieter corners most itineraries miss.",
   ],
   coverImage: {
@@ -25,7 +25,7 @@ export const scotland2026: Trip = {
     { label: "Pace", value: "Full days, early starts, light evenings" },
   ],
   planningNotes: [
-    "The Jacobite steam train and key intercity legs are the schedule-defining pieces, so bookings and timetable checks matter more here than on a road trip.",
+    "The island excursion, Glenfinnan and Mallaig rail day, and key intercity legs are the schedule-defining pieces, so timings matter more here than on a road trip.",
     "Day 6 is the hardest logistical day of the trip and Day 12 leads straight into a very early airport morning the next day.",
   ],
   days: [
@@ -428,7 +428,7 @@ export const scotland2026: Trip = {
       summary:
         "A short transfer day up the west coast to Fort William — the Connel Bridge, the shore of Loch Linnhe, and an easy afternoon at Telford's Neptune's Staircase below Ben Nevis.",
       overview:
-        "After yesterday's long circuit, today is meant to be easier. One direct bus runs north from Oban along the A828 — over the Connel Bridge with the tidal race of the Falls of Lora below, up the shore of Loch Creran, through Appin, past Castle Stalker standing on its small offshore rock, and along the length of Loch Linnhe into Fort William. The town sits at the head of the loch with Ben Nevis immediately behind it, and its useful role on this trip is as a base rather than a set-piece: somewhere to unpack, stretch the legs, and regather for the two bigger days that follow. The afternoon can stay modest. A gentle walk west out to Corpach and Neptune's Staircase — Thomas Telford's flight of eight locks on the Caledonian Canal, the longest staircase lock in Britain, climbing under the shoulder of Ben Nevis — is the right kind of stretch: water, iron, wet stone, and a view straight up the glen toward Loch Lochy. Back in town for coffee, then dinner near the accommodation and an early night. The steam train leaves tomorrow morning.",
+        "After yesterday's long circuit, today is meant to be easier. One direct bus runs north from Oban along the A828 — over the Connel Bridge with the tidal race of the Falls of Lora below, up the shore of Loch Creran, through Appin, past Castle Stalker standing on its small offshore rock, and along the length of Loch Linnhe into Fort William. The town sits at the head of the loch with Ben Nevis immediately behind it, and its useful role on this trip is as a base rather than a set-piece: somewhere to unpack, stretch the legs, and regather for the two bigger days that follow. The afternoon can stay modest. A gentle walk west out to Corpach and Neptune's Staircase — Thomas Telford's flight of eight locks on the Caledonian Canal, the longest staircase lock in Britain, climbing under the shoulder of Ben Nevis — is the right kind of stretch: water, iron, wet stone, and a view straight up the glen toward Loch Lochy. Back in town for coffee, then dinner near the accommodation and an early night. The Glenfinnan rail day starts early tomorrow morning.",
       tags: ["transfer", "recovery day", "highlands"],
       transport: [{ label: "Bus", duration: "Oban to Fort William approx. 2 hours" }],
       highlightImage: {
@@ -470,24 +470,37 @@ export const scotland2026: Trip = {
       dayNumber: 8,
       date: "2026-06-04",
       dateLabel: "Thursday",
-      title: "Jacobite Steam Train to Mallaig",
+      title: "Glenfinnan and Mallaig by rail",
       summary:
-        "The Jacobite day — real steam, lochside track, and the long curve of Glenfinnan Viaduct, twice in one ride.",
+        "A west-coast rail day with time at Glenfinnan for the viaduct viewpoint, the monument and Loch Shiel, then lunch by the harbour in Mallaig.",
       overview:
-        "Today is the Jacobite day, the one that most looks the part of a Scottish travel poster and largely earns it. We board at Fort William station just before the mid-morning departure: a heritage steam locomotive, maroon carriages, a short platform hiss, and then the train pulling west along Loch Eil with Ben Nevis somewhere behind us. The first hour is the one everyone comes for. The line climbs gently through Lochaber and curves around the head of Loch Shiel to cross the Glenfinnan Viaduct — twenty-one concrete arches, thirty metres up, the whole train leaning into the bend so that from the window you can watch the locomotive and the front carriages swinging round ahead of you. Below the viaduct stands the Glenfinnan Monument to the 1745 rising, where Bonnie Prince Charlie first raised his standard; steam and Jacobite history in one frame, and the train's name stops feeling like a marketing choice. From there the track threads through Arisaig — the westernmost railway station in Britain — with flashes of white shell-sand and, on a clear day, the low shapes of Rum and Eigg out across the sound. The line finishes at Mallaig, a working fishing harbour where the morning's catch is mostly langoustine and the CalMac ferries come and go to Skye. We eat something simple by the quay, stretch our legs for an hour, and then take the same train back — the afternoon light sits differently on the lochs, and the second pass over Glenfinnan reads differently again.",
-      tags: ["steam train", "scenic rail", "heritage rail"],
-      transport: [{ label: "Train", duration: "Fort William to Mallaig return with a midday stop" }],
+        "Today keeps the classic west-coast rail shape, but slows it down at Glenfinnan instead of treating the viaduct as something seen only from a carriage window. The morning ScotRail service leaves Fort William early and reaches Glenfinnan just before nine, giving us a proper four-hour pause before continuing to Mallaig. First we walk up to the viaduct viewpoint, where the long curve of twenty-one concrete arches sits below rather than around us, carrying the railway across the valley with Loch Shiel and the mountains close behind. From there we drop down toward the Glenfinnan Monument and the shore of Loch Shiel, where Bonnie Prince Charlie raised the Stuart standard in 1745 and the loch stretches away toward Moidart in one of the most open views of the trip. Around midday we return toward the station for a simple snack or light lunch from supplies, then take the next train west. The line threads through Arisaig with flashes of white shell-sand and, on a clear day, the low shapes of Rum, Eigg, and Skye across the water before reaching Mallaig. The afternoon is harbour time: lunch by the quay, ferries to Skye, fishing boats, a short waterfront walk, and then the late-afternoon train back to Fort William for a relaxed evening.",
+      tags: ["scenic rail", "glenfinnan", "harbour town"],
+      transport: [
+        { label: "Train", duration: "Fort William to Glenfinnan to Mallaig return by ScotRail" },
+        { label: "Walking", duration: "Glenfinnan viewpoints and Mallaig harbour at a relaxed pace" },
+      ],
       highlightImage: {
         src: "/trips/2026-scotland/highlights/day08.jpg",
-        alt: "Jacobite steam train highlight for day 8",
+        alt: "Glenfinnan and Mallaig rail highlight for day 8",
       },
       context: scotlandContextByDay["day-08"],
       fixedItems: [
         {
-          time: "10:15",
-          title: "Jacobite departure from Fort William",
+          time: "08:15",
+          title: "ScotRail departs Fort William",
+          note: "Arrives Glenfinnan 08:48.",
         },
-        { time: "14:05", title: "Jacobite return departure from Mallaig" },
+        {
+          time: "12:51",
+          title: "ScotRail departs Glenfinnan",
+          note: "Arrives Mallaig 13:40.",
+        },
+        {
+          time: "16:05",
+          title: "ScotRail departs Mallaig",
+          note: "Arrives Fort William 17:28.",
+        },
       ],
       sections: [
         {
@@ -495,22 +508,36 @@ export const scotland2026: Trip = {
           items: [
             { text: "Early breakfast and a short walk to Fort William station." },
             {
-              time: "10:15",
-              text: "Board the Jacobite bound for Mallaig.",
+              time: "08:15",
+              text: "ScotRail from Fort William to Glenfinnan.",
+              duration: "Arrives 08:48",
               fixed: true,
-              note: "The route crosses the Glenfinnan Viaduct.",
+            },
+            {
+              text: "Walk up to the Glenfinnan Viaduct viewpoint for the view down over the curve of the arches.",
+            },
+            {
+              text: "Walk down to the Glenfinnan Monument and the shore of Loch Shiel, with time to linger by the water.",
             },
           ],
         },
         {
           title: "Afternoon",
           items: [
+            { text: "Return toward Glenfinnan station and use supplies for a snack or light lunch." },
             {
-              text: "Lunch by the harbour, a short walk along the quay, and a look around town before heading back to the station.",
+              time: "12:51",
+              text: "ScotRail from Glenfinnan to Mallaig.",
+              duration: "Arrives 13:40",
+              fixed: true,
             },
             {
-              time: "14:05",
-              text: "Take the Jacobite back to Fort William.",
+              text: "Lunch at Mallaig harbour and a short waterfront walk, with ferries to Skye and the Sound of Sleat if the weather is clear.",
+            },
+            {
+              time: "16:05",
+              text: "ScotRail from Mallaig back to Fort William.",
+              duration: "Arrives 17:28",
               fixed: true,
             },
           ],
