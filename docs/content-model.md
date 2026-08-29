@@ -73,7 +73,11 @@ Each trip is stored as one TypeScript file exporting one `Trip` object.
   - display order
 
 - `date`
-  - ISO-like date string in `YYYY-MM-DD`
+  - optional ISO-like date string in `YYYY-MM-DD`
+  - omit it for trips that have not happened yet: the site is public, and the
+    whole day object is serialised into the page, so an exact date is readable
+    in the page source even when `dateLabel` hides it from the header
+  - keep the private dated itinerary in `source.local/` instead
 
 - `dateLabel`
   - optional public-facing replacement for the rendered date string

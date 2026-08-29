@@ -44,7 +44,7 @@ export type DayContext = {
 export type TripDay = {
   slug: string;
   dayNumber: number;
-  date: string;
+  date?: string;
   dateLabel?: string;
   title: string;
   summary: string;

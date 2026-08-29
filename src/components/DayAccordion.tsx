@@ -182,7 +182,8 @@ export function DayAccordion({
   defaultOpen = false,
 }: DayAccordionProps) {
   const [activePlace, setActivePlace] = useState<ContextPlace | null>(null);
-  const displayDate = day.dateLabel ?? formatTripDate(day.date);
+  const displayDate =
+    day.dateLabel ?? (day.date ? formatTripDate(day.date) : null);
   const contextPlaces = day.context?.places ?? [];
   const transportSummary = day.transport?.map((entry) => {
     if (entry.duration) {
@@ -202,8 +203,12 @@ export function DayAccordion({
           <div className="max-w-3xl">
             <div className="mb-3 flex flex-wrap items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[var(--clay)]">
               <span>{`Day ${day.dayNumber}`}</span>
-              <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
-              <span className="text-[var(--muted)]">{displayDate}</span>
+              {displayDate ? (
+                <>
+                  <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
+                  <span className="text-[var(--muted)]">{displayDate}</span>
+                </>
+              ) : null}
             </div>
             <h3 className="text-3xl leading-tight text-[var(--forest)] sm:text-4xl">
               {day.title}
