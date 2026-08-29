@@ -1,3 +1,14 @@
+export type ImageCredit = {
+  path: string;
+  author: string;
+  platform: string;
+  title?: string;
+  source?: string;
+  license?: string;
+  licenseUrl?: string;
+  original?: string;
+};
+
 export type TripFact = {
   label: string;
   value: string;

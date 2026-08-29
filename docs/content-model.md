@@ -133,6 +133,13 @@ Each trip is stored as one TypeScript file exporting one `Trip` object.
 - `sections`
   - ordered array of day sections
 
+### Where Image Credits Live
+
+Attribution for third-party images is not part of the `Trip` object. It lives in
+`src/content/image-credits.ts`, keyed by trip slug, and the trip page renders it
+at the foot of the page. The shape is `ImageCredit` in `src/content/types.ts`.
+See `docs/image-credits.md` for the conventions.
+
 ### Where Context Lives
 
 Day context is not stored inline in the trip file. Each trip that has background

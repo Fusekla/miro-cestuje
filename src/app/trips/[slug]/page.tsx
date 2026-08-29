@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { DayAccordion } from "@/components/DayAccordion";
+import { ImageCredits } from "@/components/ImageCredits";
 import { getPublishedTrips, getTripBySlug } from "@/content";
+import { getImageCredits } from "@/content/image-credits";
 
 type TripPageProps = {
   params: Promise<{
@@ -162,6 +164,8 @@ export default async function TripPage({ params }: TripPageProps) {
           ))}
         </section>
       </section>
+
+      <ImageCredits credits={getImageCredits(trip.slug)} />
     </main>
   );
 }

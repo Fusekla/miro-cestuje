@@ -34,6 +34,7 @@ Status: done
 Goal:
 
 Lock the richer live schema and make Slovenia the reference-quality example trip.
+(Scotland has since taken over that role; see Phase 3.)
 
 Success looks like:
 
@@ -51,7 +52,7 @@ Convert the archived Krakow, Scotland, and Cantabria plans into the final live c
 
 Success looks like:
 
-- Slovenia remains the canonical example trip
+- Scotland is the canonical example trip
 - one clean content file per trip
 - consistent copy style
 - no dead fields
@@ -60,7 +61,9 @@ Success looks like:
 Outcome:
 
 - Kraków 2026, Scotland 2026 and Cantabria 2026 are all live in the content model
-- Slovenia remains the reference trip for structure and tone
+- Scotland 2026 has replaced Slovenia as the reference trip for structure and
+  tone: it is the richest of the four, with day context essays, fixed timed
+  items, and the widest range of day shapes
 - Cantabria was written from a newer private planning document rather than from
   `archive/reference-inputs/09-cantabria.html`, so the archived version is now
   reference material only
