@@ -8,6 +8,22 @@ The archived pre-rebuild implementation lives in:
 - `archive/legacy-public/`
 - `archive/reference-inputs/`
 
+## [2.0.3] - 2026-08-29
+
+### Added
+
+- published the Cantabria 2026 trip: eight days on the Cantabrian coast from a single base, written in a slower register than the earlier trips, with one anchor a day and the optional half of each day kept in `options` rather than dressed up as a schedule
+- added 15 background essays across six Cantabria days, covering Altamira, El Capricho and the indianos, El Soplao, the Magdalena peninsula, the Santoña anchovy trade, and the coast itself
+- added cover and day images for Cantabria, with attribution recorded in `docs/image-credits.md`
+
+### Changed
+
+- made `date` optional on trip days so upcoming trips can omit exact dates; the site is public and the whole day object is serialised into the page, so an exact date was readable in the page source even when `dateLabel` hid it from the day header
+- restored native spelling for place names across all trips: Soča, Vršič, Portorož, Prešeren, Kraków, Rynek Główny, Horní náměstí
+- folded the Scotland context essays out of JSON and into one typed module matching the shape used for Cantabria, removing a type assertion that had been defeating type checking
+- documented in `docs/content-model.md` where day context lives and that section titles need not be clock blocks
+- Cantabria now leads the homepage as the featured trip and has left the on-deck list
+
 ## [2.0.2] - 2026-08-29
 
 ### Changed

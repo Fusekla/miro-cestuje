@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TripCard } from "@/components/TripCard";
 import { getPublishedTrips } from "@/content";
 
-const upcomingTrips = ["Cantabria 2026"];
+const upcomingTrips: string[] = [];
 
 export default function HomePage() {
   const trips = getPublishedTrips();
@@ -54,16 +54,18 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            {upcomingTrips.map((trip) => (
-              <span
-                key={trip}
-                className="rounded-full border border-[var(--line)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]"
-              >
-                On deck: {trip}
-              </span>
-            ))}
-          </div>
+          {upcomingTrips.length ? (
+            <div className="mt-10 flex flex-wrap gap-3">
+              {upcomingTrips.map((trip) => (
+                <span
+                  key={trip}
+                  className="rounded-full border border-[var(--line)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]"
+                >
+                  On deck: {trip}
+                </span>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <Link

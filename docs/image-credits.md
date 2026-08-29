@@ -91,3 +91,45 @@ This file tracks source attribution for third-party images used in the published
 - `public/trips/2026-scotland/highlights/day13.jpg` - Peggychoucair, Pixabay
   Source: https://pixabay.com/users/peggychoucair-1130890/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=859331
   Platform: https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=859331
+
+## Cantabria 2026
+
+- `public/trips/2026-cantabria/cover.jpg` - Hotelpalacion, Wikimedia Commons
+  Source: https://commons.wikimedia.org/wiki/File:Acantilados_Primoriu_en_To%C3%B1anes,_camino_de_Santiago_por_la_costa_de_Cantabria.jpg
+  License: CC BY-SA 4.0
+  Platform: https://commons.wikimedia.org/
+
+- `public/trips/2026-cantabria/highlights/day01.jpg` - Daniel Pacheco Amor, Pexels
+  Source: https://www.pexels.com/photo/road-in-mountains-9319689/
+  Platform: https://www.pexels.com/
+
+- `public/trips/2026-cantabria/highlights/day02.jpg` - Anne and Saturnino Miranda, Pixabay
+  Source: https://pixabay.com/users/barbeeanne-516629/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2663317
+  Platform: https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2663317
+
+- `public/trips/2026-cantabria/highlights/day03.jpg` - Santiago Peña Bossano, Pexels
+  Source: https://www.pexels.com/photo/el-capricho-de-gaudi-in-comillas-spain-38149955/
+  Platform: https://www.pexels.com/
+
+- `public/trips/2026-cantabria/highlights/day04.jpg` - HENCHE, Wikimedia Commons
+  Source: https://commons.wikimedia.org/wiki/File:EL_SOPLAO,_SANTANDER.jpg
+  License: CC BY-SA 4.0
+  Platform: https://commons.wikimedia.org/
+
+- `public/trips/2026-cantabria/highlights/day05.jpg` - Noreenlam, Wikimedia Commons
+  Source: https://commons.wikimedia.org/wiki/File:El_Palacio_de_la_Magdalena_(2).jpg
+  License: CC BY-SA 3.0
+  Platform: https://commons.wikimedia.org/
+
+- `public/trips/2026-cantabria/highlights/day06.jpg` - Leeloo The First, Pexels
+  Source: https://www.pexels.com/photo/photo-of-a-can-of-anchovies-near-bread-5602613/
+  Platform: https://www.pexels.com/
+
+- `public/trips/2026-cantabria/highlights/day07.jpg` - JnCrlsMG, Wikimedia Commons
+  Source: https://commons.wikimedia.org/wiki/File:Ermita_de_Santa_Justa_-_Vista_panor%C3%A1mica_(Ubiarco-Cantabria).jpg
+  License: CC BY-SA 4.0
+  Platform: https://commons.wikimedia.org/
+
+- `public/trips/2026-cantabria/highlights/day08.jpg` - Santiago Peña Bossano, Pexels
+  Source: https://www.pexels.com/photo/historic-cobblestone-street-in-santillana-del-mar-38149941/
+  Platform: https://www.pexels.com/

@@ -358,7 +358,7 @@ export const cantabria2026: Trip = {
       context: cantabriaContextByDay["day-07"],
       highlightImage: {
         src: "/trips/2026-cantabria/highlights/day07.jpg",
-        alt: "Cantabrian beach and coastline highlight for day 7",
+        alt: "The Ermita de Santa Justa above the cove at Ubiarco, highlight for day 7",
       },
       tips: [
         "Tonight is the last proper dinner of the trip, so it is the one worth booking a day ahead.",
