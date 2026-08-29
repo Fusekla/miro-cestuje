@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TripCard } from "@/components/TripCard";
 import { getPublishedTrips } from "@/content";
 
-const upcomingTrips: string[] = [];
+const upcomingTrips: string[] = ["Šumava 2026", "Portugal 2027"];
 
 export default function HomePage() {
   const trips = getPublishedTrips();

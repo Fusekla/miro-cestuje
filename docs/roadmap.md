@@ -5,12 +5,18 @@
 The project now has:
 
 - a clean content-first architecture
-- two published trips
+- four published trips: Cantabria 2026, Scotland 2026, Kraków 2026, Slovenia 2025
 - archived legacy material
 - working lint, typecheck, build, and dev setup
 - a first-pass design direction
-- committed image attribution tracking
+- committed image attribution tracking for every published image
 - improved desktop trip-page scrolling behavior
+- day background essays kept in one typed context module per trip
+- native spelling for place names across all trips
+- exact dates omitted from trips that have not happened yet, because the site is
+  public and the whole day object is readable in the page source
+- a repeatable way to write a new trip: keep the detailed private itinerary in
+  `source.local/`, and derive the published day text and context essays from it
 
 ## Phase 1: Governance And Documentation
 
@@ -37,7 +43,7 @@ Success looks like:
 
 ## Phase 3: Migrate Archived Trips
 
-Status: in progress
+Status: done
 
 Goal:
 
@@ -51,16 +57,26 @@ Success looks like:
 - no dead fields
 - no duplicate truth sources
 
-Completed so far:
+Outcome:
 
-- Krakow 2026 is now live in the new content model, with real trip imagery and richer editorial copy
+- Kraków 2026, Scotland 2026 and Cantabria 2026 are all live in the content model
+- Slovenia remains the reference trip for structure and tone
+- Cantabria was written from a newer private planning document rather than from
+  `archive/reference-inputs/09-cantabria.html`, so the archived version is now
+  reference material only
+- the archive holds no further plans to migrate; trips from here on are authored
+  rather than migrated
 
-Still pending:
+The schema review this phase called for did happen:
 
-- migrate Cantabria
-- migrate Scotland
+- `date` became optional, so upcoming trips can omit exact dates
+- `sections` stayed required, because a day with no plan reads better with mood
+  titles such as `If the weather holds` than with an empty section list
+- no other trip-specific fields turned out to be necessary
 
 ## Phase 4: Visual Polish
+
+Status: not started
 
 Goal:
 
@@ -76,6 +92,8 @@ Likely work:
 
 ## Phase 5: Shareability
 
+Status: not started
+
 Goal:
 
 Make public sharing feel complete.
@@ -89,11 +107,16 @@ Likely work:
 
 ## Next Recommended Session
 
+Two trips are on deck and shown on the homepage: Šumava in October 2026 and
+Portugal in June 2027.
+
 Pick up here next time:
 
-1. migrate Cantabria into `src/content/trips/`
-2. review whether the current schema needs any trip-specific optional fields after Cantabria
-3. migrate Scotland last, because it is the most logistics-heavy of the remaining archived plans
+1. write Šumava into `src/content/trips/` once its planning document exists,
+   following the Cantabria approach
+2. publish it: register it in `src/content/index.ts`, drop it from
+   `upcomingTrips` in `src/app/page.tsx`, and record its image attribution
+3. otherwise start Phase 4, which is now the oldest untouched work
 
 ## Phase 6: Optional Features
 
