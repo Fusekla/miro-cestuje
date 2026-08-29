@@ -133,10 +133,25 @@ Each trip is stored as one TypeScript file exporting one `Trip` object.
 - `sections`
   - ordered array of day sections
 
+### Where Context Lives
+
+Day context is not stored inline in the trip file. Each trip that has background
+essays gets one module at `src/content/context/<trip>.ts`, exporting a typed
+`Record<string, DayContext>` keyed by day slug, which the trip file imports and
+attaches per day.
+
+Write these as plain TypeScript. An earlier trip kept its essays in a separate
+JSON file with a mapping layer that bolted on slugs and aliases afterwards; that
+existed only because the text was generated outside the repository, and it cost
+a type assertion that silently defeated type checking. Both trips now use the
+typed module directly, so a mistyped field fails the build.
+
 ### Day Section Fields
 
 - `title`
   - examples: `Morning`, `Afternoon`, `Evening`
+  - titles are free text and do not have to be clock blocks; a slower trip may
+    read better with `The anchor`, `Open end`, or `If the weather holds`
 
 - `items`
   - array of day items
@@ -277,7 +292,6 @@ The following may be useful later, but are not part of the current live model:
 - travel mode chips beyond simple tags
 - booking links
 - prices
-- map coordinates
 - public/private content split
 
 Do not add these casually. If a new field becomes necessary, update:
