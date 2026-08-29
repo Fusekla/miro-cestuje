@@ -8,6 +8,20 @@ The archived pre-rebuild implementation lives in:
 - `archive/legacy-public/`
 - `archive/reference-inputs/`
 
+## [2.0.2] - 2026-08-29
+
+### Changed
+
+- corrected Scotland day 12 to reflect what the trip actually did: Loch Morlich and Glenmore Forest in place of Loch an Eilein and Rothiemurchus, with the walk distance, transport, and day sections adjusted to match
+- rewrote the day 12 background essay for Loch Morlich and Glenmore, keeping the Caledonian Forest framing and adding the loch's beach geology and the free-ranging Cairngorm reindeer herd
+- corrected a factual error carried in the old day 12 essay, which described the Speyside ospreys as reintroduced from Scandinavia when they in fact recolonised on their own in the 1950s
+- replaced the day 12 highlight image with an original photograph taken at Loch Morlich, and updated `docs/image-credits.md` accordingly
+
+### Security
+
+- upgraded `next` to 16.3.3 and `react`/`react-dom` to 19.2.8, and refreshed transitive dev dependencies, clearing all reported advisories
+- revoked the legacy OpenWeatherMap API key that remained exposed in git history from before the 2.0.1 sanitization pass
+
 ## [2.0.1] - 2026-03-21
 
 ### Changed

@@ -755,18 +755,19 @@ export const scotland2026: Trip = {
       dateLabel: "Monday",
       title: "Cairngorms morning and return to Edinburgh",
       summary:
-        "A last, quieter Highland day: the old pinewoods and island castle at Loch an Eilein, a heritage rail loop through Strathspey, then the evening train south to Edinburgh.",
+        "A last, quieter Highland day: the sandy shore and old pinewoods at Loch Morlich, a heritage rail loop through Strathspey, then the evening train south to Edinburgh.",
       overview:
-        "The last full day of the trip is deliberately the quietest, but it still ought to feel distinctly Highland. Aviemore sits on the western edge of the Cairngorms, and a short walk in the Rothiemurchus estate gets us into one of the last surviving fragments of the Great Caledonian Forest — the Scots pine woodland that once covered most of the Highlands and is now reduced to a few stubborn pockets. The main objective is Loch an Eilein, a small quiet loch ringed by old pines with a ruined fourteenth-century castle standing on its wooded islet a few metres from the shore. A gentle circular path runs the whole way around the water — about four miles — and the loop is the day's first deliberate stretch: slow, piney, and rarely busy. Red squirrels, crested tits, and the occasional osprey high over the loch. Back in Aviemore after lunch, the booked Strathspey Railway ride gives the afternoon a different register entirely: heritage carriages, a short run through the Spey valley to Boat of Garten and Broomhill, and the mild pleasure of seeing the Cairngorms from a slower rail line before we return to ordinary travel. Then comes the real southbound departure, the Highland Main Line over the Drumochter Pass, down through Pitlochry and Perth and across the Forth into Edinburgh, arriving in the long northern evening. One last short night in the city, and then the airport at first light.",
+        "The last full day of the trip is deliberately the quietest, but it still ought to feel distinctly Highland. Aviemore sits on the western edge of the Cairngorms, and a short hop out to Glenmore gets us into one of the last surviving fragments of the Great Caledonian Forest — the Scots pine woodland that once covered most of the Highlands and is now reduced to a few stubborn pockets. The main objective is Loch Morlich, a glacial loch at about a thousand feet with the Northern Corries of Cairn Gorm rising directly behind it and, improbably, a broad sandy beach along its northern shore. A flat circular path runs the whole way around the water — a shade over two miles — and threads through the pines for most of it: the day's first deliberate stretch, slow, piney, and rarely busy. Red squirrels, crested tits, and the free-ranging reindeer herd grazing the slopes above. Back in Aviemore after lunch, the booked Strathspey Railway ride gives the afternoon a different register entirely: heritage carriages, a short run through the Spey valley to Boat of Garten and Broomhill, and the mild pleasure of seeing the Cairngorms from a slower rail line before we return to ordinary travel. Then comes the real southbound departure, the Highland Main Line over the Drumochter Pass, down through Pitlochry and Perth and across the Forth into Edinburgh, arriving in the long northern evening. One last short night in the city, and then the airport at first light.",
       tags: ["forest", "heritage rail", "return south"],
       transport: [
-        { label: "Walking", duration: "Loch an Eilein and Rothiemurchus at a relaxed pace" },
+        { label: "Bus", duration: "Aviemore to Glenmore approx. 25 minutes each way" },
+        { label: "Walking", duration: "Loch Morlich and Glenmore Forest at a relaxed pace" },
         { label: "Train", duration: "Aviemore to Broomhill return on the Strathspey Railway approx. 1 hour 40 minutes" },
         { label: "Train", duration: "Aviemore to Edinburgh approx. 3 hours" },
       ],
       highlightImage: {
         src: "/trips/2026-scotland/highlights/day12.jpg",
-        alt: "Loch an Eilein and Cairngorms highlight for day 12",
+        alt: "Loch Morlich and Cairngorms highlight for day 12",
       },
       context: scotlandContextByDay["day-12"],
       fixedItems: [
@@ -792,13 +793,13 @@ export const scotland2026: Trip = {
           title: "Morning",
           items: [
             { text: "Easy breakfast start." },
-            { text: "Walk around Loch an Eilein at a relaxed pace." },
+            { text: "Bus from Aviemore out to Glenmore, then walk the Loch Morlich circuit and the pine forest at a relaxed pace." },
           ],
         },
         {
           title: "Afternoon",
           items: [
-            { text: "Lunch around Aviemore or Rothiemurchus." },
+            { text: "Bus back to Aviemore for lunch." },
             {
               time: "12:45",
               text: "Board the Strathspey Railway from Aviemore for the return run via Boat of Garten to Broomhill.",

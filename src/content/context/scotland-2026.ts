@@ -104,9 +104,9 @@ const placeMetaByDay: Record<
     },
   },
   "Day 12": {
-    "Loch an Eilein & Rothiemurchus Forest": {
-      slug: "loch-an-eilein-rothiemurchus-forest",
-      aliases: ["Loch an Eilein", "Rothiemurchus"],
+    "Loch Morlich & Glenmore Forest": {
+      slug: "loch-morlich-glenmore-forest",
+      aliases: ["Loch Morlich", "Glenmore Forest", "Glenmore"],
     },
   },
 };

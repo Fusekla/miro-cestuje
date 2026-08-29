@@ -84,10 +84,9 @@ This file tracks source attribution for third-party images used in the published
   License: CC BY-SA 2.0
   Platform: https://commons.wikimedia.org/
 
-- `public/trips/2026-scotland/highlights/day12.jpg` - Peter S, Wikimedia Commons
-  Source: https://commons.wikimedia.org/wiki/File:The_island_on_Loch_an_Eilein_-_geograph.org.uk_-_2494967.jpg
-  License: CC BY-SA 2.0
-  Platform: https://commons.wikimedia.org/
+- `public/trips/2026-scotland/highlights/day12.jpg` - original photograph by the site author
+  Source: taken on location at Loch Morlich
+  License: no third-party attribution required
 
 - `public/trips/2026-scotland/highlights/day13.jpg` - Peggychoucair, Pixabay
   Source: https://pixabay.com/users/peggychoucair-1130890/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=859331
