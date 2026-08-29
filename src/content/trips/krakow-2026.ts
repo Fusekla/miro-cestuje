@@ -2,21 +2,21 @@ import type { Trip } from "@/content/types";
 
 export const krakow2026: Trip = {
   slug: "2026-krakow",
-  title: "Krakow 2026",
+  title: "Kraków 2026",
   eyebrow: "City break, March 2026",
   destination: "Poland",
   dateRange: "28 March - 1 April 2026",
   blurb:
-    "A five-day city break built around Krakow's Old Town, Kazimierz, Wieliczka, and two heavier memory sites on the way out.",
+    "A five-day city break built around Kraków's Old Town, Kazimierz, Wieliczka, and two heavier memory sites on the way out.",
   intro: [
-    "This one is a shorter city trip rather than a road-trip sprawl: one main base, a few fixed timed visits, and enough room between them to actually feel Krakow instead of just marching through it.",
-    "The shape stays compact, but the mood should still shift from the ceremonial centre of old Krakow to Kazimierz, then outward to Wieliczka and the two more serious final stops. It is meant to feel cultured and grounded, not frantic.",
+    "This one is a shorter city trip rather than a road-trip sprawl: one main base, a few fixed timed visits, and enough room between them to actually feel Kraków instead of just marching through it.",
+    "The shape stays compact, but the mood should still shift from the ceremonial centre of old Kraków to Kazimierz, then outward to Wieliczka and the two more serious final stops. It is meant to feel cultured and grounded, not frantic.",
   ],
   coverImage: {
     src: "/trips/2026-krakow/cover.jpg",
-    alt: "Krakow skyline and historic centre for the Krakow 2026 trip",
+    alt: "Kraków skyline and historic centre for the Kraków 2026 trip",
   },
-  baseLocation: "Krakow",
+  baseLocation: "Kraków",
   tags: ["city break", "history", "culture"],
   facts: [
     { label: "Duration", value: "5 days" },
@@ -33,11 +33,11 @@ export const krakow2026: Trip = {
       slug: "day-01",
       dayNumber: 1,
       date: "2026-03-28",
-      title: "Home to Olomouc to Krakow",
+      title: "Home to Olomouc to Kraków",
       summary:
-        "A travel day with one proper stop in Olomouc before the final push into Krakow.",
+        "A travel day with one proper stop in Olomouc before the final push into Kraków.",
       overview:
-        "The opening day works best when treated as a measured arrival rather than dead transit. Olomouc is a strong halfway stop because it has the feel of an old Moravian city that still knows what it is, without needing to perform for weekend crowds in the same way bigger capitals do. Horni namesti gives the centre of gravity, the Holy Trinity Column brings the expected UNESCO weight, and the astronomical clock adds one of those Central European civic oddities that makes a square feel lived-in rather than generic. It is the right sort of stop for lunch and a short walk under arcades before getting back on the road. By the time Krakow comes into reach, the day should already feel like the trip has started rather than merely being in transfer mode. The evening then stays intentionally loose: check in, get bearings, eat nearby, and leave the city to unfold properly from the next morning onward.",
+        "The opening day works best when treated as a measured arrival rather than dead transit. Olomouc is a strong halfway stop because it has the feel of an old Moravian city that still knows what it is, without needing to perform for weekend crowds in the same way bigger capitals do. Horní náměstí gives the centre of gravity, the Holy Trinity Column brings the expected UNESCO weight, and the astronomical clock adds one of those Central European civic oddities that makes a square feel lived-in rather than generic. It is the right sort of stop for lunch and a short walk under arcades before getting back on the road. By the time Kraków comes into reach, the day should already feel like the trip has started rather than merely being in transfer mode. The evening then stays intentionally loose: check in, get bearings, eat nearby, and leave the city to unfold properly from the next morning onward.",
       tags: ["travel day", "old town", "gentle start"],
       transport: [
         { label: "Drive", duration: "Approx. 4.5-5 hours total" },
@@ -46,10 +46,10 @@ export const krakow2026: Trip = {
       accommodationName: "Apartmenty Lea",
       highlightImage: {
         src: "/trips/2026-krakow/highlights/day01.jpg",
-        alt: "Olomouc stop and Krakow arrival highlight for day 1",
+        alt: "Olomouc stop and Kraków arrival highlight for day 1",
       },
       tips: [
-        "Keep Day 1 comfortable rather than ambitious. The point is to arrive in Krakow with enough energy left for the next two full city days.",
+        "Keep Day 1 comfortable rather than ambitious. The point is to arrive in Kraków with enough energy left for the next two full city days.",
       ],
       sections: [
         {
@@ -62,7 +62,7 @@ export const krakow2026: Trip = {
         {
           title: "Midday",
           items: [
-            { text: "Lunch around Horni namesti." },
+            { text: "Lunch around Horní náměstí." },
             { text: "Walk the Upper and Lower Squares." },
             { text: "See the Holy Trinity Column and the astronomical clock." },
             { text: "Take a coffee break before the second leg of the drive." },
@@ -71,13 +71,13 @@ export const krakow2026: Trip = {
         {
           title: "Afternoon",
           items: [
-            { text: "Drive from Olomouc to Krakow.", duration: "Approx. 3 hours" },
+            { text: "Drive from Olomouc to Kraków.", duration: "Approx. 3 hours" },
           ],
         },
         {
           title: "Evening",
           items: [
-            { text: "Arrive in Krakow around late afternoon or early evening." },
+            { text: "Arrive in Kraków around late afternoon or early evening." },
             { text: "Check in and keep dinner close to the accommodation." },
             { text: "Take a short walk only if there is still energy for it." },
           ],
@@ -90,9 +90,9 @@ export const krakow2026: Trip = {
       date: "2026-03-29",
       title: "Old Town walking tour and light city time",
       summary:
-        "A classic first proper day in Krakow: the Old Town, the main square, Wawel, and enough free time to let the city register.",
+        "A classic first proper day in Kraków: the Old Town, the main square, Wawel, and enough free time to let the city register.",
       overview:
-        "This is the ceremonial Krakow day, and it should lean into that. Rynek Glowny is one of the largest medieval market squares in Europe, which is why the centre feels less like a decorative old town and more like a real urban stage. The Cloth Hall, St. Mary's Basilica, and the surrounding lanes all carry the familiar royal-city weight, but Krakow works best when some of that grandeur is cut with slower moments: a coffee break, a river walk, time on Wawel Hill without trying to consume every interior in one shot. The walking tour is useful here because Krakow's history is layered rather than instantly legible. Royal capital, university city, mercantile crossroads, and later occupied city all overlap in a relatively compact area. By the end of the day, the goal is not to have ticked off every church and courtyard. It is to understand the tone of the city well enough that the later days feel connected rather than separate excursions.",
+        "This is the ceremonial Kraków day, and it should lean into that. Rynek Główny is one of the largest medieval market squares in Europe, which is why the centre feels less like a decorative old town and more like a real urban stage. The Cloth Hall, St. Mary's Basilica, and the surrounding lanes all carry the familiar royal-city weight, but Kraków works best when some of that grandeur is cut with slower moments: a coffee break, a river walk, time on Wawel Hill without trying to consume every interior in one shot. The walking tour is useful here because Kraków's history is layered rather than instantly legible. Royal capital, university city, mercantile crossroads, and later occupied city all overlap in a relatively compact area. By the end of the day, the goal is not to have ticked off every church and courtyard. It is to understand the tone of the city well enough that the later days feel connected rather than separate excursions.",
       tags: ["old town", "walking tour", "landmarks"],
       transport: [{ label: "City walking", duration: "Most of the day" }],
       accommodationName: "Apartmenty Lea",
@@ -105,7 +105,7 @@ export const krakow2026: Trip = {
       ],
       highlightImage: {
         src: "/trips/2026-krakow/highlights/day02.jpg",
-        alt: "Krakow Old Town highlight for day 2",
+        alt: "Kraków Old Town highlight for day 2",
       },
       tips: [
         "Morskie Oko is a reliable classic Polish option after the tour.",
@@ -122,7 +122,7 @@ export const krakow2026: Trip = {
               duration: "Approx. 2.5 hours",
               fixed: true,
             },
-            { text: "Cover Rynek Glowny, Sukiennice, St. Mary's context, and the Collegium Maius area." },
+            { text: "Cover Rynek Główny, Sukiennice, St. Mary's context, and the Collegium Maius area." },
           ],
         },
         {
@@ -146,9 +146,9 @@ export const krakow2026: Trip = {
       date: "2026-03-30",
       title: "Wieliczka Salt Mine and a lighter evening",
       summary:
-        "A fixed early visit to Wieliczka, then a softer return to Krakow with an optional Nowa Huta detour in the afternoon.",
+        "A fixed early visit to Wieliczka, then a softer return to Kraków with an optional Nowa Huta detour in the afternoon.",
       overview:
-        "Wieliczka gives the trip one of those places that sounds almost too famous until it turns out to justify itself. It is not just an old mine but a whole underground world of chambers, chapels, carved salt details, and industrial history stacked over centuries. The guided structure matters here because the site is too large and too strange to appreciate properly as random wandering. The famous St. Kinga's Chapel is the visual climax, but the mine's deeper charm is that it shows how much wealth, labour, and quiet ingenuity once sat below the surface of ordinary life. Because the visit starts early, the rest of the day should remain deliberately lighter, but not necessarily empty. Returning to Krakow for lunch still leaves room for an optional afternoon look at Nowa Huta, which adds a very different urban layer to the trip: broad socialist-realist planning, postwar history, and a part of the city that feels far removed from the royal core. It should stay optional rather than forced, but if energy is still good it gives day 3 a useful second texture before the more historically heavy fourth and fifth days.",
+        "Wieliczka gives the trip one of those places that sounds almost too famous until it turns out to justify itself. It is not just an old mine but a whole underground world of chambers, chapels, carved salt details, and industrial history stacked over centuries. The guided structure matters here because the site is too large and too strange to appreciate properly as random wandering. The famous St. Kinga's Chapel is the visual climax, but the mine's deeper charm is that it shows how much wealth, labour, and quiet ingenuity once sat below the surface of ordinary life. Because the visit starts early, the rest of the day should remain deliberately lighter, but not necessarily empty. Returning to Kraków for lunch still leaves room for an optional afternoon look at Nowa Huta, which adds a very different urban layer to the trip: broad socialist-realist planning, postwar history, and a part of the city that feels far removed from the royal core. It should stay optional rather than forced, but if energy is still good it gives day 3 a useful second texture before the more historically heavy fourth and fifth days.",
       tags: ["fixed visit", "underground site", "optional district stop"],
       transport: [
         { label: "Drive", duration: "Short transfer to Wieliczka and back" },
@@ -187,8 +187,8 @@ export const krakow2026: Trip = {
         {
           title: "Afternoon",
           items: [
-            { text: "Return to Krakow." },
-            { text: "Have lunch back in Krakow." },
+            { text: "Return to Kraków." },
+            { text: "Have lunch back in Kraków." },
             { text: "Optional: head to Nowa Huta for a look around in the afternoon." },
             { text: "Keep the rest of the day flexible depending on energy." },
           ],
@@ -205,11 +205,11 @@ export const krakow2026: Trip = {
       slug: "day-04",
       dayNumber: 4,
       date: "2026-03-31",
-      title: "Jewish Krakow walking tour and Schindler's Factory",
+      title: "Jewish Kraków walking tour and Schindler's Factory",
       summary:
         "Kazimierz in the morning, then a more serious historical layer in the afternoon at Schindler's Factory.",
       overview:
-        "This is one of the richest days of the trip because Kazimierz carries several lives at once. It was once an independent town, later the centre of Jewish life in Krakow, and today remains one of the city's most atmospheric districts, where cafés, synagogues, courtyards, and memorial traces all sit close together. A walking tour is the right way in because the district can otherwise blur into mood without enough historical clarity. By the afternoon, Schindler's Factory shifts the tone from neighbourhood texture to the machinery of occupation and wartime survival. It is one of those museum visits that asks for attention rather than speed, so the day works best when the gap between lunch and the museum stays relaxed. Dinner in Kazimierz afterwards can restore some warmth without trivialising what came before. The district is strong enough to hold both memory and everyday life at the same time, which is exactly what makes it worth lingering in.",
+        "This is one of the richest days of the trip because Kazimierz carries several lives at once. It was once an independent town, later the centre of Jewish life in Kraków, and today remains one of the city's most atmospheric districts, where cafés, synagogues, courtyards, and memorial traces all sit close together. A walking tour is the right way in because the district can otherwise blur into mood without enough historical clarity. By the afternoon, Schindler's Factory shifts the tone from neighbourhood texture to the machinery of occupation and wartime survival. It is one of those museum visits that asks for attention rather than speed, so the day works best when the gap between lunch and the museum stays relaxed. Dinner in Kazimierz afterwards can restore some warmth without trivialising what came before. The district is strong enough to hold both memory and everyday life at the same time, which is exactly what makes it worth lingering in.",
       tags: ["kazimierz", "history", "booked museum"],
       transport: [
         { label: "City walking", duration: "Most of the day" },
@@ -219,7 +219,7 @@ export const krakow2026: Trip = {
       fixedItems: [
         {
           time: "10:30-13:00",
-          title: "Jewish Krakow Free Walking Tour",
+          title: "Jewish Kraków Free Walking Tour",
           note: "English tour through Kazimierz.",
         },
         {
@@ -246,7 +246,7 @@ export const krakow2026: Trip = {
           items: [
             {
               time: "10:30",
-              text: "Join the Jewish Krakow free walking tour.",
+              text: "Join the Jewish Kraków free walking tour.",
               duration: "Approx. 2.5 hours",
               fixed: true,
             },
@@ -306,7 +306,7 @@ export const krakow2026: Trip = {
         {
           title: "Morning",
           items: [
-            { text: "Early checkout from Krakow." },
+            { text: "Early checkout from Kraków." },
             { text: "Drive to Auschwitz.", duration: "Approx. 1.5 hours" },
             {
               time: "08:30",

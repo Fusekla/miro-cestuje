@@ -7,9 +7,9 @@ export const slovenia2025: Trip = {
   destination: "Slovenia",
   dateRange: "19-27 July 2025",
   blurb:
-    "A nine-day route from home through lakes, mountain passes, the Soca valley, the coast, and Ljubljana.",
+    "A nine-day route from home through lakes, mountain passes, the Soča valley, the coast, and Ljubljana.",
   intro: [
-    "A full week through northeastern Slovenia and beyond: old towns, lake mornings, mountain roads, the Soca valley, and a slower coastal landing before the final swing through Ljubljana.",
+    "A full week through northeastern Slovenia and beyond: old towns, lake mornings, mountain roads, the Soča valley, and a slower coastal landing before the final swing through Ljubljana.",
     "The route stays practical where it should, but the days are built to feel like places rather than checklists. The point is not only to know what happens next, but also why each stop earns its place on the plan.",
   ],
   coverImage: {
@@ -25,7 +25,7 @@ export const slovenia2025: Trip = {
   ],
   planningNotes: [
     "Day 1 and Day 9 carry the longest driving load, so they set the rhythm of the whole route.",
-    "The middle stretch, from Vrsic Pass through the Soca valley, is the most active part of the trip.",
+    "The middle stretch, from Vršič Pass through the Soča valley, is the most active part of the trip.",
   ],
   days: [
     {
@@ -116,7 +116,7 @@ export const slovenia2025: Trip = {
       summary:
         "A mountain day for cable-car views, Bohinj, and one of the quietest scenic stretches of the trip.",
       overview:
-        "The rhythm softens here, and that shift matters. Compared with Bled, Bohinj feels broader, quieter, and much less interested in performing for visitors. It sits inside Triglav National Park, the great alpine heart of Slovenia, and the scenery starts to feel a little more serious. Taking the Vogel cable car is the fast way into that scale: in a short time the lake drops away and the mountains begin to dominate the whole horizon. Back at Bohinj, the day becomes less about landmarks and more about atmosphere, with the lake, forest edges, and possible detours like Savica Waterfall all feeding the sense that this is Slovenia at its most naturally composed. Savica itself has literary significance too, appearing in Slovenian cultural imagination through France Preseren's epic poem about the baptism at the Savica. Even without going full literary pilgrimage, the whole day works as a deeper inhale after Bled: less polished, more spacious, and more convincingly alpine.",
+        "The rhythm softens here, and that shift matters. Compared with Bled, Bohinj feels broader, quieter, and much less interested in performing for visitors. It sits inside Triglav National Park, the great alpine heart of Slovenia, and the scenery starts to feel a little more serious. Taking the Vogel cable car is the fast way into that scale: in a short time the lake drops away and the mountains begin to dominate the whole horizon. Back at Bohinj, the day becomes less about landmarks and more about atmosphere, with the lake, forest edges, and possible detours like Savica Waterfall all feeding the sense that this is Slovenia at its most naturally composed. Savica itself has literary significance too, appearing in Slovenian cultural imagination through France Prešeren's epic poem about the baptism at the Savica. Even without going full literary pilgrimage, the whole day works as a deeper inhale after Bled: less polished, more spacious, and more convincingly alpine.",
       tags: ["nature", "mountains", "lake"],
       transport: [{ label: "Local driving", duration: "Approx. 1-1.5 hours" }],
       accommodationName: "Guest House Golja, Bled",
@@ -149,11 +149,11 @@ export const slovenia2025: Trip = {
       slug: "day-04",
       dayNumber: 4,
       date: "2025-07-22",
-      title: "Bled to Vrsic Pass to Bovec",
+      title: "Bled to Vršič Pass to Bovec",
       summary:
         "The dramatic transfer day: mountain pass scenery, a few short stops, and a more active afternoon in Bovec.",
       overview:
-        "This is one of the signature driving days of the whole route. The point is not merely to get from Bled to Bovec, but to treat the road itself as the main event. Vrsic Pass is the highest mountain pass in Slovenia, built across a sequence of hairpins that make it scenic, a little theatrical, and worth respecting in equal measure. Stops like Lake Jasna ease the day in gently, while the Russian Chapel adds an unexpected historical layer: it commemorates Russian prisoners of war who died building the pass during the First World War. After the crest, the landscape begins to open toward the Soca side, and the mood changes from high mountain transit to outdoor basecamp. Bovec has that practical adventure-town feel that comes from living close to rafting, hiking, canyoning, and river traffic rather than from trying to be charming for tourists. If the weather plays along, this day should feel like entering the wilder middle chapter of the trip.",
+        "This is one of the signature driving days of the whole route. The point is not merely to get from Bled to Bovec, but to treat the road itself as the main event. Vršič Pass is the highest mountain pass in Slovenia, built across a sequence of hairpins that make it scenic, a little theatrical, and worth respecting in equal measure. Stops like Lake Jasna ease the day in gently, while the Russian Chapel adds an unexpected historical layer: it commemorates Russian prisoners of war who died building the pass during the First World War. After the crest, the landscape begins to open toward the Soča side, and the mood changes from high mountain transit to outdoor basecamp. Bovec has that practical adventure-town feel that comes from living close to rafting, hiking, canyoning, and river traffic rather than from trying to be charming for tourists. If the weather plays along, this day should feel like entering the wilder middle chapter of the trip.",
       tags: ["mountain pass", "scenic drive", "active"],
       transport: [{ label: "Drive", duration: "Approx. 2.5-3 hours" }],
       accommodationName: "Apartma Mulino, Kobarid",
@@ -165,7 +165,7 @@ export const slovenia2025: Trip = {
         {
           title: "Morning",
           items: [
-            { text: "Drive through Vrsic Pass with options to stop at Lake Jasna and the Russian Chapel." },
+            { text: "Drive through Vršič Pass with options to stop at Lake Jasna and the Russian Chapel." },
             { text: "Add a short hike if the weather and timing allow it." },
           ],
         },
@@ -182,11 +182,11 @@ export const slovenia2025: Trip = {
       slug: "day-05",
       dayNumber: 5,
       date: "2025-07-23",
-      title: "Soca Valley kayaking and Kobarid",
+      title: "Soča Valley kayaking and Kobarid",
       summary:
         "Outdoor day in the valley, with room for the river and one culture stop if the mood fits.",
       overview:
-        "The Soca River is the emotional center of this part of Slovenia, and the day should revolve around that fact. Its unreal blue-green color is not travel-brochure exaggeration; it really does look that clear and that cold, especially where the light hits it properly. Kayaking here gives the valley its most direct and physical experience, turning the landscape from something admired into something entered. Kobarid adds a second layer if the day wants one. The town is small, but its museum gives real context to the brutal Isonzo Front of the First World War, which turned this beautiful valley into one of Europe's hardest-fought mountain battle zones. That contrast is part of what makes the area memorable: astonishingly beautiful terrain carrying a heavy historical echo underneath it. The best version of the day balances both, without overloading it. Let the river remain the main character, and use the culture stop only if it sharpens the place rather than diluting the outdoor energy.",
+        "The Soča River is the emotional center of this part of Slovenia, and the day should revolve around that fact. Its unreal blue-green color is not travel-brochure exaggeration; it really does look that clear and that cold, especially where the light hits it properly. Kayaking here gives the valley its most direct and physical experience, turning the landscape from something admired into something entered. Kobarid adds a second layer if the day wants one. The town is small, but its museum gives real context to the brutal Isonzo Front of the First World War, which turned this beautiful valley into one of Europe's hardest-fought mountain battle zones. That contrast is part of what makes the area memorable: astonishingly beautiful terrain carrying a heavy historical echo underneath it. The best version of the day balances both, without overloading it. Let the river remain the main character, and use the culture stop only if it sharpens the place rather than diluting the outdoor energy.",
       tags: ["river", "sport", "nature"],
       transport: [{ label: "Local driving", duration: "Approx. 1 hour" }],
       accommodationName: "Apartma Mulino, Kobarid",
@@ -206,7 +206,7 @@ export const slovenia2025: Trip = {
         },
         {
           title: "Afternoon",
-          items: [{ text: "Go kayaking on the Soca River." }],
+          items: [{ text: "Go kayaking on the Soča River." }],
         },
       ],
     },
@@ -218,7 +218,7 @@ export const slovenia2025: Trip = {
       summary:
         "A final mountain push in the morning, then a long scenic move to the seaside.",
       overview:
-        "This is a day with two clear identities, and it works best if both are accepted rather than forced into one mood. The morning still belongs to the mountain side of the trip, with time for one more proper hike or active stretch in the Soca area before leaving it behind. After that, the route deliberately sheds altitude and shifts toward the Adriatic. That change is one of the pleasures of Slovenia as a road-trip country: in the space of a few hours the landscape can move from alpine drama to Mediterranean ease. By the time Portoroz or Piran comes into reach, the architecture, the light, and even the psychological pace are all different. It is tempting to overdo the morning because the scenery inland is so strong, but the smarter version protects enough energy to enjoy the coast on arrival. The point of the day is not just one more hike. It is the contrast between mountain effort and seaside landing.",
+        "This is a day with two clear identities, and it works best if both are accepted rather than forced into one mood. The morning still belongs to the mountain side of the trip, with time for one more proper hike or active stretch in the Soča area before leaving it behind. After that, the route deliberately sheds altitude and shifts toward the Adriatic. That change is one of the pleasures of Slovenia as a road-trip country: in the space of a few hours the landscape can move from alpine drama to Mediterranean ease. By the time Portorož or Piran comes into reach, the architecture, the light, and even the psychological pace are all different. It is tempting to overdo the morning because the scenery inland is so strong, but the smarter version protects enough energy to enjoy the coast on arrival. The point of the day is not just one more hike. It is the contrast between mountain effort and seaside landing.",
       tags: ["hiking", "transfer", "contrast"],
       transport: [{ label: "Drive", duration: "Approx. 3.5-4 hours" }],
       accommodationName: "Luxury Apartment Magical Portorose",
@@ -233,14 +233,14 @@ export const slovenia2025: Trip = {
         {
           title: "Morning",
           items: [
-            { text: "Use the first part of the day for a fuller hike in the Soca area." },
+            { text: "Use the first part of the day for a fuller hike in the Soča area." },
           ],
         },
         {
           title: "Afternoon",
           items: [
             {
-              text: "Drive toward Piran or Portoroz.",
+              text: "Drive toward Piran or Portorož.",
               duration: "Approx. 2.5-3 hours",
             },
           ],
@@ -262,7 +262,7 @@ export const slovenia2025: Trip = {
       summary:
         "A softer coastal day with time to recover before heading into Trieste later on.",
       overview:
-        "After several fuller inland days, this part of the trip is meant to exhale. The Slovenian coast is short, but it delivers a distinct tonal change: Venetian traces, salt-air evenings, and a sense that the schedule can loosen without the trip losing shape. A beach or slow morning in Piran or Portoroz is not filler here. It is what makes the later city visit land better. Trieste then adds a different sort of elegance. For long stretches it was the Habsburg Empire's great port, which explains why it feels more literary and cosmopolitan than many cities of similar size nearby. The grand squares, seafront, coffee-house culture, and slightly faded imperial confidence give it a personality that is very different from the more compact Slovenian stops. It is a city built as much on trade and ideas as on monuments. The day should therefore stay relaxed rather than ambitious: sea first, then Trieste as an evening city with enough history and atmosphere to carry itself.",
+        "After several fuller inland days, this part of the trip is meant to exhale. The Slovenian coast is short, but it delivers a distinct tonal change: Venetian traces, salt-air evenings, and a sense that the schedule can loosen without the trip losing shape. A beach or slow morning in Piran or Portorož is not filler here. It is what makes the later city visit land better. Trieste then adds a different sort of elegance. For long stretches it was the Habsburg Empire's great port, which explains why it feels more literary and cosmopolitan than many cities of similar size nearby. The grand squares, seafront, coffee-house culture, and slightly faded imperial confidence give it a personality that is very different from the more compact Slovenian stops. It is a city built as much on trade and ideas as on monuments. The day should therefore stay relaxed rather than ambitious: sea first, then Trieste as an evening city with enough history and atmosphere to carry itself.",
       tags: ["coast", "slow", "city evening"],
       transport: [{ label: "Driving", duration: "Approx. 1 hour total" }],
       accommodationName: "Luxury Apartment Magical Portorose",
@@ -273,7 +273,7 @@ export const slovenia2025: Trip = {
       sections: [
         {
           title: "Morning",
-          items: [{ text: "Keep the morning loose with beach time in Piran or Portoroz." }],
+          items: [{ text: "Keep the morning loose with beach time in Piran or Portorož." }],
         },
         {
           title: "Afternoon",
